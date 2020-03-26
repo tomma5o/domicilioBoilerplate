@@ -1,89 +1,25 @@
-import { Component } from 'preact';
-import { ListCategory } from './components/listCategory';
+import { h, Component } from 'preact';
+import { Router } from 'preact-router';
 
 import 'tailwindcss/dist/tailwind.min.css';
 
-const SEARCH =
-	'https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json';
+// Code-splitting is automated for routes
+import Home from './routes/home.js';
+import Form from './routes/form.js';
 
 export default class App extends Component {
-	state = {
-		results: {},
-		filter: ''
+	
+	handleRoute = e => {
+		this.currentUrl = e.url;
 	};
 
-	handleChangeFilter = e => {
-		const text = e.target.value;
-		this.setState({ filter: text });
-	};
-
-	filteredCategories(filter) {
-		const { results } = this.state;
-		const regex = new RegExp(`${filter}`, 'i');
-
-		return Object.keys(results).reduce((acc, key) => {
-			return (
-				{
-					...acc,
-					[key]: {
-						icon: results[key].icon,
-						data: results[key].data.filter(e => (filter.length ? regex.test(e.name) : true))
-					}
-				}
-			);
-		}, {});
-	}
-
-	componentDidMount() {
-		fetch(
-			`${SEARCH}?q=${Math.random()
-				.toString(36)
-				.split('.')}`
-		)
-			.then(r => r.json())
-			.then(json => {
-				this.setState({
-					results: json,
-					resultBkp: json
-				});
-			});
-	}
-
-	render(props, { filter }) {
-		const stores = this.filteredCategories(filter)
-
+	render() {
 		return (
-			<div className="">
-				<h1 className="font-sans text-6xl pb-10 text-gray-800 text-center">
-					<span role="img" aria-label="biker">
-						🚴
-					</span>
-					Ferrara a Domicilio
-				</h1>
-				<div className="relative p-5">
-					<input
-						class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-						type="text"
-						placeholder="Cerca Attività"
-						onInput={this.handleChangeFilter}
-					/>
-				</div>
-				<div className="relative p-5 font-sans text-md text-gray-800">
-					{
-						Object.keys(stores) && Object.keys(stores)
-							.filter(key => stores[key].data.length)
-							.map(key => (
-								<ListCategory
-									name={key}
-									category={stores[key]}
-									filter={filter}
-								/>
-							))
-					}
-				</div>
-				<div>
-					<p class="mb-5 text-center">Developed with ❤️ by <a class="text-orange-500" href="https://twitter.com/tomma5o">Tomma5o</a></p>
-				</div>
+			<div id="app">
+				<Router onChange={this.handleRoute}>
+					<Home path="/" />
+					<Form path="/form/" />
+				</Router>
 			</div>
 		);
 	}

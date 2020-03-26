@@ -8,14 +8,14 @@ export const ListItem = ({ name, tel, site, note }) => {
 	}
 
 	return (
-		<div className="rounded-lg border bg-gray-200 p-5 text-lg font-semibold text-gray-700 my-5">
-			<div className="flex justify-between">
+		<div class="rounded-lg border bg-gray-200 p-5 text-lg font-semibold text-gray-700 my-5">
+			<div class="flex justify-between">
 				<span>{name}</span>
-				<div className="">
+				<div class="flex">
 					{note && (
 						<span
 							onClick={handleClick}
-							className="inline-block mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
+							class="inline-block mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
 							role="img"
 							aria-label="warning"
 						>
@@ -26,7 +26,7 @@ export const ListItem = ({ name, tel, site, note }) => {
 						<a href={`//${site}`}>
 							<span
 								onClick={handleClick}
-								className="inline-block mx-2 w-8 h-8 cursor-pointer text-center leading-8  bg-orange-300 rounded-lg"
+								class="inline-block mx-2 w-8 h-8 cursor-pointer text-center leading-8  bg-orange-300 rounded-lg"
 								role="img"
 								aria-label="website"
 							>
@@ -34,20 +34,22 @@ export const ListItem = ({ name, tel, site, note }) => {
 							</span>
 						</a>
 					)}
-					<a href={`tel:${tel}`}>
-						<span
-							className="inline-block mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
-							role="img"
-							aria-label="telephone"
-						>
-						📞
-						</span>
-					</a>
+					{tel && (
+						<a href={`tel:${tel}`}>
+							<span
+								class="inline-block mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
+								role="img"
+								aria-label="telephone"
+							>
+							📞
+							</span>
+						</a>
+					)}
 				</div>
 			</div>
 			{infoVisible && (
-				<div className="block mt-10">
-					<p className="text-yellow-700">{note}</p>
+				<div class="block mt-10">
+					<p class="text-yellow-700">{note}</p>
 				</div>
 			)}
 		</div>
