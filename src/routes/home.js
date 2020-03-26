@@ -1,4 +1,5 @@
-import { Component } from 'preact';
+import { Component, Fragment } from 'preact';
+
 import { ListCategory } from '../components/listCategory';
 
 const SEARCH =
@@ -51,13 +52,7 @@ export default class Home extends Component {
 		const stores = this.filteredCategories(filter)
 
 		return (
-			<div class="">
-				<h1 class="font-sans text-6xl pb-10 text-gray-800 text-center">
-					<span role="img" aria-label="biker">
-						🚴
-					</span>
-					Ferrara a Domicilio
-				</h1>
+			<Fragment>
 				<div class="relative p-5">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
@@ -82,7 +77,7 @@ export default class Home extends Component {
 				<div>
 					<p class="mb-5 text-center">Developed with ❤️ by <a class="text-orange-500" href="https://twitter.com/tomma5o">Tomma5o</a></p>
 				</div>
-			</div>
+			</Fragment>
 		);
 	}
 }
