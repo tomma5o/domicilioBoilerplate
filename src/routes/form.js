@@ -1,7 +1,10 @@
 export default function Form() {
 	return (
 		<div class="">
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+				<p>
+					<input type="hidden" name="form-name" value="contact" />
+				</p>
 				<p>
 					<label>Nome
 						<input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="name" />
