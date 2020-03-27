@@ -55,13 +55,13 @@ export default class Home extends Component {
 			<Fragment>
 				<div class="relative p-5">
 					<input
-						class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
 						type="text"
 						placeholder="Cerca Attività"
 						onInput={this.handleChangeFilter}
 					/>
 				</div>
-				<div class="relative p-5 font-sans text-md text-gray-800">
+				<div class="relative font-sans text-md text-gray-800">
 					{
 						Object.keys(stores) && Object.keys(stores)
 							.filter(key => stores[key].data.length)

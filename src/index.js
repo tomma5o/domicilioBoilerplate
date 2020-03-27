@@ -16,7 +16,7 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<div id="app">
+			<div id="app" class="px-5">
             <nav class="flex justify-end">
 					<Link class="m-5 text-blue-500 hover:text-blue-800" activeClassName="text-orange-500" href="/">Home</Link>
 					<Link class="m-5 text-blue-500 hover:text-blue-800" activeClassName="text-orange-500" href="/form">Aggiungi la tua attività</Link>
