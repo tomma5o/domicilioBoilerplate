@@ -21,8 +21,12 @@ export default function Form() {
 					</label>
 				</p>
 				<p class="my-5">
+					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Consegna in tutta la provincia</label>
+					<input type="checkbox" name="province-delivery" />
+				</p>
+				<p class="my-5">
 					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Note
-						<input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="email" />
+						<textarea class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="email" />
 					</label>
 				</p>
 				<p class="my-5">
