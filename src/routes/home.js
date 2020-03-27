@@ -2,12 +2,8 @@ import { Component, Fragment } from 'preact';
 
 import { ListCategory } from '../components/listCategory';
 
-const SEARCH =
-	'https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json';
-
 export default class Home extends Component {
 	state = {
-		results: {},
 		filter: ''
 	};
 
@@ -17,7 +13,7 @@ export default class Home extends Component {
 	};
 
 	filteredCategories(filter) {
-		const { results } = this.state;
+		const { results } = this.props;
 		const regex = new RegExp(`${filter}`, 'i');
 
 		return Object.keys(results).reduce((acc, key) => {
@@ -31,21 +27,6 @@ export default class Home extends Component {
 				}
 			);
 		}, {});
-	}
-
-	componentDidMount() {
-		fetch(
-			`${SEARCH}?q=${Math.random()
-				.toString(36)
-				.split('.')}`
-		)
-			.then(r => r.json())
-			.then(json => {
-				this.setState({
-					results: json,
-					resultBkp: json
-				});
-			});
 	}
 
 	render(props, { filter }) {

@@ -8,18 +8,48 @@ import 'tailwindcss/dist/tailwind.min.css';
 import Home from './routes/home.js';
 import Form from './routes/form.js';
 
+// Constants
+const SEARCH =
+	'https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json';
+
 export default class App extends Component {
+
+	state = {
+		results: {},
+		isHomepage: true,
+	}
 	
 	handleRoute = e => {
 		this.currentUrl = e.url;
+		this.setState({isHomepage: e.url === "/"});
 	};
 
-	render() {
+	componentDidMount() {
+		fetch(
+			`${SEARCH}?q=${Math.random()
+				.toString(36)
+				.split('.')}`
+		)
+			.then(r => r.json())
+			.then(json => {
+				this.setState({
+					results: json,
+					resultBkp: json
+				});
+			});
+	}
+
+	render(props, { isHomepage, results }) {
+		console.log(isHomepage)
 		return (
 			<div id="app" class="px-5">
-            <nav class="flex justify-end">
-					<Link class="m-5 text-blue-500 hover:text-blue-800" activeClassName="text-orange-500" href="/">Home</Link>
-					<Link class="m-5 text-blue-500 hover:text-blue-800" activeClassName="text-orange-500" href="/form">Aggiungi la tua attività</Link>
+            <nav class="flex justify-end items-center">
+					{
+						isHomepage
+							? null
+							: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
+					}
+					<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi la tua attività</Link>
 				</nav>
             <h1 class="font-sans text-6xl pb-10 text-gray-800 text-center">
 					<span role="img" aria-label="biker">
@@ -28,7 +58,7 @@ export default class App extends Component {
 					Ferrara a Domicilio
 				</h1>
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
+					<Home path="/" results={results} />
 					<Form path="/form" />
 				</Router>
 			</div>
