@@ -34,7 +34,7 @@ export default class Home extends Component {
 
 		return (
 			<Fragment>
-				<div class="relative p-5">
+				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
 						type="text"
@@ -42,7 +42,7 @@ export default class Home extends Component {
 						onInput={this.handleChangeFilter}
 					/>
 				</div>
-				<div class="relative font-sans text-md text-gray-800">
+				<div class="relative mb-10 font-sans text-md text-gray-800">
 					{
 						Object.keys(stores) && Object.keys(stores)
 							.filter(key => stores[key].data.length)
@@ -56,7 +56,7 @@ export default class Home extends Component {
 					}
 				</div>
 				<div>
-					<p class="mb-5 text-center">Developed with ❤️ by <a class="text-orange-500" href="https://twitter.com/tomma5o">Tomma5o</a></p>
+					<p class="my-10 text-center">Developed with ❤️ by <a class="text-orange-500" href="https://github.com/Th3Wall">Davide Mandelli</a></p>
 				</div>
 			</Fragment>
 		);
