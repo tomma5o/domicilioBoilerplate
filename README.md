@@ -1,6 +1,6 @@
 # Ferrara a Domicilio
 
-> If you want to make the same proj for your city, the only thing i ask is to fork this repo for make it yours.
+> If you want to make the same proj for your city, the only thing i ask is to fork the [main repo](https://github.com/tomma5o/ferraraDomicilio) for make it yours.
 > Thanks!
 
 ## CLI Commands
