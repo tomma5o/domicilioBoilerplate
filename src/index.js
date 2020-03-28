@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { h, Component, Fragment } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
@@ -7,6 +7,7 @@ import 'tailwindcss/dist/tailwind.min.css';
 // Code-splitting is automated for routes
 import Home from './routes/home.js';
 import Form from './routes/form.js';
+import { Dialog } from './components/dialog.js';
 
 // Constants
 const SEARCH =
@@ -40,28 +41,30 @@ export default class App extends Component {
 	}
 
 	render(props, { isHomepage, results }) {
-		console.log(isHomepage)
 		return (
-			<div id="app" class="px-5">
-            <nav class="flex justify-end items-center">
-					{
-						isHomepage
-							? null
-							: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
-					}
-					<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi la tua attività</Link>
-				</nav>
-            <h1 class="font-sans text-6xl pb-10 text-gray-800 text-center">
-					<span role="img" aria-label="biker">
-						🚴
-					</span>
-					Ferrara a Domicilio
-				</h1>
-				<Router onChange={this.handleRoute}>
-					<Home path="/" results={results} />
-					<Form path="/form" />
-				</Router>
-			</div>
+			<Fragment>
+				<div id="app" class="px-5">
+					<nav class="flex justify-end items-center">
+						{
+							isHomepage
+								? null
+								: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
+						}
+						<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi la tua attività</Link>
+					</nav>
+					<h1 class="font-sans text-6xl pb-10 text-gray-800 text-center">
+						<span role="img" aria-label="biker">
+							🚴
+						</span>
+						Ferrara a Domicilio
+					</h1>
+					<Router onChange={this.handleRoute}>
+						<Home path="/" results={results} />
+						<Form path="/form" />
+					</Router>
+				</div>
+				<Dialog isOpen={true} />
+			</Fragment>
 		);
 	}
 }
