@@ -7,11 +7,17 @@ export const ListItem = ({ name, tel, site, note }) => {
 		setInfoVisible(!infoVisible);
 	}
 
+	function encodeUrl(name) {
+		const encoded = encodeURIComponent(name);
+		const searchUrl = `https://www.google.com/search?q=${encoded}%20ferrara`;
+		return searchUrl;
+	}
+
 	return (
 		<div class="rounded-lg border bg-gray-200 p-5 text-lg font-semibold text-gray-700 my-5">
 			<div class="flex justify-between">
 				<span>
-					<a class="hover:underline" href={`https://www.google.com/search?q=${name}%20ferrara`} target="_blank" rel="noopener noreferrer">{name}</a>
+					<a class="hover:underline" href={encodeUrl(name)} target="_blank" rel="noopener noreferrer">{name}</a>
 				</span>
 				<div class="flex">
 					{note && (
