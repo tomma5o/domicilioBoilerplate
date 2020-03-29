@@ -41,7 +41,7 @@ export default class App extends Component {
 
 	render(props, { isHomepage, results }) {
 		return (
-			<div id="app" class="px-5">
+			<div id="app" class="px-5 max-w-screen-md mx-auto">
 				<nav class="flex justify-center md:justify-end items-center">
 					{
 						isHomepage
