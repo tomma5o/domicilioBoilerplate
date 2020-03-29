@@ -49,7 +49,7 @@ export default class App extends Component {
 					}
 					<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi un'attività</Link>
 				</nav>
-				<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center">
+				<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
 					<span class="block sm:inline-block" role="img" aria-label="biker">
 						🚴
 					</span>
