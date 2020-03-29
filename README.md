@@ -17,9 +17,11 @@ npm run build
 
 # test the production build locally
 npm run serve
-
-# run tests with jest and preact-render-spy 
-npm run test
 ```
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+
+## Deploy
+
+The site is developed with some specific Netlify.com apis.
+And if you want to add analytics just put it in your netlify admin panel
