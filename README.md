@@ -21,6 +21,18 @@ npm run serve
 
 For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
 
+## Data source
+
+All the data is fetched from this gist:
+https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json
+
+When you add your gist remember to delete the last hash because points directly at a specific commit, for example:
+
+```diff
++ https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/2456kdue3a17cc86b8fe6/FerraraDomicilio.json
+- https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json
+```
+
 ## Deploy
 
 The site is developed with some specific Netlify.com apis.
