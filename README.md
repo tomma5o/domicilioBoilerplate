@@ -29,7 +29,7 @@ And if you want to add analytics just put it in your netlify admin panel
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 
