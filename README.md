@@ -24,7 +24,7 @@ When you add your gist remember to delete the last hash because points directly 
 
 ## Deploy
 
-The site is developed with some specific Netlify.com apis.
+The site is developed with some specific https://netlify.com apis.
 And if you want to add analytics just put it in your netlify admin panel
 
 ## CLI Commands
