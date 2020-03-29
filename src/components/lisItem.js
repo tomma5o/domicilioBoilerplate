@@ -2,8 +2,9 @@ import { useState } from 'preact/hooks';
 
 export const ListItem = ({ name, tel, site, mail, note }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
-	const encoded = encodeURIComponent(name);
-	const searchUrl = `https://www.google.com/search?q=${encoded}%20ferrara`;
+	const encodedName = encodeURIComponent(name);
+	const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
+	const searchUrl = `https://www.google.com/search?q=${encodedName}%20${encodedCity}`;
 
 	function handleClick() {
 		setInfoVisible(!infoVisible);
