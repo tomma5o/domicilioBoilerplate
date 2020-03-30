@@ -1,4 +1,4 @@
-import { h, Component, Fragment } from 'preact';
+import { h, Component, createContext } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
@@ -13,17 +13,36 @@ import { Dialog } from './components/dialog.js';
 const SEARCH =
 	'https://gist.githubusercontent.com/tomma5o/1ca63d091b01a2fa6a73a17cc86b8fe6/raw/FerraraDomicilio.json';
 
+export const Action = createContext({})
+
 export default class App extends Component {
 
 	state = {
 		results: {},
 		isHomepage: true,
+		isPopupOpen: false,
+		popupNumbers: [],
 	}
 	
 	handleRoute = e => {
 		this.currentUrl = e.url;
 		this.setState({isHomepage: e.url === "/"});
 	};
+
+	setPopupNumbers = (e, numberArray) => {
+		e.preventDefault();
+
+		this.setState({
+			popupNumbers: numberArray,
+			isPopupOpen: true
+		})
+	}
+
+	closePopup = (e) => {	
+		if (e.currentTarget === e.target) {
+			this.setState({ isPopupOpen: false })
+		}
+	}
 
 	componentDidMount() {
 		fetch(
@@ -40,9 +59,9 @@ export default class App extends Component {
 			});
 	}
 
-	render(props, { isHomepage, results }) {
+	render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
 		return (
-			<Fragment>
+			<Action.Provider value={{setPopupNumbers: this.setPopupNumbers}}>
 				<div id="app" class="px-5">
 					<nav class="flex justify-end items-center">
 						{
@@ -63,8 +82,8 @@ export default class App extends Component {
 						<Form path="/form" />
 					</Router>
 				</div>
-				<Dialog isOpen={true} />
-			</Fragment>
+				<Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
+			</Action.Provider>
 		);
 	}
 }
