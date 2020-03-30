@@ -60,10 +60,17 @@ export default class App extends Component {
 			});
 	}
 
+	componentDidUpdate() {
+		const { isPopupOpen } = this.state;
+		
+		const root = document.documentElement;
+		root.style.setProperty('--popup-visible', isPopupOpen ? 'hidden': 'initial')
+	}
+
 	render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
 		return (
 			<Action.Provider value={{setPopupNumbers: this.setPopupNumbers}}>
-				<div id="app" class="px-5">
+				<div id="app" class="px-5 max-w-screen-md mx-auto">
 					<nav class="flex justify-center md:justify-end items-center">
 						{
 							isHomepage
@@ -72,7 +79,7 @@ export default class App extends Component {
 						}
 						<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi un'attività</Link>
 					</nav>
-					<h1 class="flex justify-center md:justify-end items-center capitalize">
+					<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
 						<span class="block sm:inline-block" role="img" aria-label="biker">
 							🚴
 						</span>
