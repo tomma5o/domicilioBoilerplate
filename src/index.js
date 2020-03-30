@@ -64,7 +64,7 @@ export default class App extends Component {
 		return (
 			<Action.Provider value={{setPopupNumbers: this.setPopupNumbers}}>
 				<div id="app" class="px-5">
-					<nav class="flex justify-end items-center">
+					<nav class="flex justify-center md:justify-end items-center">
 						{
 							isHomepage
 								? null
@@ -72,8 +72,8 @@ export default class App extends Component {
 						}
 						<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi un'attività</Link>
 					</nav>
-					<h1 class="font-sans text-6xl pb-10 text-gray-800 text-center">
-						<span role="img" aria-label="biker">
+					<h1 class="flex justify-center md:justify-end items-center capitalize">
+						<span class="block sm:inline-block" role="img" aria-label="biker">
 							🚴
 						</span>
 						{`${process.env.PREACT_APP_CITY} a Domicilio`}
