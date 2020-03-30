@@ -1,7 +1,11 @@
-import { useState } from 'preact/hooks';
+import { useState, useContext } from 'preact/hooks';
+
+// Actions
+import { Action } from '../index'
 
 export const ListItem = ({ name, tel, site, mail, note }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
+	const action = useContext(Action);
 	const encodedName = encodeURIComponent(name);
 	const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
 	const searchUrl = `https://www.google.com/search?q=${encodedName}%20${encodedCity}`;
@@ -52,9 +56,9 @@ export const ListItem = ({ name, tel, site, mail, note }) => {
 						</a>
 					)}
 					{tel && (
-						<a href={`tel:${tel}`}>
+						<a href={`tel:${tel}`} onClick={(e) => Array.isArray(tel) && action.setPopupNumbers(e, tel)}>
 							<span
-								class="inline-block mx-1 md:mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
+								class="inline-block mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
 								role="img"
 								aria-label="telephone"
 							>
