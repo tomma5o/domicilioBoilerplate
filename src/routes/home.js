@@ -53,11 +53,11 @@ export default class Home extends Component {
 						onInput={this.handleChangeFilter}
 					/>
 				</div>
-				<div class="relative overflow-hidden text-center mt-2 p-1">
+				<div class="relative flex overflow-x-scroll text-center mt-2 pb-5">
 					{Object.keys(stores).map(key => (
 						<button
 							onClick={this.handleCategoryFilter(key)}
-							class={`m-1 inline-block items-center border border-blue-500 py-2 px-4 rounded-full ${
+							class={`m-1 flex-grow-0 flex-shrink-0 items-center border border-blue-500 py-2 px-4 rounded-full ${
 								key === categoryFilter
 									? "bg-blue-500 hover:bg-blue-500 text-white outline-none text-white"
 									: "bg-white hover:bg-blue-500 hover:text-white"
