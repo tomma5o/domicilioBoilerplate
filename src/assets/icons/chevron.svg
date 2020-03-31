@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>chevron</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16,14.5 C15.744,14.5 15.488,14.402 15.293,14.207 L11.988,10.902 L8.695,14.082 C8.297,14.466 7.665,14.456 7.281,14.057 C6.897,13.66 6.908,13.026 7.305,12.643 L11.305,8.781 C11.698,8.402 12.322,8.407 12.707,8.793 L16.707,12.793 C17.098,13.184 17.098,13.816 16.707,14.207 C16.512,14.402 16.256,14.5 16,14.5" id="path-1"></path>
+    </defs>
+    <g id="chevron" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="🎨-Icon-Сolor" fill="#0C9EDD" xlink:href="#path-1"></use>
+    </g>
+</svg>

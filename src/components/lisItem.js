@@ -31,6 +31,7 @@ export const ListItem = ({ name, website, email, phone, description}) => {
                <pre>
                {description}
                </pre>
+            <br/>
 {/*
             )}
 */}

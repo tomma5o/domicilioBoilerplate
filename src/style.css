@@ -151,7 +151,7 @@ input.search {
    content: '';
    width: 18px;
    height: 18px;
-   background-image: url("/assets/icons/chevron.png");
+   background-image: url("/assets/icons/chevron.svg");
    display: inline-block;
    vertical-align: middle;
    background-size: contain;
