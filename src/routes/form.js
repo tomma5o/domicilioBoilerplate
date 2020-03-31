@@ -31,7 +31,7 @@ export default function Form() {
 				</p>
 				<p class="my-5">
 					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Note
-						<textarea class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="mail" />
+						<textarea class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="note" />
 					</label>
 				</p>
 				<p class="my-5">
