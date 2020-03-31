@@ -64,7 +64,7 @@ export default class Home extends Component {
 						target="_blank"
 						rel="noopener noreferrer"
 						class="mb-5 text-xs block text-gray-500 hover:underline"
-					>Se vuoi crearlo per la tua città visita la mia pagina GitHub</a>
+					>Se vuoi crearlo per la tua città visita la pagina GitHub del progetto</a>
 				</div>
 			</Fragment>
 		);
