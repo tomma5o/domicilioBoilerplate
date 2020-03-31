@@ -68,12 +68,14 @@ export default class App extends Component {
 	render(props, { isHomepage, results }) {
 		return (
 			<div id="app" class="px-5 max-w-screen-md mx-auto">
+            <div>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />
 					<Form path="/iniziativa" />
 				</Router>
-            <div className="footer">
-               <img className="logo" src="assets/footer-logo.svg"/>
+            </div>
+            <div class="footer">
+               <img class="logo" src="assets/footer-logo.svg"/>
                <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un
                   idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
             </div>
