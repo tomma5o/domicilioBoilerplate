@@ -1,7 +1,6 @@
 import {h, Component, Fragment} from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
-import { createHashHistory } from 'history';
 
 import 'tailwindcss/dist/tailwind.min.css';
 import './style.css';
@@ -70,7 +69,7 @@ export default class App extends Component {
 		return (
 			<div id="app" class="px-5 max-w-screen-md mx-auto">
             <div>
-				<Router onChange={this.handleRoute}  history={createHashHistory()}>
+				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />
 					<Form path="/iniziativa" />
 				</Router>
