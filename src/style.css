@@ -1,0 +1,145 @@
+#app {
+   padding: 150px 0 80px;
+}
+
+.btn {
+   font-family: 'Ubuntu', 'sans-serif';
+   font-size: 16px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 0.94;
+   letter-spacing: normal;
+   text-align: center;
+}
+
+.btn.btn-blue {
+   color: #0c9edd;
+}
+
+.btn.btn-gray {
+   color: #a3a8aa;
+}
+
+h1 {
+   font-family: 'Ubuntu', 'sans-serif';
+   font-size: 24px;
+   font-weight: 500;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: #171818; text-transform: capitalize;
+}
+
+h2 {
+   font-family: 'Ubuntu', 'sans-serif';
+   font-size: 20px;
+   font-weight: bolder;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: #171818; text-transform: capitalize;
+}
+pre {
+   font-size: 16px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.56;
+   letter-spacing: normal;
+   color: #353f43;
+   font-family: 'Open Sans', 'sans-serif';
+}
+
+input.search {
+   border-radius: 6px;
+   border: solid 1px rgba(163, 168, 170, 0.48);
+   background-color: #ffffff;
+   width: 100%;
+   padding: 15px 24px;
+   font-family: 'Open Sans', 'sans-serif';
+   font-size: 20px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.75;
+   letter-spacing: normal;
+   color: #353f43;
+   outline: none;
+   display: block;
+   margin: 48px auto 0;
+   max-width: 588px;
+}
+
+.logo {
+   margin: auto;
+}
+
+.buttons .btn {
+   margin-right: 24px;
+}
+
+
+.categories {
+   margin-top: 115px;
+}
+
+.categories .category {
+   margin-bottom: 38px;
+}
+
+.categories .list_item {
+   box-shadow: inset 0 -1px 0 0 #ecf1f2;
+   padding: 24px 0;
+}
+
+
+.categories .list_item .meta {
+   display: flex;
+   align-items: center;
+}
+
+.categories .list_item .meta .icon {
+   width: 30px;
+   height: 30px;
+   object-fit: contain;
+   margin-left: 20px;
+}
+
+.categories .list_item .text {
+   margin-top: 17px;
+}
+
+.categories .list_item .switcher {
+   outline: none;
+   font-size: 14px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.79;
+   letter-spacing: normal;
+   color: #0c9edd;
+   font-family: 'Open Sans', 'sans-serif';
+   text-decoration: underline;
+   margin-top: 21px;
+}
+
+.categories .list_item .switcher:before {
+   content: '';
+   width: 18px;
+   height: 18px;
+   background-image: url("/assets/icons/chevron.png");
+   display: inline-block;
+   vertical-align: middle;
+   background-size: contain;
+   background-position: center;
+   margin-right: 4px;
+   transform: rotate(0deg);
+   transition: transform 200ms ease;
+}
+
+.categories .list_item.open .switcher:before {
+   transform: rotate(180deg);
+}

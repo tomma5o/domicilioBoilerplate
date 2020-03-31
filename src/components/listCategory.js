@@ -1,16 +1,25 @@
 import { ListItem } from './lisItem';
 
-export const ListCategory = ({ name = '', category = {}}) => {
-	return (
-		<div id={name.replace(' ', '_')} className="relative py-5">
-			<p className="text-3xl md:text-4xl capitalize">
-				{category.icon} {name}
-			</p>
+export const ListCategory = ({ name = '', category = [], filter}) => {
+  /* console.log("filter:", filter);
+   console.log('ccc', category[name]);
+   const filtered_cat = category[name].filter(item => {
+     let name = item.name.toUpperCase();
+      let keyword = filter.toUpperCase();
+      console.log(name, keyword);
+      return name.includes(keyword);
+   });*/
+
+
+   return (
+		<div id={name.replace(' ', '_')} className="relative py-5 categories">
+			<h1 className="category">
+				{name}
+			</h1>
 			<div>
 				{
-					category.data
-						.map(props => (
-							<ListItem key={props.tel} {...props} />
+               category.data.map(props => (
+							<ListItem key={props.phone} {...props} />
 						))
 				}
 			</div>

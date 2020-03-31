@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
 import 'tailwindcss/dist/tailwind.min.css';
+import './style.css';
 
 // Code-splitting is automated for routes
 import Home from './routes/home.js';
@@ -14,7 +15,7 @@ const SEARCH = process.env.PREACT_APP_DATA_SOURCE;
 export default class App extends Component {
 
 	state = {
-		results: {},
+		results: [],
 		isHomepage: true,
 	}
 	
@@ -25,35 +26,50 @@ export default class App extends Component {
 
 	componentDidMount() {
 		fetch(
-			`${SEARCH}?q=${Math.random()
-				.toString(36)
-				.split('.')}`
+			`${SEARCH}`
 		)
 			.then(r => r.json())
 			.then(json => {
+			   let entries = json.feed.entry;
+            let items = entries.reduce(function(results, item) {
+               (results[item.gs$cell.row] = results[item.gs$cell.row] || []).push(item);
+               return results;
+            }, {});
+            delete items[1];
+
+            let parsed_items = Object.keys(items).map(key => {
+               return {
+                  'cat': items[key][0].content.$t,
+                  'name': items[key][1].content.$t,
+                  'address': items[key][2].content.$t,
+                  'website': items[key][3].content.$t,
+                  'phone': items[key][4].content.$t,
+                  'description': items[key][5].content.$t,
+                  'email': items[key][6].content.$t,
+               }
+            });
+
+           let grouped_items = parsed_items.reduce(function(results, item) {
+               (results[item.cat] = results[item.cat] || []).push(item);
+               return results;
+            }, {});
+
+
+
+
 				this.setState({
-					results: json,
+					results: grouped_items,
 					resultBkp: json
 				});
+
 			});
 	}
 
 	render(props, { isHomepage, results }) {
 		return (
 			<div id="app" class="px-5 max-w-screen-md mx-auto">
-				<nav class="flex justify-center md:justify-end items-center">
-					{
-						isHomepage
-							? null
-							: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
-					}
-					<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">Aggiungi un'attività</Link>
-				</nav>
 				<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
-					<span class="block sm:inline-block" role="img" aria-label="biker">
-						🚴
-					</span>
-					{`${process.env.PREACT_APP_CITY} a Domicilio`}
+					<img alt={"Fiumicino a Domicilio"} className={'logo'} src="assets/logo.svg"/>
 				</h1>
 				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="361" height="40" viewBox="0 0 361 40">
+    <defs>
+        <path id="prefix__a" d="M0 18.286L0 0.011 26.987 0.011 26.987 18.286z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#171818" font-family="Ubuntu-Bold, Ubuntu" font-size="32" font-weight="bold">
+            <tspan x="42.756" y="32">Fiumicino a domicilio</tspan>
+        </text>
+        <path fill="#4DADD6" d="M9.342 3.668h1.642v30.86c0 2.994-2.518 5.517-5.594 5.46-2.982-.055-5.382-2.424-5.382-5.34V12.752c0-5.017 4.18-9.084 9.334-9.084"/>
+        <g transform="translate(0 .036)">
+            <mask id="prefix__b" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <path fill="#5CCEFD" d="M26.92 4.508c-.477-2.959-3.467-4.934-6.496-4.414L7.715 2.274C3.257 3.04.005 6.809.003 11.215L0 14.446h.005l.002 3.841c0-2.25 1.668-4.12 3.867-4.503h-.017l18.594-3.19c2.95-.506 4.931-3.218 4.469-6.085" mask="url(#prefix__b)"/>
+        </g>
+        <path fill="#5CCEFD" d="M22.596 20.354c-.476-2.959-3.466-4.934-6.496-4.414l-8.383 1.439c-4.46.765-7.71 4.534-7.713 8.941l-.002 3.216h.002l.003 3.842c0-2.25 1.668-4.12 3.867-4.503h-.001l14.255-2.435c2.95-.507 4.93-3.219 4.468-6.086"/>
+    </g>
+</svg>

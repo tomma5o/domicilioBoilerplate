@@ -1,10 +1,12 @@
 import { Component, Fragment } from 'preact';
 
 import { ListCategory } from '../components/listCategory';
+import {Link} from "preact-router/match";
 
 export default class Home extends Component {
 	state = {
-		filter: ''
+		filter: '',
+      isHomepage: true
 	};
 
 	handleChangeFilter = e => {
@@ -13,35 +15,76 @@ export default class Home extends Component {
 	};
 
 	filteredCategories(filter) {
-		const { results } = this.props;
-		const regex = new RegExp(`${filter}`, 'i');
+      const { results } = this.props;
 
-		return Object.keys(results).reduce((acc, key) => {
-			return (
-				{
-					...acc,
-					[key]: {
-						icon: results[key].icon,
-						data: results[key].data.filter(e => (filter.length ? regex.test(e.name) : true))
-					}
-				}
-			);
-		}, {});
+      let items = results;
+
+     let filtered_keys = Object.keys(items).filter(key => {
+        let cat = key.toUpperCase();
+        if(filter) {
+           filter = filter.toUpperCase();
+        }
+        return cat.includes(filter);
+
+     });
+
+
+  /*    const filtered = Object.keys(items)
+         .filter(key => filtered_keys.includes(key))
+         .reduce((obj, key) => {
+            obj[key] = items[key];
+            return obj;
+         }, {});
+*/
+
+
+
+/*  const filtered =  Object.keys(items).map(key => {
+     return {
+        [key]:{
+           data: items[key]
+        }
+     }
+  })*/
+
+      let toret = {};
+
+      Object.keys(items).forEach(key => {
+         toret[key] = {data: items[key].filter(item => {
+               return item.name.toUpperCase().includes(filter.toUpperCase());
+            })}
+      });
+
+      console.log(toret);
+
+
+      return toret;
 	}
 
-	render(props, { filter }) {
-		const stores = this.filteredCategories(filter)
+	render(props, { filter, isHomepage }) {
+		const stores = this.filteredCategories(filter);
 
 		return (
 			<Fragment>
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
-						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+						class="search"
 						type="text"
-						placeholder="Cerca Attività"
+						placeholder="Cosa stai cercando"
 						onInput={this.handleChangeFilter}
 					/>
 				</div>
+            <nav className="buttons flex justify-center md:justify-center items-center">
+               {
+                  isHomepage
+                     ? null
+                     : <Link class="btn btn-gray" href="/">Ritorna alla ricerca</Link>
+               }
+               <Link class="btn btn-gray"
+                     href="/form">A proposito dell'iniziativa</Link>
+               <a class="btn btn-blue" target="_blank" rel='noopener'
+                     href="https://bit.ly/fiumicinoadomicilio">Aggiungi un'attività</a>
+            </nav>
 				<div class="relative mb-10 font-sans text-md text-gray-800">
 					{
 						Object.keys(stores) && Object.keys(stores)
@@ -56,7 +99,7 @@ export default class Home extends Component {
 					}
 				</div>
 				<div>
-					<p class="mb-5 text-center">Developed with ❤️ by <a class="text-orange-500" href={process.env.PREACT_APP_DEV_LINK}>{process.env.PREACT_APP_DEV_NAME}</a></p>
+               <p class="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
 				</div>
 			</Fragment>
 		);
