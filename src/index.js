@@ -39,22 +39,22 @@ export default class App extends Component {
 
             let parsed_items = Object.keys(items).map(key => {
                return {
-                  'cat': items[key][0].content.$t,
-                  'name': items[key][1].content.$t,
-                  'address': items[key][2].content.$t,
-                  'website': items[key][3].content.$t,
-                  'phone': items[key][4].content.$t,
-                  'description': items[key][5].content.$t,
-                  'email': items[key][6].content.$t,
+                  'cat': items[key][0]?items[key][0].content.$t:'',
+                  'name': items[key][1]?items[key][1].content.$t:'',
+                  'address': items[key][2]?items[key][2].content.$t:'',
+                  'website': items[key][3]?items[key][3].content.$t:'',
+                  'phone': items[key][4]?items[key][4].content.$t:'',
+                  'description': items[key][5]?items[key][5].content.$t:'',
+                  'email': items[key][6]?items[key][6].content.$t:'',
+                  'status': items[key][11]?items[key][11].content.$t:'',
                }
             });
+
 
            let grouped_items = parsed_items.reduce(function(results, item) {
                (results[item.cat] = results[item.cat] || []).push(item);
                return results;
             }, {});
-
-
 
 
 				this.setState({
@@ -74,11 +74,7 @@ export default class App extends Component {
 					<Form path="/iniziativa" />
 				</Router>
             </div>
-            <div class="footer">
-               <img class="logo" src="assets/footer-logo.svg"/>
-               <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un
-                  idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
-            </div>
+
 			</div>
 		);
 	}

@@ -51,11 +51,9 @@ export default class Home extends Component {
 
       Object.keys(items).forEach(key => {
          toret[key] = {data: items[key].filter(item => {
-               return item.name.toUpperCase().includes(filter.toUpperCase());
+               return item.name.toUpperCase().includes(filter.toUpperCase()) && item.status === 'ok';
             })}
       });
-
-      console.log(toret);
 
 
       return toret;
@@ -66,6 +64,11 @@ export default class Home extends Component {
 
 		return (
 			<Fragment>
+            <div class="mobile-buttons">
+               <Link href='/iniziativa'><img src="assets/icons/info.svg" class="info"/></Link>
+               <a className="btn btn-blue" target="_blank" rel='noopener'
+                  href="https://bit.ly/fiumicinoadomicilio">Aggiungi un'attività</a>
+            </div>
             <img alt={"Fiumicino a Domicilio"} className={'logo'} src="assets/logo.svg"/>
 					<input
 						class="search"
@@ -94,6 +97,12 @@ export default class Home extends Component {
 					}
                </div>
 				</div>
+
+            <div className="footer">
+               <img className="logo" src="assets/footer-logo.svg"/>
+               <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un'
+                  idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
+            </div>
 
 			</Fragment>
 		);
