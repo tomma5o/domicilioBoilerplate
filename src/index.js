@@ -73,7 +73,7 @@ export default class App extends Component {
 					<Form path="/iniziativa" />
 				</Router>
             <div className="footer">
-               <img className="logo" src="/assets/footer-logo.svg"/>
+               <img className="logo" src="assets/footer-logo.svg"/>
                <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un
                   idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
             </div>
