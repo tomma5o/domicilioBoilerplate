@@ -66,26 +66,21 @@ export default class Home extends Component {
 
 		return (
 			<Fragment>
-				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
+            <img alt={"Fiumicino a Domicilio"} className={'logo'} src="assets/logo.svg"/>
 					<input
 						class="search"
 						type="text"
 						placeholder="Cosa stai cercando"
 						onInput={this.handleChangeFilter}
 					/>
-				</div>
-            <nav className="buttons flex justify-center md:justify-center items-center">
-               {
-                  isHomepage
-                     ? null
-                     : <Link class="btn btn-gray" href="/">Ritorna alla ricerca</Link>
-               }
+            <nav className="buttons">
                <Link class="btn btn-gray"
-                     href="/form">A proposito dell'iniziativa</Link>
+                     href="/iniziativa">A proposito dell'iniziativa</Link>
                <a class="btn btn-blue" target="_blank" rel='noopener'
                      href="https://bit.ly/fiumicinoadomicilio">Aggiungi un'attività</a>
             </nav>
 				<div class="relative mb-10 font-sans text-md text-gray-800">
+               <div class="categories">
 					{
 						Object.keys(stores) && Object.keys(stores)
 							.filter(key => stores[key].data.length)
@@ -97,10 +92,9 @@ export default class Home extends Component {
 								/>
 							))
 					}
+               </div>
 				</div>
-				<div>
-               <p class="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
-				</div>
+
 			</Fragment>
 		);
 	}

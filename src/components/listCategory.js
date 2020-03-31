@@ -12,7 +12,7 @@ export const ListCategory = ({ name = '', category = [], filter}) => {
 
 
    return (
-		<div id={name.replace(' ', '_')} className="relative py-5 categories">
+		<div id={name.replace(' ', '_')} className="relative py-5 category">
 			<h1 className="category">
 				{name}
 			</h1>

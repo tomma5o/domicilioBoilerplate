@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import {h, Component, Fragment} from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
@@ -68,13 +68,16 @@ export default class App extends Component {
 	render(props, { isHomepage, results }) {
 		return (
 			<div id="app" class="px-5 max-w-screen-md mx-auto">
-				<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
-					<img alt={"Fiumicino a Domicilio"} className={'logo'} src="assets/logo.svg"/>
-				</h1>
+
 				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />
-					<Form path="/form" />
+					<Form path="/iniziativa" />
 				</Router>
+            <div className="footer">
+               <img className="logo" src="/assets/footer-logo.svg"/>
+               <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un
+                  idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
+            </div>
 			</div>
 		);
 	}

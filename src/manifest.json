@@ -1,11 +1,11 @@
 {
-  "name": "Ferrara a Domicilio",
-  "short_name": "FerraraDomicilio",
+  "name": "Fiumicino a Domicilio",
+  "short_name": "FiumicinoDomicilio",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#0c9edd",
+  "theme_color": "#0c9edd",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",

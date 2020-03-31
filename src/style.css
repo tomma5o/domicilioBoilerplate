@@ -1,5 +1,8 @@
 #app {
-   padding: 150px 0 80px;
+   padding: 150px 0px 80px;
+}
+a {
+   text-decoration: underline;
 }
 
 .btn {
@@ -11,6 +14,7 @@
    line-height: 0.94;
    letter-spacing: normal;
    text-align: center;
+   text-decoration: none;
 }
 
 .btn.btn-blue {
@@ -51,6 +55,8 @@ pre {
    letter-spacing: normal;
    color: #353f43;
    font-family: 'Open Sans', 'sans-serif';
+   word-break: break-word;
+   white-space: pre-line;
 }
 
 input.search {
@@ -77,8 +83,15 @@ input.search {
    margin: auto;
 }
 
+.buttons {
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .buttons .btn {
-   margin-right: 24px;
+   margin-right: 35px;
 }
 
 
@@ -87,7 +100,7 @@ input.search {
 }
 
 .categories .category {
-   margin-bottom: 38px;
+   margin-bottom: 10px;
 }
 
 .categories .list_item {
@@ -142,4 +155,89 @@ input.search {
 
 .categories .list_item.open .switcher:before {
    transform: rotate(180deg);
+}
+
+.footer {
+   text-align: center;
+   margin-top: 160px;
+   opacity: 0.8;
+   font-family: 'Open Sans', 'sans-serif';
+   font-size: 16px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 0.94;
+   letter-spacing: normal;
+   color: #353f43;
+}
+
+.footer .logo {
+   margin: auto;
+   margin-bottom: 40px;
+}
+
+
+.about h1 {
+   margin-top: 40px;
+   font-size: 32px;
+   font-weight: bolder;
+   text-align: center;
+}
+
+.about .text {
+   margin: 32px auto 0;
+   max-width: 561px;
+}
+
+.about .text p {
+   margin: 15px 0;
+   font-family: 'Open Sans', 'sans-serif';
+   font-size: 18px;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.56;
+   letter-spacing: normal;
+   color: #353f43;
+}
+
+
+@media(max-width: 1024px) {
+   #app {
+      padding: 120px 18px 64px;
+   }
+
+   .logo {
+      width: 90%;
+      max-width: 272px ;
+
+   }
+
+   .buttons {
+      flex-direction: column-reverse;
+   }
+
+   .buttons .btn {
+      margin: 15px 0;
+   }
+
+   .categories {
+      margin-top: 80px;
+   }
+
+   .categories .list_item .switcher {
+      margin-top: 10px;
+   }
+   .footer {
+      margin-top: 64px;
+   }
+
+   .footer .logo {
+      width: 20px;
+      height: 30px;
+   }
+
+   .footer p {
+      line-height: 1.4;
+   }
 }
