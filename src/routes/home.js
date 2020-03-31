@@ -73,7 +73,7 @@ export default class Home extends Component {
 					<input
 						class="search"
 						type="text"
-						placeholder="Cosa stai cercando"
+						placeholder="Cosa stai cercando?"
 						onInput={this.handleChangeFilter}
 					/>
             <nav className="buttons">
@@ -102,6 +102,9 @@ export default class Home extends Component {
                <img className="logo" src="assets/footer-logo.svg"/>
                <p className="mb-5 text-center">Realizzato da cittadini di Fiumicino per i cittadini di Fiumicino | da un'
                   idea di <a href='http://tomma5o.com/' target='_blank'>Tomma5o</a></p>
+               <p><a href="https://www.iubenda.com/privacy-policy/83882923" className="iubenda-white iubenda-embed"
+                     title="Privacy Policy ">Privacy Policy</a>
+               </p>
             </div>
 
 			</Fragment>

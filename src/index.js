@@ -1,6 +1,7 @@
 import {h, Component, Fragment} from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
+const { createHashHistory } = History;
 
 import 'tailwindcss/dist/tailwind.min.css';
 import './style.css';
