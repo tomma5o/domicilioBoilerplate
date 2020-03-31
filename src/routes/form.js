@@ -18,19 +18,20 @@ export default function Form() {
             <h1>Un aiuto alla nostra città</h1>
             <div className="text">
                <p>
-                  Siamo un gruppo di ragazzi che vivono a Fiumicino e che hanno a cuore la propria città.
+                  Siamo un gruppo di ragazzi che vivono a Fiumicino e che hanno a cuore la propria città. Partendo dall’idea di Tommaso, un ragazzo di Ferrara, abbiamo voluto realizzare fiumicinoadomicilio.it, un sito web che offre alle attività produttive ancora aperte del nostro Comune di poter continuare a lavorare, offrendo prodotti e servizi a tutti noi che dobbiamo restare a casa. In questo momento particolare, in cui il cambio di scenario in corso sta costringendo tutti noi a cambiare le nostre abitudini, abbiamo voluto dare il nostro piccolo contributo a supporto della comunità.
                </p>
 
                <p>
-                  Abbiamo realizzato questo sito web, partendo da un’idea di un ragazzo di Ferrara (Tommaso), per offrire un modo di continuare a operare in questo periodo particolare in cui il cambio di scenario in corso ci sta costringendo tutti a cambiare le nostre abitudini e ad evolvere.
+                  L’iniziativa è completamente gratuita e senza alcun fine economico, commerciale, politico o di qualsiasi altro tipo.
                </p>
 
-               <p>L’iniziativa è completamente gratuita e senza nessun fine economico, politico o di qualsiasi altro tipo.</p>
+               <p>Chiunque abbia un’attività ancora aperta ai sensi dell’ultimo DPCM e che offra consegne a domicilio in linea con le norme di sicurezza ed igiene vigenti, può registrarsi ed entrare nella piattaforma.
+                  Aiutaci a diffondere il progetto, condividi con chi puoi!</p>
 
                <p>Chiunque può entrare in questa lista purché sia un’attività esistente e che offre servizi di consegna a domicilio dei propri prodotti in linea con le norme di sicurezza ed igiene vigenti.</p>
 
-               <p>Aiutaci a diffondere questo progetto! Condividi con chi puoi!</p>
-               <p>Grazie del tuo contributo prezioso.</p>
+               <p>Grazie per il tuo prezioso contributo.
+               </p>
 
                <p>- Alessio, Enzo, Jonathan, Luca, Matteo.</p>
             </div>
