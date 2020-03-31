@@ -68,7 +68,6 @@ export default class App extends Component {
 	render(props, { isHomepage, results }) {
 		return (
 			<div id="app" class="px-5 max-w-screen-md mx-auto">
-
 				<Router onChange={this.handleRoute}>
 					<Home path="/" results={results} />
 					<Form path="/iniziativa" />
