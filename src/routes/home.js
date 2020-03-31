@@ -3,6 +3,7 @@ import { Component, Fragment } from 'preact';
 import { ListCategory } from '../components/listCategory';
 import {Link} from "preact-router/match";
 
+
 export default class Home extends Component {
 	state = {
 		filter: '',
