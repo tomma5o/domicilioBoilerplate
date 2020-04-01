@@ -27,7 +27,7 @@ https://gist.githubusercontent.com/tomma5o/<hash>/raw/<removeThisHash>/FerraraDo
 
 ## Netlify deploy & configuration
 
-> The site is developed with some specific https://netlify.com apis.
+> The site is developed with some specific https://netlify.com APIs.
 
 ### Deploy configuration steps
 
