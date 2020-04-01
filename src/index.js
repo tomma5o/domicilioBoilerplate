@@ -27,7 +27,7 @@ export default class App extends Component {
 	
 	handleRoute = e => {
 		this.currentUrl = e.url;
-		this.setState({isHomepage: e.url === "/"});
+		this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
 	};
 
 	setPopupNumbers = (e, numberArray) => {

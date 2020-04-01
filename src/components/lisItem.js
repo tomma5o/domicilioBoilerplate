@@ -34,7 +34,6 @@ export const ListItem = ({ name, tel, site, mail, note }) => {
 					{site && (
 						<a href={`${site}`}>
 							<span
-								onClick={handleClick}
 								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-orange-300 rounded-lg"
 								role="img"
 								aria-label="website"
@@ -46,7 +45,6 @@ export const ListItem = ({ name, tel, site, mail, note }) => {
 					{mail && (
 						<a href={`mailto:${mail}`}>
 							<span
-								onClick={handleClick}
 								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-300 rounded-lg"
 								role="img"
 								aria-label="e-mail"
