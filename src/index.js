@@ -1,6 +1,7 @@
 import { h, Component, createContext } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
+import PWAPrompt from 'react-ios-pwa-prompt';
 
 import 'tailwindcss/dist/tailwind.min.css';
 
@@ -83,6 +84,10 @@ export default class App extends Component {
 					</Router>
 				</div>
 				<Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
+				{typeof window !== "undefined"
+					? <PWAPrompt promptOnVisit={1} timesToShow={3} copyClosePrompt="Close" permanentlyHideOnDismiss={false} />
+					: null
+				}
 			</Action.Provider>
 		);
 	}
