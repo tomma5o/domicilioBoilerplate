@@ -11,9 +11,6 @@ import Form from './routes/form.js';
 // Components
 import { Dialog } from './components/dialog.js';
 
-// Constants
-const SEARCH = process.env.PREACT_APP_DATA_SOURCE;
-
 export const Action = createContext({})
 
 export default class App extends Component {
@@ -46,11 +43,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch(
-			`${SEARCH}?q=${Math.random()
-				.toString(36)
-				.split('.')}`
-		)
+		fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
 			.then(r => r.json())
 			.then(json => {
 				this.setState({
