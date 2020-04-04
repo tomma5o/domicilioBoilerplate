@@ -7,7 +7,7 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --no-prerender",
+    "build": "preact build",
     "serve": "preact build && sirv build --cors --single",
     "dev": "preact watch",
     "lint": "eslint src"
@@ -22,10 +22,12 @@
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
     "identity-obj-proxy": "^3.0.0",
+    "node-sass": "^4.13.1",
     "per-env": "^1.0.2",
     "preact-cli": "^3.0.0-rc.6",
     "preact-cli-plugin-env-vars": "^1.2.1",
     "preact-render-spy": "^1.2.1",
+    "sass-loader": "^8.0.2",
     "sirv-cli": "^0.4.5"
   },
   "dependencies": {
