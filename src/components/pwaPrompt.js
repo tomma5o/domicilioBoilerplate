@@ -1,6 +1,4 @@
-import { Fragment } from 'preact';
-import { useRef, useState } from 'preact/hooks';
-import { forwardRef } from 'preact/compat';
+import { useRef, useState, useEffect } from 'preact/hooks';
 
 const visibilityCheks = () => {
 	if (typeof window !== "undefined") {
@@ -16,7 +14,7 @@ const visibilityCheks = () => {
 	
 		return (isiOS || isiPadOS) && !isStandalone && neverShowed;
 	}
-	
+
 	return true;
 };
 
@@ -56,9 +54,8 @@ const stylePrompt = {
 	bottom: '2rem',
 };
 
-const Prompt = forwardRef(({visible, closePopup}, ref) => (
+const Prompt = ({visible, closePopup}) => (
 	<div 
-		ref={ref} 
 		style={stylePrompt} 
 		class={`fixed p-2 w-11/12 bottom-0 bg-gray-100 rounded-lg max-w-md border ${visible ? '' : 'hidden'}`}
 	>
@@ -80,11 +77,10 @@ const Prompt = forwardRef(({visible, closePopup}, ref) => (
 			<p class="text-gray-900 px-2 ">Fai tap sulla voce 'Aggiungi a Home'</p>
 		</div>
 	</div>
-));
+);
 
 export const PWAPrompt = (props) => {
-	const componentRef = useRef(null);
-	const [isVisible, setIsVisible] = useState(true)
+	const [isVisible, setIsVisible] = useState(false);
 	
 	function handleClosePopup() {
 		setIsVisible(false);
@@ -93,17 +89,15 @@ export const PWAPrompt = (props) => {
 		}
 	}
 
-	return (
-		<Fragment>
-			{
-				visibilityCheks() &&
-					<Prompt
-						ref={componentRef}
-						visible={isVisible}
-						closePopup={handleClosePopup}
-						{...props}
-					/>
-			}
-		</Fragment>
+	useEffect(() => {
+		setIsVisible(visibilityCheks())
+	}, [])
+
+	return visibilityCheks() && (	
+		<Prompt
+			visible={isVisible}
+			closePopup={handleClosePopup}
+			{...props}
+		/>
 	);
 };
