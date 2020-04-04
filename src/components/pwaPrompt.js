@@ -1,16 +1,16 @@
-import { useRef, useState, useEffect } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 
 const visibilityCheks = () => {
-	if (typeof window !== "undefined") {
+	if (typeof window !== 'undefined') {
 		const isiOS = /iphone|ipad|ipod/.test(
 			window.navigator.userAgent.toLowerCase()
 		);
 		const isiPadOS =
-			navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+			navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
 		const isStandalone =
-			"standalone" in window.navigator && window.navigator.standalone;
+			'standalone' in window.navigator && window.navigator.standalone;
 	
-		const neverShowed = !window.localStorage.getItem("pwaPrompt");
+		const neverShowed = !window.localStorage.getItem('pwaPrompt');
 	
 		return (isiOS || isiPadOS) && !isStandalone && neverShowed;
 	}
@@ -57,7 +57,7 @@ const stylePrompt = {
 const Prompt = ({visible, closePopup}) => (
 	<div 
 		style={stylePrompt} 
-		class={`fixed p-2 w-11/12 bottom-0 bg-gray-100 rounded-lg max-w-md border ${visible ? '' : 'hidden'}`}
+		class={`fixed p-2 w-11/12 bottom-0 rounded-lg backdrop max-w-md border ${visible ? '' : 'hidden'}`}
 	>
 		<div class="flex justify-between items-center border-b p-2">
 			<p class="font-bold text-lg">Sono un'app!</p>
@@ -68,11 +68,11 @@ const Prompt = ({visible, closePopup}) => (
 			>✖️</span>
 		</div>
 		<p class="border-b py-4 px-2">Aggiungimi alla Home per utilizzarmi in fullscreen e offline. Così appena vorrai ordinare mi avrai a portata di tap!</p>
-		<div class="flex text-blue-700 px-2 my-4">
+		<div class="flex items-center text-blue-700 px-2 my-4">
 			<ShareIcon classes="fill-current" size="20px" />
 			<p class="text-gray-900 px-2">Fai tap sul bottone condividi</p>
 		</div>
-		<div class="flex text-blue-700 px-2 mb-2">
+		<div class="flex items-center text-blue-700 px-2 mb-2">
 			<HomeScreenIcon classes="fill-current" size="20px" />
 			<p class="text-gray-900 px-2 ">Fai tap sulla voce 'Aggiungi a Home'</p>
 		</div>
@@ -84,8 +84,8 @@ export const PWAPrompt = (props) => {
 	
 	function handleClosePopup() {
 		setIsVisible(false);
-		if (typeof window !== "undefined") {
-		   window.localStorage.setItem('pwaPrompt', "true")
+		if (typeof window !== 'undefined') {
+		   window.localStorage.setItem('pwaPrompt', 'true')
 		}
 	}
 
