@@ -88,7 +88,9 @@ export const PWAPrompt = (props) => {
 	
 	function handleClosePopup() {
 		setIsVisible(false);
-		window.localStorage.setItem('pwaPrompt', "true")
+		if (typeof window !== "undefined") {
+		   window.localStorage.setItem('pwaPrompt', "true")
+		}
 	}
 
 	return (
