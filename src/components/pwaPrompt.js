@@ -3,17 +3,21 @@ import { useRef, useState } from 'preact/hooks';
 import { forwardRef } from 'preact/compat';
 
 const visibilityCheks = () => {
-  const isiOS = /iphone|ipad|ipod/.test(
-	 window.navigator.userAgent.toLowerCase()
-  );
-  const isiPadOS =
-	 navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
-  const isStandalone =
-	 "standalone" in window.navigator && window.navigator.standalone;
-
-	const neverShowed = !window.localStorage.getItem("pwaPrompt");
-
-  return (isiOS || isiPadOS) && !isStandalone && neverShowed;
+	if (typeof window !== "undefined") {
+		const isiOS = /iphone|ipad|ipod/.test(
+			window.navigator.userAgent.toLowerCase()
+		);
+		const isiPadOS =
+			navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+		const isStandalone =
+			"standalone" in window.navigator && window.navigator.standalone;
+	
+		const neverShowed = !window.localStorage.getItem("pwaPrompt");
+	
+		return (isiOS || isiPadOS) && !isStandalone && neverShowed;
+	}
+	
+	return true;
 };
 
 const ShareIcon = ({ classes, size }) => {

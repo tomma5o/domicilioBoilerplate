@@ -84,10 +84,7 @@ export default class App extends Component {
 					</Router>
 				</div>
 				<Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
-				{typeof window !== "undefined"
-					? <PWAPrompt />
-					: null
-				}
+				<PWAPrompt />
 			</Action.Provider>
 		);
 	}
