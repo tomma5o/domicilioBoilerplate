@@ -3,3 +3,16 @@
 	backdrop-filter: blur(10px);
 	background-color: rgba(250, 250, 250, 0.8);
 }
+
+.new-entry::after {
+	content: 'Nuovo';
+	position: absolute;
+	top: -11px;
+	background-color: #4299e1;
+	border: 1px solid #3782c0;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius: 20px;
+}
