@@ -1,4 +1,4 @@
-# Ferrara a Domicilio
+# Imola a Domicilio
 
 > If you want to make the same proj for your city, the only thing I ask is to fork the [main repo](https://github.com/tomma5o/ferraraDomicilio) to make it yours.
 > Thanks!
@@ -19,7 +19,7 @@ When you add your gist url remember to delete the last hash because points direc
 
 ```
 remove the second hash ------------------------------------┐
-                                                         
+
 https://gist.githubusercontent.com/tomma5o/<hash>/raw/<removeThisHash>/FerraraDomicilio.json
 ```
 
@@ -30,7 +30,7 @@ And if you want to add analytics just put it in your netlify admin panel
 
 ## CLI Commands
 
-``` bash
+```bash
 # install dependencies
 npm install
 
