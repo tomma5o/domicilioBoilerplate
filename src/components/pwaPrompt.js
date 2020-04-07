@@ -57,17 +57,17 @@ const stylePrompt = {
 const Prompt = ({visible, closePopup}) => (
 	<div 
 		style={stylePrompt} 
-		class={`fixed p-2 w-11/12 bottom-0 rounded-lg backdrop max-w-md border ${visible ? '' : 'hidden'}`}
+		class={`fixed p-2 w-11/12 bottom-0 rounded-lg backdrop max-w-md border border-gray-500 ${visible ? '' : 'hidden'}`}
 	>
-		<div class="flex justify-between items-center border-b p-2">
+		<div class="flex justify-between items-center border-b border-gray-500 p-2">
 			<p class="font-bold text-lg">Sono un'app!</p>
 			<span
-				class="bg-gray-400 rounded-full text-center"
+				class="bg-red-300 rounded-full text-center"
 				style={{ width: '30px', height: '30px', lineHeight: '30px' }}
 				onClick={closePopup}
 			>✖️</span>
 		</div>
-		<p class="border-b py-4 px-2">Aggiungimi alla Home per utilizzarmi in fullscreen e offline. Così appena vorrai ordinare mi avrai a portata di tap!</p>
+		<p class="border-b border-gray-500 py-4 px-2">Aggiungimi alla Home per utilizzarmi in fullscreen e offline. Così appena vorrai ordinare mi avrai a portata di tap!</p>
 		<div class="flex items-center text-blue-700 px-2 my-4">
 			<ShareIcon classes="fill-current" size="20px" />
 			<p class="text-gray-900 px-2">Fai tap sul bottone condividi</p>
