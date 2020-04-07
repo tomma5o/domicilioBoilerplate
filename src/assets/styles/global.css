@@ -1,3 +1,38 @@
+@tailwind base;
+@tailwind utilities;
+
+:root {
+	--bg: #ffffff;
+	--gray-200: #edf2f7;
+	--gray-500: #a0aec0;
+	--gray-700: #4a5568;
+	--orange-300: #fbd38d;
+	--green-300: #9ae6b4;
+	--yellow-300: #faf089;
+	--yellow-700: #b7791f;
+	--blue-300: #90cdf4;
+	--blue-500: #4299e1;
+	--blue-700: #2b6cb0;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #1A202C;
+		--gray-200: #272f3d;
+		--gray-500: #3b4455;
+		--gray-700: #8c9499;
+	}
+
+	body {
+		color: #d3d9e2;
+	}
+}
+
+body {
+	background-color: var(--bg);
+}
+
+
 .backdrop {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);

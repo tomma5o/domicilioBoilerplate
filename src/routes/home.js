@@ -13,7 +13,7 @@ export default class Home extends Component {
 		this.setState({ filter: text });
 	};
 
-	handleCategoryFilter = key => _ => {
+	handleCategoryFilter = key => _ => { // eslint-disable-line no-unused-vars
       if (key === this.state.categoryFilter) {
          return this.setState({ categoryFilter: null });
       }

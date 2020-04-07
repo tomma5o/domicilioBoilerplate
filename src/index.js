@@ -2,7 +2,7 @@ import { h, Component, createContext } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
-import 'tailwindcss/dist/tailwind.min.css';
+// import 'tailwindcss/dist/tailwind.min.css';
 import './assets/styles/global.css';
 
 // Routes
