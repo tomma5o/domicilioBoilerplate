@@ -3,7 +3,7 @@ import { useState, useContext } from 'preact/hooks';
 // Actions
 import { Action } from '../index'
 
-export const ListItem = ({ name, tel, site, mail, note }) => {
+export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
 	const action = useContext(Action);
 	const encodedName = encodeURIComponent(name);
@@ -15,7 +15,7 @@ export const ListItem = ({ name, tel, site, mail, note }) => {
 	}
 
 	return (
-		<div class="rounded-lg border bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700">
+		<div class={`relative rounded-lg border border-gray-500 bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700 ${newEntry ? "new-entry" : ""}`}>
 			<div class="flex justify-between items-center">
 				<span>
 					<a class="hover:underline" href={searchUrl} target="_blank" rel="noopener noreferrer">{name}</a>

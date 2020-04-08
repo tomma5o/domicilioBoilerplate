@@ -23,10 +23,24 @@ remove the second hash ------------------------------------┐
 https://gist.githubusercontent.com/tomma5o/<hash>/raw/<removeThisHash>/FerraraDomicilio.json
 ```
 
-## Deploy
+## Netlify deploy & configuration
 
-The site is developed with some specific https://netlify.com APIs.
-And if you want to add analytics just put it in your netlify admin panel
+> The site is developed with some specific https://netlify.com APIs.
+
+### Deploy configuration steps
+
+1. Connect your GitHub account to Netlify
+3. Select the project
+2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
+3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
+
+### Google analytics setup
+
+In **Settings** → Build & Deploy → Post processing → Snippet injection: you can add here your GAnalytics snippet
+
+### Contact Form
+
+In **Form** you can find all the submissions.<br>There are two type of submission: **Verified Submission** and **Spam Submission** sometimes they end up in spam
 
 ## CLI Commands
 
