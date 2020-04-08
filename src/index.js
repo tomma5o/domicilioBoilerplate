@@ -2,7 +2,7 @@ import { h, Component, createContext } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
-import 'tailwindcss/dist/tailwind.min.css';
+import './assets/styles/global.css';
 
 // Routes
 import Home from './routes/home.js';
@@ -10,9 +10,7 @@ import Form from './routes/form.js';
 
 // Components
 import { Dialog } from './components/dialog.js';
-
-// Constants
-const SEARCH = process.env.PREACT_APP_DATA_SOURCE;
+import { PWAPrompt } from './components/pwaPrompt';
 
 export const Action = createContext({})
 
@@ -46,11 +44,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch(
-			`${SEARCH}?q=${Math.random()
-				.toString(36)
-				.split('.')}`
-		)
+		fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
 			.then(r => r.json())
 			.then(json => {
 				this.setState({
@@ -90,6 +84,7 @@ export default class App extends Component {
 					</Router>
 				</div>
 				<Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
+				<PWAPrompt />
 			</Action.Provider>
 		);
 	}

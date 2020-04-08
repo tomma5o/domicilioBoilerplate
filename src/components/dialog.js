@@ -1,8 +1,8 @@
 export const Dialog = ({ isOpen, telNumbers, closePopup }) => {
 	return (
 		<dialog 
-			class="fixed inset-x-0 top-0 w-screen h-screen"
-			style={{background: "rgba(255, 255, 255, 0.9)", display: isOpen ? "initial" : "none"}}
+			class="fixed inset-x-0 top-0 backdrop w-screen h-screen"
+			style={{display: isOpen ? "initial" : "none"}}
 			onClick={closePopup}
 		>
 			<div
