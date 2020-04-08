@@ -2,9 +2,11 @@ import { useState, useContext } from 'preact/hooks';
 
 // Actions
 import { Action } from '../index'
+import { ListOpeningtime } from './listOpeningtime';
 
-export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
+export const ListItem = ({ name, tel, site, mail, note, newEntry, openingtimes }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
+	const [openingtimeVisible, setOpeningtimeVisible] = useState(false);
 	const action = useContext(Action);
 	const encodedName = encodeURIComponent(name);
 	const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
@@ -12,6 +14,9 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 
 	function handleClick() {
 		setInfoVisible(!infoVisible);
+	}
+	function viewOpeningtime() {
+		setOpeningtimeVisible(!openingtimeVisible);
 	}
 
 	return (
@@ -21,6 +26,16 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 					<a class="hover:underline" href={searchUrl} target="_blank" rel="noopener noreferrer">{name}</a>
 				</span>
 				<div class="flex">
+					{openingtimes && (
+						<span
+							onClick={viewOpeningtime}
+							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-red-300 rounded-lg"
+							role="img"
+							aria-label="warning"
+						>
+							🕔
+						</span>
+					)}
 					{note && (
 						<span
 							onClick={handleClick}
@@ -69,6 +84,15 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 			{infoVisible && (
 				<div class="block mt-10">
 					<p class="text-yellow-700 text-sm md:text-md lg:text-lg">{note}</p>
+				</div>
+			)}
+			{openingtimeVisible && (
+				<div class="block mt-10">
+					{
+						openingtimes.map(openingtime => (
+							<ListOpeningtime key={openingtime.days} {...openingtime} />
+						))
+					}
 				</div>
 			)}
 		</div>
