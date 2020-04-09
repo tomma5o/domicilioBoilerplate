@@ -44,7 +44,7 @@ export default class App extends Component {
 	}
 
 	componentDidMount() {
-		fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
+		fetch(`${process.env.PREACT_APP_DATA_SOURCE}?c=${Math.random().toString(36).split('.')[1]}`)
 			.then(r => r.json())
 			.then(json => {
 				this.setState({
