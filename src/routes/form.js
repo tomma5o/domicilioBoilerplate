@@ -55,7 +55,11 @@ export default function Form() {
             </p>
             <p class="my-5">
                <label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                  <input type="checkbox" name="province-delivery" class="mr-2" />
+                  <input
+                     type="checkbox"
+                     name="province-delivery"
+                     class="mr-2"
+                  />
                   Consegna in tutto il comprensorio
                </label>
             </p>
