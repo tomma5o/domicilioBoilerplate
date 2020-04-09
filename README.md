@@ -1,9 +1,28 @@
 # Domicilio Boilerplate
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/928e6869-c807-4fae-9168-9e556e67bf00/deploy-status)](https://app.netlify.com/sites/ferraradomicilio/deploys)
 
 > If you want to make the same proj for your city, the only thing I ask is to fork the [main repo](https://github.com/tomma5o/ferraraDomicilio) to make it yours.
 > Thanks!
+
+## Quick Start
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# test the production build locally
+npm run serve
+```
 
 ## How to
 
@@ -44,18 +63,28 @@ In **Settings** → Build & Deploy → Post processing → Snippet injection: yo
 
 In **Form** you can find all the submissions.<br>There are two type of submission: **Verified Submission** and **Spam Submission** sometimes they end up in spam
 
-## CLI Commands
+## Support this project
 
-``` bash
-# install dependencies
-npm install
+If this project has helped you in any way, a small contribution is welcome!
+I can't guarantee it will be a coffee though 🍺
 
-# serve with hot reload at localhost:8080
-npm run dev
+<a href="https://www.buymeacoffee.com/tomma5o" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 170px !important;" ></a>
 
-# build for production with minification
-npm run build
+## Contributors ✨
 
-# test the production build locally
-npm run serve
-```
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://tomma5o.com"><img src="https://avatars0.githubusercontent.com/u/8134038?v=4" width="100px;" alt=""/><br /><sub><b>Tommaso Poletti</b></sub></a><br /><a href="https://github.com/tomma5o/ferraraDomicilio/commits?author=tomma5o" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
