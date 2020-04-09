@@ -10,7 +10,9 @@
     "build": "preact build",
     "serve": "preact build && sirv build --cors --single",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "eslintConfig": {
     "extends": "preact",
@@ -19,6 +21,7 @@
     ]
   },
   "devDependencies": {
+    "all-contributors-cli": "^6.14.1",
     "autoprefixer": "^9.7.6",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",

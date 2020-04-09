@@ -1,0 +1,71 @@
+{
+  "projectName": "ferraraDomicilio",
+  "projectOwner": "tomma5o",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "tomma5o",
+      "name": "Tommaso Poletti",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8134038?v=4",
+      "profile": "http://tomma5o.com",
+      "contributions": [
+        "question",
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "verlok",
+      "name": "Andrea Verlicchi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1127721?v=4",
+      "profile": "https://www.andreaverlicchi.eu",
+      "contributions": [
+        "question",
+        "bug",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "LorenzoCamporesi",
+      "name": "Lorenzo Camporesi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/15997606?v=4",
+      "profile": "http://lorenzocamporesi.it",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "Th3Wall",
+      "name": "Davide Mandelli",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25078541?v=4",
+      "profile": "https://www.linkedin.com/in/mandelli-davide/",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "CVarisco",
+      "name": "Christian Varisco",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7335613?v=4",
+      "profile": "https://www.christianvarisco.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
