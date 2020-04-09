@@ -35,6 +35,11 @@ export default function Form() {
 					</label>
 				</p>
 				<p class="my-5">
+					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Orari di apertura
+						<textarea class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="text" name="openingtime" />
+					</label>
+				</p>
+				<p class="my-5">
 					<button class="block w-full bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type="submit">Send</button>
 				</p>
 			</form>
