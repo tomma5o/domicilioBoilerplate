@@ -90,4 +90,4 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 If this project has helped you in any way, a small contribution is welcome!
 I can't guarantee it will be a coffee though 🍺
 
-<a href="https://www.buymeacoffee.com/tomma5o" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 170px !important;" ></a>
+<a href="https://www.buymeacoffee.com/tomma5o" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="170px" ></a>
