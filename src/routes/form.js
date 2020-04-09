@@ -37,7 +37,7 @@ export default function Form() {
                   Numero di telefono
                   <input
                      class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                     type="text"
+                     type="tel"
                      inputmode="numeric"
                      name="telephone"
                   />
@@ -48,8 +48,18 @@ export default function Form() {
                   Email
                   <input
                      class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                     type="text"
+                     type="mail"
                      name="mail"
+                  />
+               </label>
+            </p>
+            <p class="my-5">
+               <label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">
+                  Sito Web
+                  <input
+                     class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                     type="url"
+                     name="site"
                   />
                </label>
             </p>
