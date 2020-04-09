@@ -48,7 +48,7 @@ export default function Form() {
                   Email
                   <input
                      class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                     type="mail"
+                     type="email"
                      name="mail"
                   />
                </label>
