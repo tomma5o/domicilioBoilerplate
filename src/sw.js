@@ -56,9 +56,6 @@ workbox.routing.registerRoute(
 			new workbox.cacheableResponse.Plugin({
 				statuses: [200],
 			}),
-			new workbox.expiration.Plugin({
-				maxEntries: 5,
-			}),
 			{ useLastCachedResponse },
 		],
 	})

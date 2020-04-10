@@ -4,3 +4,5 @@ node_modules
 /*.log
 
 size-plugin.json
+data
+.gitmodules
