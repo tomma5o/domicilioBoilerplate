@@ -4,6 +4,32 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
 const isNav = (event) => event.request.mode === "navigate";
 
+/*
+ * Listeners
+ */
+
+self.addEventListener("activate", () => {
+   caches
+      .open("github-api-cache")
+      .then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
+});
+
+/*
+ * Hand-made plugin
+ */
+
+const useLastCachedResponse = ({ cacheName, cachedResponse }) => {
+   // If there's already a match against the request URL, return it.
+   if (cachedResponse) {
+      return cachedResponse;
+   }
+
+   return caches
+      .open(cacheName)
+      .then((cache) => cache.keys())
+      .then((keys) => caches.match(keys[keys.length - 1].url));
+};
+
 /**
  * Adding this before `precacheAndRoute` lets us handle all
  * the navigation requests even if they are in precache.
@@ -24,25 +50,19 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
    new RegExp(`${process.env.PREACT_APP_DATA_SOURCE}`),
-   new workbox.strategies.NetworkFirst({
-      cacheName: "GHapi",
+   new workbox.strategies.StaleWhileRevalidate({
+      cacheName: "github-api-cache",
       networkTimeoutSeconds: 5,
       plugins: [
          new workbox.cacheableResponse.Plugin({
             statuses: [200],
          }),
-         new workbox.expiration.Plugin({
-            maxEntries: 5,
-            maxAgeSeconds: 60 * 24 * 60 * 60, // 60 days
-         }),
+         { useLastCachedResponse },
       ],
    })
 );
 
-workbox.precaching.precacheAndRoute(
-   [`${process.env.PREACT_APP_DATA_SOURCE}`, ...self.__precacheManifest],
-   {}
-);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.setCatchHandler(({ event }) => {
    if (isNav(event))
