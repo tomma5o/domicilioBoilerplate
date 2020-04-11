@@ -1,0 +1,17 @@
+{
+   "New entry": {
+      "prefix": "entry",
+      "body": [
+         "{",
+            "\"newEntry\": 1,",
+            "\"name\": \"$1\",",
+            "\"addr\": \"$2\",",
+            "\"mail\": \"$3\",",
+            "\"tel\": \"$4\",",
+            "\"site\": \"$5\",",
+            "\"note\": \"$6\"",
+         "},$0"
+      ],
+      "description": "Adds a new entry"
+   }
+}
