@@ -1,6 +1,6 @@
 {
-  "name": "Ferrara a Domicilio",
-  "short_name": "FerraraDomicilio",
+  "name": "Napoli a Domicilio",
+  "short_name": "NapoliDomicilio",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
