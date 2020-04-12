@@ -1,6 +1,6 @@
 import { Component, Fragment } from 'preact';
 
-import { ListCategory } from '../components/listCategory';
+import { ListCategory } from '../components/listCategory';//empty
 
 export default class Home extends Component {
 	state = {
