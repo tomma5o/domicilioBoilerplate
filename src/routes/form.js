@@ -35,7 +35,7 @@ export default function Form() {
 					</label>
 				</p>
 				<p class="my-5">
-					<button class="block w-full bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type="submit">Send</button>
+					<button class="block w-full bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type="submit">Invia La Richiesta</button>
 				</p>
 			</form>
 		</div>
