@@ -16,76 +16,76 @@ export const Action = createContext({})
 
 export default class App extends Component {
 
-	state = {
-		results: {},
-		isHomepage: true,
-		isPopupOpen: false,
-		popupNumbers: [],
-	}
-	
-	handleRoute = e => {
-		this.currentUrl = e.url;
-		this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
-	};
+   state = {
+      results: {},
+      isHomepage: true,
+      isPopupOpen: false,
+      popupNumbers: [],
+   }
 
-	setPopupNumbers = (e, numberArray) => {
-		e.preventDefault();
+   handleRoute = e => {
+      this.currentUrl = e.url;
+      this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
+   };
 
-		this.setState({
-			popupNumbers: numberArray,
-			isPopupOpen: true
-		})
-	}
+   setPopupNumbers = (e, numberArray) => {
+      e.preventDefault();
 
-	closePopup = (e) => {	
-		if (e.currentTarget === e.target) {
-			this.setState({ isPopupOpen: false })
-		}
-	}
+      this.setState({
+         popupNumbers: numberArray,
+         isPopupOpen: true
+      })
+   }
 
-	componentDidMount() {
-		fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
-			.then(r => r.json())
-			.then(json => {
-				this.setState({
-					results: json,
-					resultBkp: json
-				});
-			});
-	}
+   closePopup = (e) => {
+      if (e.currentTarget === e.target) {
+         this.setState({ isPopupOpen: false })
+      }
+   }
 
-	componentDidUpdate() {
-		const { isPopupOpen } = this.state;
-		
-		const root = document.documentElement;
-		root.style.setProperty('--popup-visible', isPopupOpen ? 'hidden': 'initial')
-	}
+   componentDidMount() {
+      fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
+         .then(r => r.json())
+         .then(json => {
+            this.setState({
+               results: json,
+               resultBkp: json
+            });
+         });
+   }
 
-	render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
-		return (
-			<Action.Provider value={{setPopupNumbers: this.setPopupNumbers}}>
-				<div id="app" class="px-5 max-w-screen-md mx-auto">
-					<nav class="flex justify-center md:justify-end items-center">
-						{
-							isHomepage
-								? <Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
-								: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
-						}
-					</nav>
-					<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
-						<span class="block sm:inline-block" role="img" aria-label="biker">
-							🚴
+   componentDidUpdate() {
+      const { isPopupOpen } = this.state;
+
+      const root = document.documentElement;
+      root.style.setProperty('--popup-visible', isPopupOpen ? 'hidden' : 'initial')
+   }
+
+   render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
+      return (
+         <Action.Provider value={{ setPopupNumbers: this.setPopupNumbers }}>
+            <div id="app" class="px-5 max-w-screen-md mx-auto">
+               <nav class="flex justify-center md:justify-end items-center">
+                  {
+                     isHomepage
+                        ? <Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
+                        : <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
+                  }
+               </nav>
+               <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
+                  {`${process.env.PREACT_APP_CITY} a Domicilio`}
+                  <span class="block sm:inline-block ml-2" role="img" aria-label="biker">
+                     🚴
 						</span>
-						{`${process.env.PREACT_APP_CITY} a Domicilio`}
-					</h1>
-					<Router onChange={this.handleRoute}>
-						<Home path="/" results={results} />
-						<Form path="/form" />
-					</Router>
-				</div>
-				<Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
-				<PWAPrompt />
-			</Action.Provider>
-		);
-	}
+               </h1>
+               <Router onChange={this.handleRoute}>
+                  <Home path="/" results={results} />
+                  <Form path="/form" />
+               </Router>
+            </div>
+            <Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
+            <PWAPrompt />
+         </Action.Provider>
+      );
+   }
 }
