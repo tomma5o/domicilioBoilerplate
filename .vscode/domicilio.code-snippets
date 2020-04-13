@@ -3,15 +3,20 @@
       "prefix": "entry",
       "body": [
          "{",
-            "\"newEntry\": 1,",
-            "\"name\": \"$1\",",
-            "\"tel\": \"$2\",",
-            "\"mail\": \"$3\",",
-            "\"site\": \"$4\",",
-            "\"note\": \"$5\",$0",
-            "\"addr\": \"$6\"",
+         "\"newEntry\": 1,",
+         "\"name\": \"$1\",",
+         "\"tel\": \"$2\",",
+         "\"mail\": \"$3\",",
+         "\"site\": \"$4\",",
+         "\"note\": \"$5\",$0",
+         "\"addr\": \"$6\"",
          "},"
       ],
       "description": "Adds a new entry"
+   },
+   "Complete address": {
+      "prefix": "Imola",
+      "body": ", 40026 Imola BO",
+      "description": "Complete the address with CAP, City and Province"
    }
 }
