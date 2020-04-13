@@ -5,20 +5,11 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 const isNav = (event) => event.request.mode === "navigate";
 
 /*
-* Listeners
-*/
-
-self.addEventListener("activate", () => {
-	caches
-		.open("github-api-cache")
-		.then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
-});
-
-/*
 * Hand-made plugin
 */
 
 const useLastCachedResponse = ({ cacheName, cachedResponse }) => {
+	console.log("ciccio")
 	// If there's already a match against the request URL, return it.
 	if (cachedResponse) {
 		return cachedResponse;
@@ -56,10 +47,20 @@ workbox.routing.registerRoute(
 			new workbox.cacheableResponse.Plugin({
 				statuses: [200],
 			}),
-			{ useLastCachedResponse },
+			{ cachedResponseWillBeUsed : useLastCachedResponse },
 		],
 	})
 );
+
+/*
+* Listeners
+*/
+
+self.addEventListener("activate", () => {
+	caches
+		.open("github-api-cache")
+		.then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
+});
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
