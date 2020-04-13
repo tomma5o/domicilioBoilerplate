@@ -7,6 +7,7 @@ import './assets/styles/global.css';
 // Routes
 import Home from './routes/home.js';
 import Form from './routes/form.js';
+import FormSuccess from './routes/formSuccess';
 
 // Components
 import { Dialog } from './components/dialog.js';
@@ -35,12 +36,6 @@ export default class App extends Component {
          popupNumbers: numberArray,
          isPopupOpen: true
       })
-   }
-
-   closePopup = (e) => {
-      if (e.currentTarget === e.target) {
-         this.setState({ isPopupOpen: false })
-      }
    }
 
    componentDidMount() {
@@ -81,6 +76,7 @@ export default class App extends Component {
                <Router onChange={this.handleRoute}>
                   <Home path="/" results={results} />
                   <Form path="/form" />
+                  <FormSuccess path="/form/success" />
                </Router>
             </div>
             <Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />

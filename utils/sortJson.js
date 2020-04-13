@@ -1,3 +1,4 @@
+const fs = require("fs");
 const path = require("path");
 
 let inputFile = process.argv[2] || "../data/gist.json";
@@ -20,5 +21,4 @@ for (let name in json) {
    };
 }
 
-fs = require("fs");
-fs.writeFileSync(filePath + "/sorted.json", JSON.stringify(output));
+fs.writeFileSync(`${filePath}/sorted.json`, JSON.stringify(output));

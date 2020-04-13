@@ -6,6 +6,7 @@ export default function Form() {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/form/success"
          >
             <p>
                <input type="hidden" name="form-name" value="contact" />
@@ -88,7 +89,7 @@ export default function Form() {
                   class="block w-full bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                   type="submit"
                >
-                  Send
+                  Invia Richiesta
                </button>
             </p>
          </form>
