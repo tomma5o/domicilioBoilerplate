@@ -14,22 +14,6 @@ self.addEventListener("activate", () => {
       .then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
 });
 
-/*
- * Hand-made plugin
- */
-
-const useLastCachedResponse = ({ cacheName, cachedResponse }) => {
-   // If there's already a match against the request URL, return it.
-   if (cachedResponse) {
-      return cachedResponse;
-   }
-
-   return caches
-      .open(cacheName)
-      .then((cache) => cache.keys())
-      .then((keys) => caches.match(keys[keys.length - 1].url));
-};
-
 /**
  * Adding this before `precacheAndRoute` lets us handle all
  * the navigation requests even if they are in precache.
@@ -50,14 +34,13 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
    new RegExp(`${process.env.PREACT_APP_DATA_SOURCE}`),
-   new workbox.strategies.StaleWhileRevalidate({
+   new workbox.strategies.NetworkFirst({
       cacheName: "github-api-cache",
       networkTimeoutSeconds: 5,
       plugins: [
          new workbox.cacheableResponse.Plugin({
             statuses: [200],
          }),
-         { useLastCachedResponse },
       ],
    })
 );
