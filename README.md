@@ -1,7 +1,25 @@
-# Imola a Domicilio
+# # Imola a Domicilio
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad921e79-fd5e-46a8-a3bf-b661e3d86dba/deploy-status)](https://app.netlify.com/sites/imoladomicilio/deploys)
 
 > If you want to make the same proj for your city, the only thing I ask is to fork the [main repo](https://github.com/tomma5o/ferraraDomicilio) to make it yours.
 > Thanks!
+
+## Quick Start
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# test the production build locally
+npm run serve
+```
 
 ## How to
 
@@ -42,18 +60,21 @@ In **Settings** → Build & Deploy → Post processing → Snippet injection: yo
 
 In **Form** you can find all the submissions.<br>There are two type of submission: **Verified Submission** and **Spam Submission** sometimes they end up in spam
 
-## CLI Commands
+## Contributors ✨
 
 ```bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
-# build for production with minification
-npm run build
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-# test the production build locally
-npm run serve
-```
+## Support this project
+
+If this project has helped you in any way, a small contribution is welcome!
+I can't guarantee it will be a coffee though 🍺
+
+<a href="https://www.buymeacoffee.com/tomma5o" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="170px" ></a>

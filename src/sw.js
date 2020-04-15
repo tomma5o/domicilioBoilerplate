@@ -2,12 +2,6 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
 const isNav = (event) => event.request.mode === "navigate";
 
-self.addEventListener("activate", () => {
-   caches
-      .open("github-api-cache")
-      .then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
-});
-
 const useLastCachedResponse = ({ cacheName, cachedResponse }) => {
    if (cachedResponse) {
       return cachedResponse;
@@ -23,7 +17,7 @@ workbox.routing.registerRoute(
    ({ event }) => isNav(event),
    new workbox.strategies.NetworkFirst({
       cacheName: workbox.core.cacheNames.precache,
-      networkTimeoutSeconds: 5,
+      networkTimeoutSeconds: 5, // if u dont start getting headers within 5 sec fallback to cache.
       plugins: [
          new workbox.cacheableResponse.Plugin({
             statuses: [200],
@@ -36,15 +30,20 @@ workbox.routing.registerRoute(
    new RegExp(`${process.env.PREACT_APP_DATA_SOURCE}`),
    new workbox.strategies.StaleWhileRevalidate({
       cacheName: "github-api-cache",
-      networkTimeoutSeconds: 5,
       plugins: [
          new workbox.cacheableResponse.Plugin({
             statuses: [200],
          }),
-         { useLastCachedResponse },
+         { cachedResponseWillBeUsed: useLastCachedResponse },
       ],
    })
 );
+
+self.addEventListener("activate", () => {
+   caches
+      .open("github-api-cache")
+      .then((cache) => cache.add(`${process.env.PREACT_APP_DATA_SOURCE}`));
+});
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
