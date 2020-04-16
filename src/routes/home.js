@@ -1,6 +1,7 @@
 import { Component, Fragment } from 'preact';
 
 import { ListCategory } from '../components/listCategory';//empty
+import { NumberResults } from '../components/numberResults';
 
 export default class Home extends Component {
 	state = {
@@ -19,6 +20,16 @@ export default class Home extends Component {
       }
       this.setState({ categoryFilter: key });
    };
+
+   calculateStoresNumber() {
+	const { results: stores } = this.props;
+	const keys = Object.keys(stores);
+	let storesNumber = 0;
+	for (const key of keys) {
+		storesNumber += stores[key].data.length;
+	}
+	return storesNumber;
+   }
 
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
@@ -42,9 +53,15 @@ export default class Home extends Component {
 	render(props, { filter, categoryFilter }) {
 		const { results: stores } = props;
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
+		const storesNumber = this.calculateStoresNumber();
 
 		return (
 			<Fragment>
+				{storesNumber>0 && (
+				<div class="text-center mt-2 pb-5">
+					Ci sono <span class="font-semibold">{storesNumber}</span> attività in archivio!
+				</div>
+				)}
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"

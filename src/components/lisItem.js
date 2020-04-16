@@ -32,7 +32,7 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 						</span>
 					)}
 					{site && (
-						<a href={`${site}`}>
+						<a href={`${site}`} target="_blank">
 							<span
 								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-orange-300 rounded-lg"
 								role="img"
