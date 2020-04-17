@@ -68,7 +68,7 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry }) => {
 					{tel && (
 						<a href={`tel:${tel}`} onClick={(e) => Array.isArray(tel) && action.setPopupNumbers(e, tel)}>
 							<span
-								class="inline-block mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
+								class="inline-block mx-1 md:mx-2 w-8 h-8 bg-green-300 text-center leading-8 rounded-lg cursor-pointer"
 								role="img"
 								aria-label="telephone"
 							>
