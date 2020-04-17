@@ -13,7 +13,7 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "340 6832410 ",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Folli prodotti Ortofrutticoli",
@@ -41,20 +41,20 @@
             "addr": "via f.Orsini n 7 t",
             "mail": "manarafrutta@alice.it",
             "tel": "0542 28061",
-            "site": "https://www.facebook.com/Manara-Frutta-e-Verdura-1086500428178477/"
+            "fb": "https://www.facebook.com/Manara-Frutta-e-Verdura-1086500428178477/"
          },
          {
             "name": "Marca Oro - frutta e verdura",
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Prodotti Tipici del Sud",
             "addr": "via giovanni x 86/b (quartiere pedagna)",
             "mail": "prod.tipicidelsud@libero.it",
             "tel": "349 2468732",
-            "site": "https://www.facebook.com/prodottitipicidelsud.imola/"
+            "fb": "https://www.facebook.com/prodottitipicidelsud.imola/"
          }
       ]
    },
@@ -75,7 +75,7 @@
          {
             "name": "Azienda agricola biologica Bordona",
             "tel": "3397021594",
-            "site": "https://www.facebook.com/aziendagricolabordona/shop/",
+            "fb": "https://www.facebook.com/aziendagricolabordona/shop/",
             "note": "Prodotti visionabili sulla pagina FB"
          },
          {
@@ -87,7 +87,7 @@
          {
             "name": "Ca di Viazadur Farm House",
             "tel": "334 3031821",
-            "site": "https://www.facebook.com/cadiviazadur/posts/2077953082350735",
+            "fb": "https://www.facebook.com/cadiviazadur/posts/2077953082350735",
             "note": "Scrivete al 3343031821 per conoscere la lista ed effettuare un ordine con consegna gratuita a domicilio"
          },
          {
@@ -133,7 +133,7 @@
          },
          {
             "name": "CLAI Macelleria e Salumificio",
-            "site": "https://www.facebook.com/claisalumi/posts/1795831800554100",
+            "fb": "https://www.facebook.com/claisalumi/posts/1795831800554100",
             "tel": "800 895110",
             "mail": "inferno.negozio@clai.it",
             "note": "Ordini da Lunedì a Sabato dalle 8:00 alle 13:00 e dalle 16:00 alle 19:00, esclusi Martedì pomeriggio e festivi"
@@ -150,21 +150,21 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "338 5249963",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "GiustoScambio - Associazione San Cassiano",
             "addr": "via Emilia 69,",
             "mail": "info@giustoscambioimola.it",
             "tel": "370 3355296",
-            "site": "https://www.facebook.com/pg/GiustoScambio-Imola-Bottega-del-Commercio-Equo-e-Solidale-141428532586472/"
+            "fb": "https://www.facebook.com/pg/GiustoScambio-Imola-Bottega-del-Commercio-Equo-e-Solidale-141428532586472/"
          },
          {
             "name": "I Buongustai salumeria, alimentari, latte",
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": ["0542 26749", "335 1495867"],
             "mail": "carlo.sabattani@alice.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/",
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/",
             "note": "Al numero fisso solo al mattino, al cellulare tutto il giorno fino alle 19."
          },
          {
@@ -172,7 +172,7 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "338 1477866",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Macelleria Angeli",
@@ -183,14 +183,14 @@
             "name": "Pescheria \"Il Borghetto\"",
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Polleria del Borghetto",
             "addr": "presso mercato coperto \"Il Borghetto\", piazzale Ragazzi del '99 - Imola",
             "tel": ["0542 26715", "351 7776754"],
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Puro - quelli del caffè",
@@ -207,7 +207,7 @@
          {
             "name": "Bar Otello",
             "tel": "333 5974499",
-            "site": "https://www.facebook.com/otello.imola/",
+            "fb": "https://www.facebook.com/otello.imola/",
             "addr": "via Emilia, 166"
          },
          {
@@ -223,7 +223,7 @@
          {
             "name": "Caffè Porteño",
             "tel": "335 5340093",
-            "site": "https://www.facebook.com/CafePortenoImola/",
+            "fb": "https://www.facebook.com/CafePortenoImola/",
             "addr": "Via Emilia 241/b"
          },
          {
@@ -236,7 +236,7 @@
             "addr": "via F. Orsini, 3",
             "mail": "famigliapattuelli@libero.it",
             "tel": "0542 25253",
-            "site": "https://www.facebook.com/CioccolateriaImola"
+            "fb": "https://www.facebook.com/CioccolateriaImola"
          },
          {
             "name": "Cofferose",
@@ -255,7 +255,7 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "0542 33480",
             "mail": "franicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          },
          {
             "name": "Forno Pasticceria Katanè",
@@ -285,7 +285,7 @@
             "addr": "via Puccini 50/f",
             "mail": "mammamiaenocafe@gmail.com ",
             "tel": "3388050061",
-            "site": "https://www.facebook.com/MammaMiaCafeImola",
+            "fb": "https://www.facebook.com/MammaMiaCafeImola",
             "note": "Vino, birre, brioche e pane da forno. Attivi con il servizio di consegna a domicilio di  brioche e prodotti da forno (Ordine entro le 19:00 del giorno prima), vino, birra e salatini mignon. Donazioni all’AUSL di Imola: per ogni bottiglia di vino venduta doneremo il 10% del suo valore e a fronte di 1 cartone di Birra donermo 10€. Orari di consegna 7:30-12:00 per le colazioni e pane e 12:00-17:00 per birra, vino e aperitivo"
          }
       ]
@@ -360,7 +360,7 @@
             "name": "America Graffiti",
             "tel": "366 3626901",
             "mail": "grandprixsrl2011@gmail.com",
-            "site": "https://www.facebook.com/AGViaMalsicuraImola/",
+            "fb": "https://www.facebook.com/AGViaMalsicuraImola/",
             "addr": "Via Malsicura 1, 40026 Imola BO"
          },
          {
@@ -418,7 +418,7 @@
          },
          {
             "name": "Fabbrica Gastronomica",
-            "site": "https://www.facebook.com/fabbrica.gastronomica/"
+            "fb": "https://www.facebook.com/fabbrica.gastronomica/"
          },
          {
             "name": "Forum Cornelii",
@@ -431,7 +431,7 @@
             "addr": "Viale Dante, 20",
             "mail": "hostaria900@hostaria900.it",
             "tel": ["0542.24211", "347 3091215"],
-            "site": "https://www.facebook.com/hostaria900/",
+            "fb": "https://www.facebook.com/hostaria900/",
             "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
          },
          {
@@ -492,7 +492,7 @@
             "tel": "054229779",
             "addr": "via Fratelli Cairoli 2, 40026 Imola BO",
             "mail": "siciliabedda@blu.it",
-            "site": "https://www.facebook.com/siciliabeddaimola/"
+            "fb": "https://www.facebook.com/siciliabeddaimola/"
          },
          {
             "name": "Trattoria la Sterlina",
@@ -546,7 +546,7 @@
             "addr": "c/o centro commerciale Leonardo viale Amendola - Imola",
             "mail": "ordinikmzero@gmail.com",
             "tel": ["0542 1901795", "327 3428961", "320 3577717"],
-            "site": "https://www.facebook.com/sushisunbarimola/"
+            "fb": "https://www.facebook.com/sushisunbarimola/"
          }
       ]
    },
@@ -613,7 +613,7 @@
             "name": "Bulli e pupe fashion store",
             "tel": ["3939125082", "3331630522"],
             "mail": "bulliepupeimola1@gmail.com",
-            "site": "https://www.facebook.com/bulliepupeimola0",
+            "fb": "https://www.facebook.com/bulliepupeimola0",
             "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
          },
          {
@@ -621,7 +621,7 @@
             "addr": "viale carducci, 14/a",
             "mail": "info@lacicogna-imola.it",
             "tel": "0542 28123",
-            "site": "https://www.facebook.com/LaCicognaImola/"
+            "fb": "https://www.facebook.com/LaCicognaImola/"
          },
          {
             "name": "La città dei giochi",
@@ -663,7 +663,7 @@
             "addr": "via Pisacane 71",
             "mail": "neg70369@prenatal.com",
             "tel": "0542 28510",
-            "site": "https://www.facebook.com/Pr%C3%A8natal-Imola-2066743986962118/"
+            "fb": "https://www.facebook.com/Pr%C3%A8natal-Imola-2066743986962118/"
          },
          {
             "name": "Spaccio Pannolini imola",
@@ -690,7 +690,7 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "0542 30881",
             "mail": "ranicola@libero.it",
-            "site": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
          }
       ]
    },
@@ -702,7 +702,7 @@
             "addr": "via Aldrovandi 20",
             "mail": "erb.zambrini@libero.it",
             "tel": ["0542 33029", "331 1234569"],
-            "site": "https://www.facebook.com/zambrinierboristeria.imola/"
+            "fb": "https://www.facebook.com/zambrinierboristeria.imola/"
          }
       ]
    },
@@ -718,7 +718,7 @@
             "addr": "via Emilia 148, Imola",
             "mail": "chiarapelliconi@libero.it",
             "tel": ["347 5636800", "054223152"],
-            "site": "https://www.facebook.com/cartoleriaarcangeli/",
+            "fb": "https://www.facebook.com/cartoleriaarcangeli/",
             "note": "Consegna gratuita"
          },
          {
@@ -755,7 +755,7 @@
             "addr": "via Pacinotti, 10",
             "mail": "pi.greco40026@virgilio.it",
             "tel": ["0542 25691", "351 5399557"],
-            "site": "https://www.facebook.com/cartoleriapigreco/"
+            "fb": "https://www.facebook.com/cartoleriapigreco/"
          }
       ]
    },
@@ -852,7 +852,7 @@
          {
             "name": "Gió & Gió tutto l'intimo",
             "tel": "3932694211",
-            "site": "https://www.facebook.com/Gi%C3%B3-Gi%C3%B3-tutto-lintimo-192830997739960",
+            "fb": "https://www.facebook.com/Gi%C3%B3-Gi%C3%B3-tutto-lintimo-192830997739960",
             "mail": "giovanna.bandini@icloud.com",
             "note": "Anche su Whatsapp, Instagram gioo_ba, Facebook Gió & Gió"
          },
@@ -860,7 +860,7 @@
             "name": "Madera",
             "tel": "370 370 5681",
             "mail": "maderaimola@gmail.com",
-            "site": "https://www.facebook.com/Madera-creative-outfit-104941370893936/",
+            "fb": "https://www.facebook.com/Madera-creative-outfit-104941370893936/",
             "addr": "via Emilia 193, 40026 Imola BO"
          },
          {
@@ -868,7 +868,7 @@
             "addr": "via Cavour 22/a",
             "mail": "merceriaivonne@libero.it",
             "tel": "334 8409824",
-            "site": "https://www.facebook.com/Ivonne-merceria-1384366248556136/"
+            "fb": "https://www.facebook.com/Ivonne-merceria-1384366248556136/"
          },
          {
             "name": "Pro Match",
@@ -894,14 +894,13 @@
             "newEntry": 1,
             "name": "3P Parrucchieri",
             "tel": "3490971716",
-            "site": "https://www.facebook.com/3PParrucchieri",
-            "note": "Consegna in tutto il comprensorio",
-            "fb": "https://www.facebook.com/3PParrucchieri"
+            "fb": "https://www.facebook.com/3PParrucchieri",
+            "note": "Consegna in tutto il comprensorio"
          },
          {
             "name": "Hair Stylist Look Center",
             "addr": "via Marconi, 52",
-            "site": "https://www.facebook.com/hairstylistlookcenter/"
+            "fb": "https://www.facebook.com/hairstylistlookcenter/"
          }
       ]
    },
