@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-let inputFile = process.argv[2] || "../data/businesses.json";
+let inputFile = process.argv[2] || "../src/assets/data/businesses.json";
 const filePath = path.dirname(inputFile);
 
 const json = require(inputFile);
