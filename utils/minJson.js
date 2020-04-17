@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-let inputFile = process.argv[2] || "../data/gist.json";
+let inputFile = process.argv[2] || "../data/businesses.json";
 const filePath = path.dirname(inputFile);
 
 const json = require(inputFile);
@@ -21,4 +21,4 @@ for (let name in json) {
    };
 }
 
-fs.writeFileSync(`${filePath}/sorted.json`, JSON.stringify(output));
+fs.writeFileSync(`${filePath}/businesses.min.json`, JSON.stringify(output));
