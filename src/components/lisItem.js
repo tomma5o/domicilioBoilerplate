@@ -3,12 +3,13 @@ import { useState, useContext } from 'preact/hooks';
 // Actions
 import { Action } from '../index'
 
-export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
+export const ListItem = ({ name, tel, site, fb, mail, note, newEntry }) => {
 	const [infoVisible, setInfoVisible] = useState(false);
 	const action = useContext(Action);
 	const encodedName = encodeURIComponent(name);
-	const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
+   const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
 	const searchUrl = `https://www.google.com/search?q=${encodedName}%20${encodedCity}`;
+   const link = site || fb || searchUrl;
 
 	function handleClick() {
 		setInfoVisible(!infoVisible);
@@ -18,17 +19,17 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 		<div class={`relative rounded-lg border border-gray-500 bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700 ${newEntry ? "new-entry" : ""}`}>
 			<div class="flex justify-between items-center">
 				<span>
-					<a class="hover:underline" href={searchUrl} target="_blank" rel="noopener noreferrer">{name}</a>
+					<a class="hover:underline" href={link} target="_blank" rel="noopener noreferrer">{name}</a>
 				</span>
 				<div class="flex">
 					{note && (
 						<span
 							onClick={handleClick}
-							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
+							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-300 rounded-lg"
 							role="img"
 							aria-label="warning"
 						>
-							⚠️
+							ℹ
 						</span>
 					)}
 					{site && (
@@ -42,10 +43,21 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 							</span>
 						</a>
 					)}
+               {fb && (
+						<a href={`${fb}`}>
+							<span
+								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-orange-300 rounded-lg"
+								role="img"
+								aria-label="facebook"
+							>
+							👍
+							</span>
+						</a>
+					)}
 					{mail && (
 						<a href={`mailto:${mail}`}>
 							<span
-								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-300 rounded-lg"
+								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
 								role="img"
 								aria-label="e-mail"
 							>
@@ -68,7 +80,7 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 			</div>
 			{infoVisible && (
 				<div class="block mt-10">
-					<p class="text-yellow-700 text-sm md:text-md lg:text-lg">{note}</p>
+					<p class="text-blue-500 text-sm md:text-md lg:text-lg">{note}</p>
 				</div>
 			)}
 		</div>
