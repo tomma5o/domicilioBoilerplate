@@ -11,7 +11,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - robots.txt file
 - sitemap.xml file
-- All the files in the root of `assets/` are copied in the root when build the app
 
 ### Changed
 
