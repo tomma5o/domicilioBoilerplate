@@ -15,7 +15,7 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 	}
 
 	return (
-		<div class={`relative rounded-lg border border-gray-500 bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700 ${newEntry ? "new-entry" : ""}`}>
+		<article class={`relative rounded-lg border border-gray-500 bg-gray-200 p-4 md:p-5 my-5 text-md lg:text-xl font-semibold text-gray-700 ${newEntry ? "new-entry" : ""}`}>
 			<div class="flex justify-between items-center">
 				<span>
 					<a class="hover:underline" href={searchUrl} target="_blank" rel="noopener noreferrer">{name}</a>
@@ -71,6 +71,6 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 					<p class="text-yellow-700 text-sm md:text-md lg:text-lg">{note}</p>
 				</div>
 			)}
-		</div>
+		</article>
 	);
 };
