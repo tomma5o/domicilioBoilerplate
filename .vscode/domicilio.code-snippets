@@ -21,5 +21,10 @@
       "prefix": "Imola",
       "body": ", 40026 Imola BO",
       "description": "Complete the address with CAP, City and Province"
+   },
+   "Add facebook":{
+      "prefix": "fb", 
+      "body": "\"fb\": \"$4\",",
+      "description": "Add facebook info"
    }
 }
