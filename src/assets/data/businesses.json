@@ -6,7 +6,8 @@
             "newEntry": 1,
             "name": "Aldo Grementieri",
             "tel": ["3335636753", "0542 680815"],
-            "fb": "https://www.facebook.com/aldogrementierifruttaeverdura/"
+            "fb": "https://www.facebook.com/aldogrementierifruttaeverdura/",
+            "gmap": "https://goo.gl/maps/CuorD21HJRnCuhkk8"
          },
          {
             "name": "Clorofilla (all'ingrosso)",
@@ -797,9 +798,8 @@
             "newEntry": 1,
             "name": "Azienda vinicola e agriturismo Trerè",
             "tel": "054647034",
-            "satispay": 1,
             "mail": "trere@trere.com",
-            "fb": "https://m.facebook.com/Trerenonsolovino/",
+            "fb": "https://www.facebook.com/Trerenonsolovino/",
             "site": "https://www.trere.com/",
             "gmap": "https://g.page/trerefaenza",
             "addr": "Via Casale, 19, 48018 Faenza RA"
@@ -825,6 +825,7 @@
             "tel": "3518305141",
             "mail": "lasorgentedivina@gmail.com",
             "fb": "https://www.facebook.com/lasorgentedivina/",
+            "gmap": "https://goo.gl/maps/piXim3o4HTRTr4gf6",
             "note": "Vini sfusi, birra artigianale alla spina e in bottiglia. Birrifici Claterna, Mazapegul, Valsenio. Birra senza glutine Belgian craft beers."
          },
          {
