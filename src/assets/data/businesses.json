@@ -3,6 +3,12 @@
       "icon": "🥕",
       "data": [
          {
+            "newEntry": 1,
+            "name": "Aldo Grementieri",
+            "tel": ["3335636753", "0542 680815"],
+            "fb": "https://www.facebook.com/aldogrementierifruttaeverdura/"
+         },
+         {
             "name": "Clorofilla (all'ingrosso)",
             "addr": "viale Rivalta, 10 - Imola",
             "mail": "clorofilla1@legalmail.it",
@@ -211,11 +217,7 @@
             "addr": "via Emilia, 166",
             "satispay": 1
          },
-         {
-            "name": "Bar centrale",
-            "tel": "3296499059",
-            "satispay": 1
-         },
+         { "name": "Bar centrale", "tel": "3296499059", "satispay": 1 },
          {
             "name": "Caffè Emilia",
             "tel": "340 7369906",
@@ -719,10 +721,7 @@
    "Cartolerie, librerie": {
       "icon": "📚",
       "data": [
-         {
-            "name": "Carta e Penna",
-            "tel": "338 1391081"
-         },
+         { "name": "Carta e Penna", "tel": "338 1391081" },
          {
             "name": "Cartoleria Arcangeli",
             "addr": "via Emilia 148, Imola",
@@ -777,10 +776,7 @@
             "tel": "338.9763854",
             "note": "Produzione e vendita vini Bio in bottiglia e in Bag Box. Ordini telefonici."
          },
-         {
-            "name": "Cafè del Grillo",
-            "tel": "3470131723"
-         },
+         { "name": "Cafè del Grillo", "tel": "3470131723" },
          {
             "name": "Hop!nion Birrificio Imolese Agricolo",
             "tel": ["340.5856032", "348.7793909"],
@@ -792,6 +788,14 @@
             "mail": "info@inenotecaimola.com",
             "site": "http://www.inenotecaimola.com",
             "fb": "https://www.facebook.com/In-Enoteca-Imola-146574662141153/"
+         },
+         {
+            "newEntry": 1,
+            "name": "La sorgente divina",
+            "tel": "3518305141",
+            "mail": "lasorgentedivina@gmail.com",
+            "fb": "https://www.facebook.com/lasorgentedivina/",
+            "note": "Vini sfusi, birra artigianale alla spina e in bottiglia. Birrifici Claterna, Mazapegul, Valsenio. Birra senza glutine Belgian craft beers."
          },
          {
             "name": "Merlotta",
