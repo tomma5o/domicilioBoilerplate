@@ -208,17 +208,20 @@
             "name": "Bar Otello",
             "tel": "333 5974499",
             "fb": "https://www.facebook.com/otello.imola/",
-            "addr": "via Emilia, 166"
+            "addr": "via Emilia, 166",
+            "satispay": 1
          },
          {
             "name": "Bar centrale",
-            "tel": "3296499059"
+            "tel": "3296499059",
+            "satispay": 1
          },
          {
             "name": "Caffè Emilia",
             "tel": "340 7369906",
             "mail": "Glello75@libero.it",
-            "note": "Consegna a Domicilio per colazione, pranzi, Vino con vasta scelta nella nostra enoteca ed aperitivi. Chiuso la Domenica"
+            "note": "Consegna a Domicilio per colazione, pranzi, Vino con vasta scelta nella nostra enoteca ed aperitivi. Chiuso la Domenica",
+            "satispay": 1
          },
          {
             "name": "Caffè Porteño",
@@ -236,7 +239,8 @@
             "addr": "via F. Orsini, 3",
             "mail": "famigliapattuelli@libero.it",
             "tel": "0542 25253",
-            "fb": "https://www.facebook.com/CioccolateriaImola"
+            "fb": "https://www.facebook.com/CioccolateriaImola",
+            "satispay": 1
          },
          {
             "name": "Cofferose",
@@ -270,7 +274,7 @@
             "note": "Attivi con il servizio a domicilio. Ordini al Mattino e consegne dalle 8.30 alle 12:30. Uova pasquali, colombe, ovetti di cioccolato e caffè."
          },
          {
-            "name": "Laboratorio Plasir snc",
+            "name": "Laboratorio Plasir",
             "tel": "349.7928406",
             "note": "Pasticceria, Gelateria e Cioccolateria. Produzione artigianale di Gelato, Cioccolato, Torte e Biscotteria artigianale. Sono attivi tutti i giorni per gli ordini telefonici. Ordini fino alle 15:00 del giorno di consegna che è gratuita a domicilio e avviene il Martedì, Giovedì e Sabato (solo pomeriggio). Pasticceria, Gelateria e Cioccolateria. Produzione artigianale di Gelato, Cioccolato, Torte e Biscotteria artigianale. Sono attivi tutti i giorni per gli ordini telefonici. Ordini fino alle 15:00 del giorno di consegna che è gratuita a domicilio e avviene il Martedì, Giovedì e Sabato (solo pomeriggio)."
          },
@@ -287,7 +291,8 @@
             "mail": "mammamiaenocafe@gmail.com ",
             "tel": "3388050061",
             "fb": "https://www.facebook.com/MammaMiaCafeImola",
-            "note": "Vino, birre, brioche e pane da forno. Attivi con il servizio di consegna a domicilio di  brioche e prodotti da forno (Ordine entro le 19:00 del giorno prima), vino, birra e salatini mignon. Donazioni all’AUSL di Imola: per ogni bottiglia di vino venduta doneremo il 10% del suo valore e a fronte di 1 cartone di Birra donermo 10€. Orari di consegna 7:30-12:00 per le colazioni e pane e 12:00-17:00 per birra, vino e aperitivo"
+            "note": "Vino, birre, brioche e pane da forno. Attivi con il servizio di consegna a domicilio di  brioche e prodotti da forno (Ordine entro le 19:00 del giorno prima), vino, birra e salatini mignon. Donazioni all’AUSL di Imola: per ogni bottiglia di vino venduta doneremo il 10% del suo valore e a fronte di 1 cartone di Birra donermo 10€. Orari di consegna 7:30-12:00 per le colazioni e pane e 12:00-17:00 per birra, vino e aperitivo",
+            "satispay": 1
          }
       ]
    },
@@ -345,7 +350,8 @@
          {
             "name": "Ristorante Pizzeria da Valerio",
             "tel": "0542.011286",
-            "note": "Attivi tutti i giorni – Negli orari 12:00-14:00 e 18:30-21:00 servizio a domicilio. Oltre alle consegne a domicilio attivo il nuovo servizio “Take away” con prenotazione dei piatti o della pizza e ritiro senza scendere dall’auto."
+            "note": "Attivi tutti i giorni – Negli orari 12:00-14:00 e 18:30-21:00 servizio a domicilio. Oltre alle consegne a domicilio attivo il nuovo servizio “Take away” con prenotazione dei piatti o della pizza e ritiro senza scendere dall’auto.",
+            "satispay": 1
          },
          {
             "name": "Ristorante e Pizzeria Anema & Core",
@@ -362,7 +368,8 @@
             "tel": "366 3626901",
             "mail": "grandprixsrl2011@gmail.com",
             "fb": "https://www.facebook.com/AGViaMalsicuraImola/",
-            "addr": "Via Malsicura 1, 40026 Imola BO"
+            "addr": "Via Malsicura 1, 40026 Imola BO",
+            "satispay": 1
          },
          {
             "name": "Pancake burgers",
@@ -506,7 +513,8 @@
             "name": "Vivanderia Note e Aromi",
             "mail": "vivanderia@gmail.com",
             "tel": "3489061576",
-            "note": "Attivo il Ristorante con consegne a domicilio tutti i giorni a Imola e circondario. Menù settimanale su Fb. Costo della consegna nel circondario di Imola di 1/2€ con spesa minima di 20€"
+            "note": "Attivo il Ristorante con consegne a domicilio tutti i giorni a Imola e circondario. Menù settimanale su Fb. Costo della consegna nel circondario di Imola di 1/2€ con spesa minima di 20€",
+            "satispay": 1
          }
       ]
    },
