@@ -24,7 +24,10 @@ module.exports = {
 			yellow: {
 				300: 'var(--yellow-300)',
 				700: 'var(--yellow-700)',
-			},
+         },
+         indigo: {
+            600: 'var(--indigo-600)'
+         }
 		},
 	}
  }
