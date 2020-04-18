@@ -27,9 +27,11 @@ npm run serve
 ## How to
 
 1. Change the specific label related to me and my city are inside the `.env` file, if you change that the js will be clean ;)
-2. Change the city in the `template.html` file
-3. Change the **name** and **short_name** inside `manifest.json`
-4. Change the **name** inside `package.json`
+2. Change the hardocded name of the city in the `template.html` file
+3. Change the hardocded name of the city in the `assets/sitemap.xml` file
+4. Change the hardocded name of the city in the `assets/robots.txt` file
+5. Change the **name** and **short_name** inside `manifest.json`
+6. Change the **name** inside `package.json`
 
 ## Data source
 
