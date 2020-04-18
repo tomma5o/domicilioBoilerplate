@@ -80,9 +80,7 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry, satispay }
 				</div>
 			</div>
 			{infoVisible && (
-				<div class="block mt-10">
-					<p class="text-blue-500 text-sm md:text-md lg:text-lg">{note}</p>
-				</div>
+				<p class="block mt-5 text-blue-500 text-sm md:text-md lg:text-lg">{note}</p>
 			)}
 		</article>
 	);
