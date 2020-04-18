@@ -248,7 +248,8 @@
             "addr": "Piazza Alessandro Bianconcini, 16/17, 40026 Imola BO",
             "tel": "0542 27055",
             "site": "//dulciscafe.it",
-            "note": "Pasticcerie e Caffetteria. Consegna della colazione a domicilio. Accetta pagamenti con Satispay."
+            "note": "Pasticcerie e Caffetteria. Consegna della colazione a domicilio. ",
+            "satispay": 1
          },
          {
             "name": "Forno Gardelli",
@@ -334,7 +335,7 @@
             "name": "Pizzeria ristorante La Lanterna",
             "addr": "Via G.Mazzini, 21, 40026 Imola BO",
             "tel": "0542 26296",
-            "note": "Accetta pagamenti con Satispay"
+            "satispay": 1
          },
          {
             "name": "Ristorante Pizzeria Donatello",
@@ -369,7 +370,8 @@
             "tel": "0542 1893584",
             "site": "https://www.pancakeburgers.it/",
             "fb": "https://www.facebook.com/pancakeimola/",
-            "note": "Hamburger (Kraken Burger disponibile solo in negozio no domicili e asporti) – Attivi tutti i giorni dal Lunedì alla Domenica. Ordini per il pranzo dalle 11:00 con Deliveroo & Foodracers e per la cena telefonando dalle 17:00 con consegne dirette a domicilio. Orari delle consegne: 12:00-14:30 / 18:30-22:30. Accetta pagamenti con Satispay."
+            "note": "Hamburger (Kraken Burger disponibile solo in negozio no domicili e asporti) – Attivi tutti i giorni dal Lunedì alla Domenica. Ordini per il pranzo dalle 11:00 con Deliveroo & Foodracers e per la cena telefonando dalle 17:00 con consegne dirette a domicilio. Orari delle consegne: 12:00-14:30 / 18:30-22:30.",
+            "satispay": 1
          }
       ]
    },
@@ -579,13 +581,14 @@
             "name": "Gelateria Burrocacao",
             "addr": "Via Gaetano Donizetti, 43, 40026 Imola BO",
             "tel": "338 3100854",
-            "note": "Accetta pagamenti con Satispay"
+            "satispay": 1
          },
          {
             "name": "Gelateria Ferri",
             "addr": "Via Giovanni X, 15, 40026 Imola BO",
             "tel": "388.4442316",
-            "note": "Torte e gelato con servizio di consegna gratuita a domicilio. Prenotazioni entro le ore 19:00 – Consegne dalle 16:00 alle 22:00 anche su WhatsApp. Accetta pagamenti con Satispay."
+            "note": "Torte e gelato con servizio di consegna gratuita a domicilio. Prenotazioni entro le ore 19:00 – Consegne dalle 16:00 alle 22:00 anche su WhatsApp. ",
+            "satispay": 1
          },
          {
             "name": "Gelateria Nord Pol",
@@ -677,7 +680,6 @@
             "mail": "titu.bimbi@gmail.com",
             "site": "http://www.titubimbi.it",
             "fb": "https://www.facebook.com/titubimbi/",
-            "note": "",
             "addr": "via Appia 36, 40026 Imola BO"
          }
       ]
