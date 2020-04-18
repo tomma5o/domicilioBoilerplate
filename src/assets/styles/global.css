@@ -9,11 +9,12 @@
 	--orange-300: #fbd38d;
 	--green-300: #9ae6b4;
 	--red-300: #e69a9a;
+   --red-500: #ff5b5b;
 	--yellow-300: #faf089;
 	--yellow-700: #b7791f;
 	--blue-300: #90cdf4;
 	--blue-500: #4299e1;
-	--blue-700: #2b6cb0;
+   --blue-700: #2b6cb0;
 }
 
 body {
@@ -45,7 +46,8 @@ body {
 		--bg: #1a212d;
 		--gray-200: #272f3d;
 		--gray-500: #3b4455;
-		--gray-700: #8c9499;
+      --gray-700: #8c9499;
+      --red-500: #d49e9e;
 	}
 
 	body {
