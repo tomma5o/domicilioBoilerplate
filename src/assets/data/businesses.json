@@ -231,7 +231,7 @@
             "name": "Caffè Emilia",
             "tel": "340 7369906",
             "mail": "Glello75@libero.it",
-            "note": "Consegna a Domicilio per colazione, pranzi, Vino con vasta scelta nella nostra enoteca ed aperitivi. Chiuso la Domenica",
+            "note": "Consegna a domicilio per colazione, pranzi, vino con vasta scelta nella nostra enoteca ed aperitivi. Chiuso la Domenica",
             "satispay": 1
          },
          {
@@ -793,6 +793,17 @@
             "tel": "338.9763854",
             "note": "Produzione e vendita vini Bio in bottiglia e in Bag Box. Ordini telefonici."
          },
+         {
+            "newEntry": 1,
+            "name": "Azienda vinicola e agriturismo Trerè",
+            "tel": "054647034",
+            "satispay": 1,
+            "mail": "trere@trere.com",
+            "fb": "https://m.facebook.com/Trerenonsolovino/",
+            "site": "https://www.trere.com/",
+            "gmap": "https://g.page/trerefaenza",
+            "addr": "Via Casale, 19, 48018 Faenza RA"
+         },
          { "name": "Cafè del Grillo", "tel": "3470131723", "satispay": 1 },
          {
             "name": "Hopinion Birrificio Imolese Agricolo",
@@ -931,11 +942,21 @@
       "icon": "💇‍♀️",
       "data": [
          {
-            "newEntry": 1,
             "name": "3P Parrucchieri",
             "tel": "3490971716",
             "fb": "https://www.facebook.com/3PParrucchieri",
             "note": "Consegna in tutto il comprensorio"
+         },
+         {
+            "newEntry": 1,
+            "name": "Esser Bella parrucchiera",
+            "tel": "3489343876",
+            "satispay": 1,
+            "mail": "info@esserbella.it",
+            "fb": "https://www.facebook.com/EsserBellaParrucchiera",
+            "note": "Consegna solo nel comune di Imola",
+            "gmap": "https://goo.gl/maps/DNM3SpDMrL9j8X5c8",
+            "addr": "Via Turibio Baruzzi, 5/B, 40026 Imola BO"
          },
          {
             "name": "Hair Stylist Look Center",
