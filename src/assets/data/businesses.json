@@ -19,17 +19,20 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "340 6832410 ",
             "mail": "franicola@libero.it",
-            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/",
+            "satispay": 1
          },
          {
             "name": "Folli prodotti Ortofrutticoli",
-            "tel": ["3336687712", "3409128427"]
+            "tel": ["3336687712", "3409128427"],
+            "satispay": 1
          },
          {
             "name": "La Misticanza",
             "addr": "Via Pietro Baroncini, 21, 40026 Imola BO",
             "mail": "lamisticanza-19@gmail.com",
-            "tel": "320 2465995"
+            "tel": "320 2465995",
+            "satispay": 1
          },
          {
             "name": "Le 5 Stagioni",
@@ -47,7 +50,8 @@
             "addr": "via f.Orsini n 7 t",
             "mail": "manarafrutta@alice.it",
             "tel": "0542 28061",
-            "fb": "https://www.facebook.com/Manara-Frutta-e-Verdura-1086500428178477/"
+            "fb": "https://www.facebook.com/Manara-Frutta-e-Verdura-1086500428178477/",
+            "satispay": 1
          },
          {
             "name": "Marca Oro - frutta e verdura",
@@ -110,7 +114,7 @@
          {
             "name": "La Valle delle Albicocche",
             "tel": "3341308514",
-            "site": "//www.lavalledellealbicocche.it",
+            "site": "https://www.lavalledellealbicocche.it",
             "note": "Consegna in tutto il comprensorio. Frutta, verdura e trasformati. Vendita unicamente online con consegna a domicilio gratuita (entro quattro giorni all'ordine)"
          },
          {
@@ -149,7 +153,8 @@
             "addr": "via Felice Orsini 35",
             "mail": "info@chaimandir.com",
             "tel": "0542 27950",
-            "site": "http://www.chaimandir.com"
+            "site": "http://www.chaimandir.com",
+            "satispay": 1
          },
          {
             "name": "Drogheria presso mercato coperto \"Il Borghetto\"",
@@ -178,12 +183,14 @@
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "338 1477866",
             "mail": "franicola@libero.it",
-            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/",
+            "satispay": 1
          },
          {
             "name": "Macelleria Angeli",
             "tel": "0542.692542",
-            "note": "Consegne a domicilio."
+            "note": "Consegne a domicilio.",
+            "satispay": 1
          },
          {
             "name": "Pescheria \"Il Borghetto\"",
@@ -196,14 +203,16 @@
             "addr": "presso mercato coperto \"Il Borghetto\", piazzale Ragazzi del '99 - Imola",
             "tel": ["0542 26715", "351 7776754"],
             "mail": "franicola@libero.it",
-            "fb": "https://www.facebook.com/mercatocopertoilborghetto/"
+            "fb": "https://www.facebook.com/mercatocopertoilborghetto/",
+            "satispay": 1
          },
          {
             "name": "Puro - quelli del caffè",
             "addr": "via giovanni x, 88/h",
             "mail": "info@puroquellidelcaffe.it",
             "tel": "370 3759246",
-            "site": "https://www.puroquellidelcaffe.it/"
+            "site": "https://www.puroquellidelcaffe.it/",
+            "satispay": 1
          }
       ]
    },
@@ -234,7 +243,8 @@
          {
             "name": "Caffè della Rocca",
             "tel": "338.9543526",
-            "note": "Attivi con il servizio di consegna a domicilio per le colazioni il pranzo e il vino tutti i giorni per dalle 8:00 alle 14:30 con consegna gratuita. Colazioni con pancake e waffle – Ordini entro le 19:00 del giorno prima. A pranzo ogni giorno un piatto differente – Piadine cotte tutti i giorni (Ordini per fare una scorta e tenere nel feezer). Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici. Pagamenti in contanti e (prossimamente) satipay. Attività di preparazione e consegna in massima sicurezza."
+            "note": "Attivi con il servizio di consegna a domicilio per le colazioni il pranzo e il vino tutti i giorni per dalle 8:00 alle 14:30 con consegna gratuita. Colazioni con pancake e waffle – Ordini entro le 19:00 del giorno prima. A pranzo ogni giorno un piatto differente – Piadine cotte tutti i giorni (Ordini per fare una scorta e tenere nel feezer). Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici. Pagamenti in contanti e (prossimamente) satipay. Attività di preparazione e consegna in massima sicurezza.",
+            "satispay": 1
          },
          {
             "name": "Cioccolateria Imola",
@@ -268,7 +278,8 @@
             "name": "Forno Pasticceria Katanè",
             "tel": "054223244",
             "mail": "fornopasticceriakatane@delisgroup.it",
-            "note": "Consegna in tutto il comprensorio"
+            "note": "Consegna in tutto il comprensorio",
+            "satispay": 1
          },
          {
             "name": "Il Ghiottone",
@@ -345,11 +356,6 @@
             "satispay": 1
          },
          {
-            "name": "Ristorante Pizzeria Donatello",
-            "tel": "380.5883904",
-            "note": " Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
-         },
-         {
             "name": "Ristorante Pizzeria da Valerio",
             "tel": "0542.011286",
             "note": "Attivi tutti i giorni – Negli orari 12:00-14:00 e 18:30-21:00 servizio a domicilio. Oltre alle consegne a domicilio attivo il nuovo servizio “Take away” con prenotazione dei piatti o della pizza e ritiro senza scendere dall’auto.",
@@ -390,7 +396,8 @@
          {
             "name": "Chiosco La Nuova Greppia Piadineria",
             "tel": "340 4033521",
-            "addr": "Via Emilia, 287, 40026 Imola BO"
+            "addr": "Via Emilia, 287, 40026 Imola BO",
+            "satispay": 1
          },
          {
             "name": "Da Lori Piadineria",
@@ -398,14 +405,15 @@
             "note": "Pizza a scelta e hamburger. Servizio a domicilio gratuito rispettando tutte le norme igieniche sanitarie."
          },
          {
-            "name": "Le3marie",
+            "name": "Le 3 marie",
             "tel": ["0542.851761", "338.3089378"],
             "note": "Piadineria, primi piatti e secondi – Attivi con il servizio di consegna gratuita a domicilio da martedì alla Domenica. Per le consegne del pranzo richiedono l’ordine entro le 12:00 del giorno precedente. Per la consegna della sera ordini anche nel pomeriggio per la sera stessa. Servizio di consegna a domicilio negli orari 12:00-14:00 e dalle 18:00 alle 21:00. Trovate il menù sulla loro pagina Facebook e Instagram."
          },
          {
             "name": "Piadinaland",
             "tel": "348.7923772",
-            "note": "Attivi con il servizio di consegna a domicilio. Ordini telefonici specificando l’orario di consegna."
+            "note": "Attivi con il servizio di consegna a domicilio. Ordini telefonici specificando l’orario di consegna.",
+            "satispay": 1
          },
          {
             "name": "Piadinosauro - La Baracchina",
@@ -423,13 +431,21 @@
             "note": "Attivi dal Martedì al Venerdì a cena e Sabato e Domenica a pranzo e cena. Consegne gratuite a  domicilio."
          },
          {
+            "name": "Anonima Fornelli",
+            "addr": "Via Emilia, 38, 40026 Imola BO",
+            "site": "//anonimafornelli.it",
+            "tel": "0542 24755",
+            "satispay": 1
+         },
+         {
             "name": "Da Noi Osteria e Vini",
             "tel": "0542.24045",
             "note": "Siamo attivi a partire da 11/3 con le consegne a domicilio dalle 18:00 alle 22:00"
          },
          {
             "name": "Fabbrica Gastronomica",
-            "fb": "https://www.facebook.com/fabbrica.gastronomica/"
+            "fb": "https://www.facebook.com/fabbrica.gastronomica/",
+            "satispay": 1
          },
          {
             "name": "Forum Cornelii",
@@ -451,15 +467,10 @@
             "note": "Attivi con le consegne a domicilio Venerdì e Sabato sera con sconto del 25%."
          },
          {
-            "name": "Poggiopollino Ristorante",
+            "name": "Poggio Pollino Ristorante",
             "tel": "331.6125474",
-            "note": "Attivi tutti i giorni a pranzo e cena con servizio di consegna a domicilio. Ogni 30€ in omaggio una bottiglia di vino. Prenotazioni almeno 1 ora prima della consegna."
-         },
-         {
-            "name": "Ristorante Anonima Fornelli",
-            "addr": "Via Emilia, 38, 40026 Imola BO",
-            "site": "//anonimafornelli.it",
-            "tel": "0542 24755"
+            "note": "Attivi tutti i giorni a pranzo e cena con servizio di consegna a domicilio. Ogni 30€ in omaggio una bottiglia di vino. Prenotazioni almeno 1 ora prima della consegna.",
+            "satispay": 1
          },
          {
             "name": "Ristorante Campanaccio",
@@ -496,7 +507,7 @@
          {
             "name": "Ristorante Pizzeria Donatello",
             "tel": "380.5883904",
-            "note": " Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
+            "note": "Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
          },
          {
             "name": "Sicilia Bedda... la buona gastronomia siciliana",
@@ -509,7 +520,8 @@
             "name": "Trattoria la Sterlina",
             "addr": "Via Nuova, 16, 40026 Imola BO",
             "tel": "0542.55030",
-            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-13:30 e 18:00-21:00"
+            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-13:30 e 18:00-21:00",
+            "satispay": 1
          },
          {
             "name": "Vivanderia Note e Aromi",
@@ -531,7 +543,8 @@
          {
             "name": "Agriturismo La Marletta",
             "tel": "348.0977076",
-            "note": "Attivi il Venerdì, Sabato e Domenica con servizio di consegne a domicilio. Orario degli ordini (cena): fino alle 20:30. Consegne dalle 19:00 alle 21:30. Domenica (pranzo) Orario degli Ordini: entro le 13:00 – Consegne dalle 12:00 alle 14:00. Consegna gratuita nel comune di Imola. Pagamento solo in contanti."
+            "note": "Attivi il Venerdì, Sabato e Domenica con servizio di consegne a domicilio. Orario degli ordini (cena): fino alle 20:30. Consegne dalle 19:00 alle 21:30. Domenica (pranzo) Orario degli Ordini: entro le 13:00 – Consegne dalle 12:00 alle 14:00. Consegna gratuita nel comune di Imola. Pagamento solo in contanti.",
+            "satispay": 1
          }
       ]
    },
@@ -541,7 +554,7 @@
          {
             "name": "Gusto Rama",
             "tel": "334.3856812",
-            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-21:00 con orario continuato. Trovate il menù del giorno sulla nostra pagina Facebook e Instagram. "
+            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-21:00 con orario continuato. Trovate il menù del giorno sulla nostra pagina Facebook e Instagram."
          },
          {
             "name": "Pastificio Gigliola - Produzione Di Pasta Fresca Artigianale",
@@ -566,9 +579,10 @@
       "icon": "🍦",
       "data": [
          {
-            "name": "Alsi Gelateria",
+            "name": "AlSi Gelateria",
             "tel": "338.3856912",
-            "note": "Attivi con le consegne a domicilio nel comune di Imola tutti i giorni delle 12:00 alle 21:30"
+            "note": "Consegne a domicilio nel comune di Imola tutti i giorni delle 12:00 alle 21:30",
+            "satispay": 1
          },
          {
             "name": "Angolo del Gelato",
@@ -578,20 +592,16 @@
          },
          {
             "name": "Burrocacao Gelateria Artigianale",
+            "addr": "Via Gaetano Donizetti, 43, 40026 Imola BO",
             "tel": "338.3100854",
-            "note": "Attivi con le consegna gratuita a domicilio."
+            "note": "Consegna gratuita a domicilio.",
+            "satispay": 1
          },
          {
             "name": "GIOELIA - Emilia Cremeria Imola",
             "addr": "Via Appia, 42, 40026 Imola BO",
             "site": "//cremeriaemilia.com",
             "tel": "0542 25719"
-         },
-         {
-            "name": "Gelateria Burrocacao",
-            "addr": "Via Gaetano Donizetti, 43, 40026 Imola BO",
-            "tel": "338 3100854",
-            "satispay": 1
          },
          {
             "name": "Gelateria Ferri",
@@ -603,7 +613,8 @@
          {
             "name": "Gelateria Nord Pol",
             "tel": "054226358",
-            "mail": "gelaterianordpol@libero.it"
+            "mail": "gelaterianordpol@libero.it",
+            "satispay": 1
          },
          {
             "name": "Gelateria Sesto Senso",
@@ -630,11 +641,20 @@
             "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
          },
          {
+            "name": "Giù Giù e Bebè Sorriso ",
+            "mail": "mammachiocciaimola@gmail.com",
+            "fb": "https://www.facebook.com/giugiuebebesorriso/",
+            "tel": "3890715322",
+            "note": "Consegna anche fuori comune",
+            "satispay": 1
+         },
+         {
             "name": "La cicogna",
             "addr": "viale carducci, 14/a",
             "mail": "info@lacicogna-imola.it",
             "tel": "0542 28123",
-            "fb": "https://www.facebook.com/LaCicognaImola/"
+            "fb": "https://www.facebook.com/LaCicognaImola/",
+            "satispay": 1
          },
          {
             "name": "La città dei giochi",
@@ -645,7 +665,7 @@
             "fb": "https://www.facebook.com/lacittadeigiochi/"
          },
          {
-            "name": "La vispa Teresa snc",
+            "name": "La vispa Teresa",
             "addr": "Piazza Bianconcini 6/7",
             "mail": "lavispateresa04@libero.it",
             "tel": "0542 20992",
@@ -653,23 +673,26 @@
             "fb": "https://www.facebook.com/lavispateresaimola/"
          },
          {
-            "name": "MamiGi",
+            "name": "MamiGì",
             "tel": "0542012526",
             "mail": "info@mamigi.it",
             "site": "https://www.mamigi.it/",
-            "note": "Articoli e abbigliamento bimbi e neonati"
+            "note": "Articoli e abbigliamento bimbi e neonati",
+            "satispay": 1
          },
          {
             "name": "Mammanatura",
             "mail": "info@mammanatura.bio",
             "tel": "0542 30365",
             "site": "//mammanatura.bio",
-            "note": "Consegna a domicilio gratuita su Imola e comprensorio"
+            "note": "Consegna a domicilio gratuita su Imola e comprensorio",
+            "satispay": 1
          },
          {
             "name": "Pom Pon",
             "mail": "diciassettesnc@gmail.com",
-            "tel": ["3402913550", "3393878212"]
+            "tel": ["3402913550", "3393878212"],
+            "satispay": 1
          },
          {
             "name": "Prenatal",
@@ -677,12 +700,6 @@
             "mail": "neg70369@prenatal.com",
             "tel": "0542 28510",
             "fb": "https://www.facebook.com/Pr%C3%A8natal-Imola-2066743986962118/"
-         },
-         {
-            "name": "Spaccio Pannolini imola",
-            "mail": "mammachiocciaimola@gmail.com",
-            "tel": "3890715322",
-            "note": "Consegna anche fuori comune"
          },
          {
             "name": "Titù bimbi",
@@ -776,18 +793,20 @@
             "tel": "338.9763854",
             "note": "Produzione e vendita vini Bio in bottiglia e in Bag Box. Ordini telefonici."
          },
-         { "name": "Cafè del Grillo", "tel": "3470131723" },
+         { "name": "Cafè del Grillo", "tel": "3470131723", "satispay": 1 },
          {
-            "name": "Hop!nion Birrificio Imolese Agricolo",
+            "name": "Hopinion Birrificio Imolese Agricolo",
             "tel": ["340.5856032", "348.7793909"],
-            "note": "Birrificio Agricolo. Sono attivi con il servizio di consegna a domicilio gratuita per le birre di propria produzione e di altri prodotti agricoli delle aziende della zona quali: vino (Cantina Tampieri), farina macinata a pietra grano Senatore Capelli (Stefano Quartieri), passata di pomodoro, miele (Il Mielaio del Guelfo), Raviole, crostate, succhi di frutta (Il bertuzzo – prodotti BIO Succhi di frutta) e Olio extravergine d’oliva. Sconti elevati per tutto il periodo di Quarantena."
+            "note": "Birrificio Agricolo. Sono attivi con il servizio di consegna a domicilio gratuita per le birre di propria produzione e di altri prodotti agricoli delle aziende della zona quali: vino (Cantina Tampieri), farina macinata a pietra grano Senatore Capelli (Stefano Quartieri), passata di pomodoro, miele (Il Mielaio del Guelfo), Raviole, crostate, succhi di frutta (Il bertuzzo – prodotti BIO Succhi di frutta) e Olio extravergine d’oliva. Sconti elevati per tutto il periodo di Quarantena.",
+            "satispay": 1
          },
          {
             "name": "In enoteca",
             "tel": "320 3693008",
             "mail": "info@inenotecaimola.com",
             "site": "http://www.inenotecaimola.com",
-            "fb": "https://www.facebook.com/In-Enoteca-Imola-146574662141153/"
+            "fb": "https://www.facebook.com/In-Enoteca-Imola-146574662141153/",
+            "satispay": 1
          },
          {
             "newEntry": 1,
@@ -807,7 +826,8 @@
          {
             "name": "Top of the Hops - Birreria",
             "tel": "3396666642",
-            "mail": "info@topofthehops.it"
+            "mail": "info@topofthehops.it",
+            "satispay": 1
          }
       ]
    },
@@ -818,24 +838,28 @@
             "name": "Fioraio Ceroni",
             "tel": "347 2840177",
             "mail": "patriziaceroni62@gmail.com",
-            "note": "Consegna in tutto il comprensorio"
+            "note": "Consegna in tutto il comprensorio",
+            "satispay": 1
          },
          {
             "name": "Neve in Fiore",
             "mail": "neveinfiore@gmail.com",
-            "tel": "3913354258"
+            "tel": "3913354258",
+            "satispay": 1
          },
          {
             "name": "PERVINCA fiori & decori",
             "mail": "ghinisara@virgilio.it",
             "tel": "3922875979",
-            "note": "Fiori piante candele diffusori"
+            "note": "Fiori piante candele diffusori",
+            "satispay": 1
          },
          {
             "name": "Papaveri e Papere",
             "mail": "papaveriepapere@icloud.com",
             "tel": "3396340693",
-            "note": "Consegnamo ad Imola e zone limitrofe"
+            "note": "Consegnamo ad Imola e zone limitrofe",
+            "satispay": 1
          }
       ]
    },
@@ -874,14 +898,16 @@
             "tel": "370 370 5681",
             "mail": "maderaimola@gmail.com",
             "fb": "https://www.facebook.com/Madera-creative-outfit-104941370893936/",
-            "addr": "via Emilia 193, 40026 Imola BO"
+            "addr": "via Emilia 193, 40026 Imola BO",
+            "satispay": 1
          },
          {
             "name": "Merceria Ivonne",
             "addr": "via Cavour 22/a",
             "mail": "merceriaivonne@libero.it",
             "tel": "334 8409824",
-            "fb": "https://www.facebook.com/Ivonne-merceria-1384366248556136/"
+            "fb": "https://www.facebook.com/Ivonne-merceria-1384366248556136/",
+            "satispay": 1
          },
          {
             "name": "Pro Match",
@@ -896,7 +922,8 @@
             "addr": "Viale Zappi, 56",
             "mail": "info@sportimeimola.it",
             "tel": "391 763450",
-            "site": "http://www.sportimeimola.it"
+            "site": "http://www.sportimeimola.it",
+            "satispay": 1
          }
       ]
    },
