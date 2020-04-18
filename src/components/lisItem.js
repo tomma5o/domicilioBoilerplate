@@ -26,7 +26,7 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry, satispay }
 					{note && (
 						<span
 							onClick={handleClick}
-							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-300 rounded-lg"
+							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
 							role="img"
 							aria-label="warning"
 						>
@@ -47,7 +47,7 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry, satispay }
                {fb && (
 						<a href={`${fb}`}>
 							<span
-								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-orange-300 rounded-lg"
+								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-indigo-600 rounded-lg"
 								role="img"
 								aria-label="facebook"
 							>
@@ -58,7 +58,7 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry, satispay }
 					{mail && (
 						<a href={`mailto:${mail}`}>
 							<span
-								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
+								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-500 rounded-lg"
 								role="img"
 								aria-label="e-mail"
 							>
