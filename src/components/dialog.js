@@ -36,7 +36,7 @@ export const Dialog = ({
 				{note && <D_Notes {...{note}} />}
 				<D_Contacts {...{tel, mail, site}} />
 				{payments && <D_Payments {...{payments}} />}
-				{services && <D_Services {...{services, name}} />}
+				{services && <D_Services {...{services}} />}
 			</div>
 		</dialog>
 	);
