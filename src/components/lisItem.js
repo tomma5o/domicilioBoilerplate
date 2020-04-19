@@ -30,6 +30,17 @@ export const ListItem = (props) => {
 							ℹ️
 						</span>
 					}
+					{mail && !site && !tel && (
+						<a href={`mailto:${mail}`}>
+							<span
+								class="inline-block mx-2 w-8 h-8 bg-orange-300 text-center leading-8 rounded-lg cursor-pointer"
+								role="img"
+								aria-label="mail"
+							>
+							✉️
+							</span>
+						</a>
+					)}
 					{site && !tel && (
 						<a href={`${site}`}>
 							<span
