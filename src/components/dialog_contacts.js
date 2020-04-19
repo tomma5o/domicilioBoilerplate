@@ -3,7 +3,9 @@ import { Fragment } from "preact";
 // Utils
 import cleanUrls from '../utils/cleanUrls'
 
-function Tel({isArrayOfTel, tel}) {
+function Tel({tel}) {
+	const isArrayOfTel = Array.isArray(tel);
+
 	return ( isArrayOfTel
 		? tel.map((telNumber, i) => (
 			<a href={`tel:${telNumber}`} class="inline-block rounded-lg text-sm font-semibold text-gray-700">
@@ -11,15 +13,13 @@ function Tel({isArrayOfTel, tel}) {
 				{tel.length !== i+1 && <span class="mx-2">-</span>}
 			</a>
 		))
-		: <span class="inline-block rounded-lg text-sm font-semibold text-gray-700">
+		: <a href={`tel:${tel}`} class="inline-block rounded-lg text-sm font-semibold text-gray-700">
 			{tel}
-		</span>
+		</a>
 	);
 }
 
 export const D_Contacts = ({tel, mail, site}) => {
-	const isArrayOfTel = Array.isArray(tel);
-
 	return (
 		<Fragment>
 			<h3 class="text-lg font-bold mb-2">Contatti</h3>
@@ -33,7 +33,7 @@ export const D_Contacts = ({tel, mail, site}) => {
 						>
 						📞
 						</span>
-						<Tel {...{isArrayOfTel, tel}} />
+						<Tel {...{tel}} />
 					</p>
 				)}
 				{site && (
