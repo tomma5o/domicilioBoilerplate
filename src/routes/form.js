@@ -26,8 +26,17 @@ export default function Form() {
 					</label>
 				</p>
 				<p class="my-5">
-					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Consegna in tutta la provincia</label>
-					<input type="checkbox" name="province-delivery" />
+					<label class="block text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Consegna in tutta la provincia</label>
+					<div class="flex">
+						<label class="flex flex-col mr-5 px-2">
+							<span>Si</span>
+							<input type="radio" name="province-delivery" required value="yes" />
+						</label>
+						<label class="flex flex-col mr-5 px-2">
+							<span>No</span>
+							<input type="radio" name="province-delivery" required value="no" />
+						</label>
+					</div>
 				</p>
 				<p class="my-5">
 					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Note
