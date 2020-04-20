@@ -47,11 +47,11 @@ export const ListItem = ({ name, tel, site, fb, mail, note, newEntry, satispay }
                {fb && (
 						<a href={`${fb}`}>
 							<span
-								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-indigo-600 rounded-lg"
+								class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer font-bold text-trueWhite text-center text-lg leading-8 bg-blue-700 rounded-lg"
 								role="img"
 								aria-label="facebook"
 							>
-							👍
+							f
 							</span>
 						</a>
 					)}
