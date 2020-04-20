@@ -1,7 +1,6 @@
 import { Component, Fragment } from 'preact';
 
-import { ListCategory } from '../components/listCategory';//empty
-import { NumberResults } from '../components/numberResults';
+import { ListCategory } from '../components/listCategory';
 
 export default class Home extends Component {
 	state = {
@@ -22,15 +21,15 @@ export default class Home extends Component {
    };
 
    calculateStoresNumber() {
-	const { results: stores } = this.props;
-	const keys = Object.keys(stores);
-	let storesNumber = 0;
-	for (const key of keys) {
-		storesNumber += stores[key].data.length;
-	}
-	return storesNumber;
-   }
-
+	   const { results: stores } = this.props;
+	   const keys = Object.keys(stores);
+	   let storesNumber = 0;
+	   for (const key of keys) {
+		   storesNumber += stores[key].data.length;
+		}
+	    return storesNumber;
+	 }
+	 
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
 		const regex = new RegExp(`${filter}`, 'i');
@@ -53,13 +52,13 @@ export default class Home extends Component {
 	render(props, { filter, categoryFilter }) {
 		const { results: stores } = props;
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
-		const storesNumber = this.calculateStoresNumber();
-
+		const storesNumber = this.calculateStoresNumber()
+		
 		return (
 			<Fragment>
 				{storesNumber>0 && (
 				<div class="text-center mt-2 pb-5">
-					Ci sono <span class="font-semibold">{storesNumber}</span> attività in archivio!
+					A <span class="capitalize">{process.env.PREACT_APP_CITY}</span> sono presenti <span class="font-semibold">{storesNumber}</span> attivit&agrave; che consegnano a domicilio
 				</div>
 				)}
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
