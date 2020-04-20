@@ -1,7 +1,8 @@
 module.exports = {
 	theme: {
 		colors: {
-			white: 'var(--bg)',
+         white: 'var(--bg)',
+         trueWhite: "#ffffff",
 			gray: {
 				200: 'var(--gray-200)',
 				500: 'var(--gray-500)',
@@ -25,9 +26,6 @@ module.exports = {
 			yellow: {
 				300: 'var(--yellow-300)',
 				700: 'var(--yellow-700)',
-         },
-         indigo: {
-            600: 'var(--indigo-600)'
          }
 		},
 	}
