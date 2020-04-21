@@ -29,6 +29,16 @@ export default class Home extends Component {
 		}
 	    return storesNumber;
 	 }
+
+	 getFinalSentence() {
+		const { results: stores } = this.props;
+		const keys = Object.keys(stores);
+		let sentence = "";
+		if (keys > 2) {
+			sentence = "tra " + keys[0] + ", " + keys[1] + " e " + keys[2];
+		}
+		return sentence;
+	 }
 	 
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
@@ -53,12 +63,13 @@ export default class Home extends Component {
 		const { results: stores } = props;
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
 		const storesNumber = this.calculateStoresNumber()
+		const finalSentence = this.getFinalSentence()
 		
 		return (
 			<Fragment>
 				{storesNumber>0 && (
 				<div class="text-center mt-2 pb-5">
-					A <span class="capitalize">{process.env.PREACT_APP_CITY}</span> sono presenti <span class="font-semibold">{storesNumber}</span> attivit&agrave; che consegnano a domicilio
+					A <span class="capitalize">{process.env.PREACT_APP_CITY}</span> sono presenti <span class="font-semibold">{storesNumber}</span> attivit&agrave; {finalSentence} che consegnano a domicilio
 				</div>
 				)}
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
