@@ -1,14 +1,300 @@
 {
-   "Supermercati": {
-      "icon": "🛒",
+
+   "Pizzerie": {
+      "icon": "🍕",
       "data": [
          {
+            "name": "Andy & Flo",
+            "tel": "0542.640109",
+            "fb": "//www.facebook.com/Andy-Flo-1417704201845485",
+            "note": "Pizzeria attiva con il servizio di consegna a domicilio. Dal Martedì al Venerdì solo la sera mentre Sabato e Domenica attivi sia a pranzo che a cena."
+         },
+         {
+            "name": "Ci.Bo’ Pizzeria Ristò",
+            "tel": "0542.25477",
+            "mail": "info@cibo-pizzeriaristo.it",
+            "fb": "//www.facebook.com/CiBo-pizzeria-rist%C3%B2-1452449751677071",
+            "note": "Aperti con il servizio di asporto a domicilio."
+         },
+         {
+            "name": "La Voglia Matta",
+            "tel": "0542.850132",
+            "fb": "//www.facebook.com/La-Voglia-Matta-Imola-426769174063866",
+            "note": "Attivi con la il servizio gratuito di consegna a domicilio. Ordini dalle 11:00 alle 13:00 per la sera. Consegne a partire dalle ore 18:00. Per semplificare ed accorciare i tempi di consegna non accattano ordinazioni per pizze giganti, metri e mezzi metri e calzoni."
+         },
+         {
+            "name": "Pizzeria I Munel",
+            "tel": "0542.43274",
+            "fb": "//www.facebook.com/RistorantePizzeriaIMunel",
+            "note": "Consegna a domicilio tutti i giorni tranne il Mercoledì dalle 18:30 alle 22:00"
+         },
+         {
+            "name": "Pizzeria La Lanterna (i nanetti)",
+            "addr": "Via G.Mazzini, 21, 40026 Imola BO",
+            "fb": "//www.facebook.com/lalanternaimola.it",
+            "tel": "0542 26296",
+            "satispay": 1
+         },
+         {
+            "name": "Pizzeria Milana",
+            "tel": ["054242200", "0542627240"],
+            "mail": "pizzeriamilana@gmail.com",
+            "site": "//www.pizzeriamilana.it/",
+            "fb": "//www.facebook.com/pages/Pizzeria%20Milana%20-%20Ristoranti%20E%20Pizzerie/187969714560616/",
+            "note": "Consegna a domicilio in tutto il comprensorio di pizze con vari impasti, anche SENZA GLUTINE. Tutti i giorni compreso il giorno di Pasqua, dalle ore 18:00. Pagamenti anche con bancomat e/o carta di credito."
+         },
+         {
+            "name": "Pizzeria Reginella",
+            "tel": "0542 1894049",
+            "fb": "//www.facebook.com/pizzeriareginella2014"
+         },
+         {
+            "name": "Pizzeria Zolino",
+            "tel": "388.7835340",
+            "fb": "//www.facebook.com/Pizzeria-Zolino-209300093193852",
+            "note": "Pizzeria d’asporto – Attivo il servizio di consegna a domicilio tutti i giorni dalle ore 18:00 alle 21:30"
+         },
+         {
+            "name": "Ristorante Pizzeria da Valerio",
+            "tel": "0542.011286",
+            "fb": "//www.facebook.com/PizzeriaValerio",
+            "note": "Attivi tutti i giorni – Negli orari 12:00-14:00 e 18:30-21:00 servizio a domicilio. Oltre alle consegne a domicilio attivo il nuovo servizio “Take away” con prenotazione dei piatti o della pizza e ritiro senza scendere dall’auto.",
+            "satispay": 1
+         },
+         {
+            "name": "Ristorante e Pizzeria Anema e Core",
+            "addr": "Via Selice Provinciale, 44/b, 40026 Imola BO",
+            "fb": "//www.facebook.com/Pizzeria-Anema-e-Core-102488027924687",
+            "tel": ["0542 31328", "380 151 1599"]
+         }
+      ]
+   },
+   "Ristoranti": {
+      "icon": "🍽",
+      "data": [
+         {
+            "name": "Andy & Flo",
+            "tel": "0542.640109",
+            "fb": "//www.facebook.com/Andy-Flo-1417704201845485",
+            "note": "Attivi dal Martedì al Venerdì a cena e Sabato e Domenica a pranzo e cena. Consegne gratuite a  domicilio."
+         },
+         {
+            "name": "Anonima Fornelli",
+            "addr": "Via Emilia, 38, 40026 Imola BO",
+            "site": "//anonimafornelli.it",
+            "fb": "//www.facebook.com/Anonima-Fornelli-167093829971859",
+            "tel": "0542 24755",
+            "satispay": 1
+         },
+         {
             "newEntry": 1,
-            "name": "Conad Carducci",
-            "tel": "0542 30485",
-            "mail": "negozio@carducci-srl.it",
-            "fb": "//www.facebook.com/ConadImolaVialeCarducci/",
-            "site": "http://shop.carducci-srl.it/"
+            "name": "Cà delle Querce",
+            "tel": "0542 690176",
+            "satispay": 1,
+            "mail": "cadellequerce@gmail.com",
+            "fb": "//www.facebook.com/profile.php?id=100008860025460"
+         },
+         {
+            "name": "Da Noi Osteria e Vini",
+            "tel": "0542.24045",
+            "fb": "//www.facebook.com/danoiosteriaevini",
+            "note": "Siamo attivi a partire da 11/3 con le consegne a domicilio dalle 18:00 alle 22:00"
+         },
+         {
+            "name": "Fabbrica Gastronomica",
+            "tel": "0542 35502",
+            "email": "fabbrica.gastronomica@hotmail.it",
+            "fb": "//www.facebook.com/fabbrica.gastronomica/",
+            "satispay": 1
+         },
+         {
+            "name": "Forum Cornelii",
+            "tel": ["0542.23903 ", "324.8460804", "335.6806997"],
+            "mail": "info@forumcornelii.com",
+            "fb": "//www.facebook.com/forumcornelii",
+            "note": "La nostra picanha potete continuare a gustarla a domicilio dal lunedì al venerdì pranzo e cena. Attivi con cosegne a domicilio di vino e piatti del ristorante. Consegna gratuita con tutte le precauzioni del caso (mascherina e guanti). Prenotazioni anche su le Piattaforme Deliveroo e  JustEat. Ristorante: menù a prezzi ridotti. Consegne di vino e piatti del ristorante Lunedì-Venerdì dalle 12:30 alle 14:30 e dalle 19:00 alle 21:30. Consegna in tutto il comprensorio."
+         },
+         {
+            "name": "Hostaria 900",
+            "addr": "Viale Dante, 20",
+            "mail": "hostaria900@hostaria900.it",
+            "tel": ["0542.24211", "347 3091215"],
+            "fb": "//www.facebook.com/hostaria900/",
+            "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
+         },
+         {
+            "newEntry": 1,
+            "name": "La Tavernetta",
+            "tel": "0542 22417",
+            "mail": "mauro.paolini52@gmail.com"
+         },
+         {
+            "name": "Le Magie di Bacco",
+            "tel": "0542.31280",
+            "fb": "//www.facebook.com/magiedibacco",
+            "note": "Attivi con le consegne a domicilio Venerdì e Sabato sera con sconto del 25%."
+         },
+         {
+            "newEntry": 1,
+            "name": "Osteria del Teatro",
+            "tel": "3389239291",
+            "satispay": 1,
+            "mail": "danilomartelli@alice.it",
+            "fb": "//www.facebook.com/Osteriadelteatroimola/",
+            "site": "http://www.osteriadelteatro.org/"
+         },
+         {
+            "name": "Poggiopollino Ristorante",
+            "tel": "331.6125474",
+            "fb": "//www.facebook.com/poggiopollino",
+            "note": "Attivi tutti i giorni a pranzo e cena con servizio di consegna a domicilio. Ogni 30€ in omaggio una bottiglia di vino. Prenotazioni almeno 1 ora prima della consegna.",
+            "satispay": 1
+         },
+         {
+            "name": "Ristorante Campanaccio",
+            "tel": "335.6384918",
+            "fb": "//www.facebook.com/il.campanaccio.3",
+            "note": "Servizio di consegna a domicilio attivo tutti i giorni dalle 12:00 alle 14:30 e dalle 18:30 alle 21:30. Ordini entro le ore 19:00 – Consegna gratuita a Imola, Toscanella e Castel San Pietro Terme. Menu aggiornato settimanalmente sulla loro pagina Facebook. Omaggio di una bottiglia di vino Monticino Rosso al raggiungimento di 40€ di ordini."
+         },
+         {
+            "name": "Ristorante Carpe Diem",
+            "tel": "347.4358768",
+            "fb": "//www.facebook.com/carpediemimola",
+            "note": "Carne e pesce. Attivi con le consegne a domicilio tutti i giorni a pra e cena. Ordini telefonici entro le ore 14:00 per la cena e entro le 20:00 del giorno prima per la cena. Consegne solo a Imola. Pagamento in contanti. Dal Mercoledì 2 proposte settimanale (pesce e tradizionale). Per i menù consultate la loro pagina Facebook."
+         },
+         {
+            "name": "Ristorante Controluce",
+            "tel": "388.7764330",
+            "fb": "//www.facebook.com/ControluceImola",
+            "note": "Il menù varia settimanalmente – Consegne a domicilio dalle 19:30 alle 21:30 con ordini telefonici che dovranno pervenire entro le 16:00"
+         },
+         {
+            "name": "Ristorante E Parlamintè",
+            "tel": "0542.30144",
+            "fb": "//www.facebook.com/pages/E%20Parlamint%C3%A8%20(Imola)/449412555095973/",
+            "note": "Sono attivi con il servizio di consegne a domicilio dal Martedì al Venerdì per la cena, Sabato pranzo e cena e Domenica solo a pranzo."
+         },
+         {
+            "name": "Ristorante La Zambra",
+            "tel": "0545.288757",
+            "fb": "//www.facebook.com/RistoranteZambra",
+            "note": "A Lugo, consegna anche ad Imola. Attivi con le consegne a domicilio di piatti di pesce, carne, focacce, piadina, pasta fresca fatta in casa e dolci. Trovate i piatti sulla pagina Facebook. Ordini anche per anche vini bianchi o rossi, bibite in barattolo, Coca Cola in bottiglia e birra da 33 e 66 cl. Chiamare con anticipo rispetto all’orario di consegna."
+         },
+         {
+            "name": "Ristorante Le Bistrot",
+            "tel": ["0542.672122", "340.5574589"],
+            "mail": "info@ristorantelebistrot.it",
+            "site": "//www.ristorantelebistrot.it/",
+            "fb": "//www.facebook.com/ristorantelebistrot",
+            "note": "Il ristorante è attivo con il servizio di consegna a domicilio a cena nei giorni di Venerdi, Sabato con ordini entro le 18:00. Domenica pranzo e cena. Si accettano ordini di Lasagne per Domenica a pranzo. Il menù cambia settimanalmente (guardare su Facebook)"
+         },
+         {
+            "name": "Ristorante Pizzeria Donatello",
+            "tel": "380.5883904",
+            "fb": "//www.facebook.com/ristorantepizzeriadonatello",
+            "note": "Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
+         },
+         {
+            "name": "Sicilia Bedda... la buona gastronomia siciliana",
+            "tel": "054229779",
+            "addr": "via Fratelli Cairoli 2, 40026 Imola BO",
+            "mail": "siciliabedda@blu.it",
+            "fb": "//www.facebook.com/siciliabeddaimola/"
+         },
+         {
+            "name": "Trattoria la Sterlina",
+            "addr": "Via Nuova, 16, 40026 Imola BO",
+            "tel": "0542.55030",
+            "fb": "//www.facebook.com/Trattoria-la-Sterlina-151476190474",
+            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-13:30 e 18:00-21:00",
+            "satispay": 1
+         },
+         {
+            "name": "Vivanderia Note e Aromi",
+            "mail": "vivanderia@gmail.com",
+            "tel": "3489061576",
+            "fb": "//www.facebook.com/Vivanderia",
+            "note": "Attivo il Ristorante con consegne a domicilio tutti i giorni a Imola e circondario. Menù settimanale su Fb. Costo della consegna nel circondario di Imola di 1/2€ con spesa minima di 20€",
+            "satispay": 1
+         }
+      ]
+   },
+   "Agriturismi": {
+      "icon": "👩‍🌾🍽",
+      "data": [
+         {
+            "name": "Agriturismo Colombara",
+            "tel": "339.3448493",
+            "fb": "//www.facebook.com/agri.colombara",
+            "note": "Attivi dal venerdì alla domenica a pranzo e cena con il servizio di consegna a domicilio. Ordini telefonici e consegne. Per il pranzo entro le ore 11:00 e consegna dalle 12:00. Per la la cena ordine telefonico entro le ore 18:00 e consegna dalle 19:00 – Ogni settimana propongono un nuovo menù (guarda su Facebook). La consegna è gratuita. "
+         },
+         {
+            "name": "Agriturismo La Marletta",
+            "tel": "348.0977076",
+            "note": "Attivi il Venerdì, Sabato e Domenica con servizio di consegne a domicilio. Orario degli ordini (cena): fino alle 20:30. Consegne dalle 19:00 alle 21:30. Domenica (pranzo) Orario degli Ordini: entro le 13:00 – Consegne dalle 12:00 alle 14:00. Consegna gratuita nel comune di Imola. Pagamento solo in contanti.",
+            "fb": "//www.facebook.com/Agriturismo-La-Marletta-1778075132444946",
+            "satispay": 1
+         }
+      ]
+   },
+   "Paninoteche": {
+      "icon": "🍔",
+      "data": [
+         {
+            "name": "America Graffiti",
+            "tel": "366 3626901",
+            "mail": "grandprixsrl2011@gmail.com",
+            "fb": "//www.facebook.com/AGViaMalsicuraImola/",
+            "addr": "Via Malsicura 1, 40026 Imola BO",
+            "satispay": 1
+         },
+         {
+            "name": "Pancake burgers",
+            "addr": "Via Filippo Turati, 3, 40026 Imola BO",
+            "tel": "0542 1893584",
+            "site": "//www.pancakeburgers.it/",
+            "fb": "//www.facebook.com/pancakeimola/",
+            "note": "Hamburger (Kraken Burger disponibile solo in negozio no domicili e asporti) – Attivi tutti i giorni dal Lunedì alla Domenica. Ordini per il pranzo dalle 11:00 con Deliveroo & Foodracers e per la cena telefonando dalle 17:00 con consegne dirette a domicilio. Orari delle consegne: 12:00-14:30 / 18:30-22:30.",
+            "satispay": 1
+         }
+      ]
+   },
+   "Chioschi": {
+      "icon": "🌮",
+      "data": [
+         {
+            "name": "Da Lori Piadineria",
+            "tel": "339.1782830",
+            "fb": "//www.facebook.com/dalori.piadineria",
+            "note": "Pizza a scelta e hamburger. Servizio a domicilio gratuito rispettando tutte le norme igieniche sanitarie."
+         },
+         {
+            "name": "La Greppia Piadineria",
+            "tel": "340 4033521",
+            "addr": "Via Emilia, 287, 40026 Imola BO",
+            "fb": "//www.facebook.com/chioscolagreppia",
+            "satispay": 1
+         },
+         {
+            "name": "Le 3 marie",
+            "tel": ["0542.851761", "338.3089378"],
+            "fb": "//www.facebook.com/le3marie",
+            "note": "Piadineria, primi piatti e secondi – Attivi con il servizio di consegna gratuita a domicilio da martedì alla Domenica. Per le consegne del pranzo richiedono l’ordine entro le 12:00 del giorno precedente. Per la consegna della sera ordini anche nel pomeriggio per la sera stessa. Servizio di consegna a domicilio negli orari 12:00-14:00 e dalle 18:00 alle 21:00. Trovate il menù sulla loro pagina Facebook e Instagram."
+         },
+         {
+            "name": "Piadinaland",
+            "tel": "348.7923772",
+            "fb": "//www.facebook.com/PIADINALAND",
+            "mail": "info@piadinaland.com",
+            "site": "http://www.piadinaland.com/",
+            "note": "Attivi con il servizio di consegna a domicilio. Ordini telefonici specificando l’orario di consegna.",
+            "satispay": 1
+         },
+         {
+            "name": "Piadinosauro - La Baracchina",
+            "addr": "via Scotellaro 4",
+            "fb": "//www.facebook.com/Il-PiadinoSauro-2020-105771310955596",
+            "tel": "345 8086618"
          }
       ]
    },
@@ -156,6 +442,19 @@
             "mail": "tremonti@tremonti.it",
             "fb": "//www.facebook.com/tremontiwines/",
             "site": "//www.tremonti.it/"
+         }
+      ]
+   },
+   "Supermercati": {
+      "icon": "🛒",
+      "data": [
+         {
+            "newEntry": 1,
+            "name": "Conad Carducci",
+            "tel": "0542 30485",
+            "mail": "negozio@carducci-srl.it",
+            "fb": "//www.facebook.com/ConadImolaVialeCarducci/",
+            "site": "http://shop.carducci-srl.it/"
          }
       ]
    },
@@ -351,304 +650,6 @@
             "tel": "3388050061",
             "fb": "//www.facebook.com/MammaMiaCafeImola",
             "note": "Vino, birre, brioche e pane da forno. Attivi con il servizio di consegna a domicilio di  brioche e prodotti da forno (Ordine entro le 19:00 del giorno prima), vino, birra e salatini mignon. Donazioni all’AUSL di Imola: per ogni bottiglia di vino venduta doneremo il 10% del suo valore e a fronte di 1 cartone di Birra donermo 10€. Orari di consegna 7:30-12:00 per le colazioni e pane e 12:00-17:00 per birra, vino e aperitivo",
-            "satispay": 1
-         }
-      ]
-   },
-   "Pizzerie": {
-      "icon": "🍕",
-      "data": [
-         {
-            "name": "Andy & Flo",
-            "tel": "0542.640109",
-            "fb": "//www.facebook.com/Andy-Flo-1417704201845485",
-            "note": "Pizzeria attiva con il servizio di consegna a domicilio. Dal Martedì al Venerdì solo la sera mentre Sabato e Domenica attivi sia a pranzo che a cena."
-         },
-         {
-            "name": "Ci.Bo’ Pizzeria Ristò",
-            "tel": "0542.25477",
-            "mail": "info@cibo-pizzeriaristo.it",
-            "fb": "//www.facebook.com/CiBo-pizzeria-rist%C3%B2-1452449751677071",
-            "note": "Aperti con il servizio di asporto a domicilio."
-         },
-         {
-            "name": "La Voglia Matta",
-            "tel": "0542.850132",
-            "fb": "//www.facebook.com/La-Voglia-Matta-Imola-426769174063866",
-            "note": "Attivi con la il servizio gratuito di consegna a domicilio. Ordini dalle 11:00 alle 13:00 per la sera. Consegne a partire dalle ore 18:00. Per semplificare ed accorciare i tempi di consegna non accattano ordinazioni per pizze giganti, metri e mezzi metri e calzoni."
-         },
-         {
-            "name": "Pizzeria I Munel",
-            "tel": "0542.43274",
-            "fb": "//www.facebook.com/RistorantePizzeriaIMunel",
-            "note": "Consegna a domicilio tutti i giorni tranne il Mercoledì dalle 18:30 alle 22:00"
-         },
-         {
-            "name": "Pizzeria La Lanterna (i nanetti)",
-            "addr": "Via G.Mazzini, 21, 40026 Imola BO",
-            "fb": "//www.facebook.com/lalanternaimola.it",
-            "tel": "0542 26296",
-            "satispay": 1
-         },
-         {
-            "name": "Pizzeria Milana",
-            "tel": ["054242200", "0542627240"],
-            "mail": "pizzeriamilana@gmail.com",
-            "site": "//www.pizzeriamilana.it/",
-            "fb": "//www.facebook.com/pages/Pizzeria%20Milana%20-%20Ristoranti%20E%20Pizzerie/187969714560616/",
-            "note": "Consegna a domicilio in tutto il comprensorio di pizze con vari impasti, anche SENZA GLUTINE. Tutti i giorni compreso il giorno di Pasqua, dalle ore 18:00. Pagamenti anche con bancomat e/o carta di credito."
-         },
-         {
-            "name": "Pizzeria Reginella",
-            "tel": "0542 1894049",
-            "fb": "//www.facebook.com/pizzeriareginella2014"
-         },
-         {
-            "name": "Pizzeria Zolino",
-            "tel": "388.7835340",
-            "fb": "//www.facebook.com/Pizzeria-Zolino-209300093193852",
-            "note": "Pizzeria d’asporto – Attivo il servizio di consegna a domicilio tutti i giorni dalle ore 18:00 alle 21:30"
-         },
-         {
-            "name": "Ristorante Pizzeria da Valerio",
-            "tel": "0542.011286",
-            "fb": "//www.facebook.com/PizzeriaValerio",
-            "note": "Attivi tutti i giorni – Negli orari 12:00-14:00 e 18:30-21:00 servizio a domicilio. Oltre alle consegne a domicilio attivo il nuovo servizio “Take away” con prenotazione dei piatti o della pizza e ritiro senza scendere dall’auto.",
-            "satispay": 1
-         },
-         {
-            "name": "Ristorante e Pizzeria Anema e Core",
-            "addr": "Via Selice Provinciale, 44/b, 40026 Imola BO",
-            "fb": "//www.facebook.com/Pizzeria-Anema-e-Core-102488027924687",
-            "tel": ["0542 31328", "380 151 1599"]
-         }
-      ]
-   },
-   "Paninoteche": {
-      "icon": "🍔",
-      "data": [
-         {
-            "name": "America Graffiti",
-            "tel": "366 3626901",
-            "mail": "grandprixsrl2011@gmail.com",
-            "fb": "//www.facebook.com/AGViaMalsicuraImola/",
-            "addr": "Via Malsicura 1, 40026 Imola BO",
-            "satispay": 1
-         },
-         {
-            "name": "Pancake burgers",
-            "addr": "Via Filippo Turati, 3, 40026 Imola BO",
-            "tel": "0542 1893584",
-            "site": "//www.pancakeburgers.it/",
-            "fb": "//www.facebook.com/pancakeimola/",
-            "note": "Hamburger (Kraken Burger disponibile solo in negozio no domicili e asporti) – Attivi tutti i giorni dal Lunedì alla Domenica. Ordini per il pranzo dalle 11:00 con Deliveroo & Foodracers e per la cena telefonando dalle 17:00 con consegne dirette a domicilio. Orari delle consegne: 12:00-14:30 / 18:30-22:30.",
-            "satispay": 1
-         }
-      ]
-   },
-   "Chioschi": {
-      "icon": "🌮",
-      "data": [
-         {
-            "name": "Da Lori Piadineria",
-            "tel": "339.1782830",
-            "fb": "//www.facebook.com/dalori.piadineria",
-            "note": "Pizza a scelta e hamburger. Servizio a domicilio gratuito rispettando tutte le norme igieniche sanitarie."
-         },
-         {
-            "name": "La Greppia Piadineria",
-            "tel": "340 4033521",
-            "addr": "Via Emilia, 287, 40026 Imola BO",
-            "fb": "//www.facebook.com/chioscolagreppia",
-            "satispay": 1
-         },
-         {
-            "name": "Le 3 marie",
-            "tel": ["0542.851761", "338.3089378"],
-            "fb": "//www.facebook.com/le3marie",
-            "note": "Piadineria, primi piatti e secondi – Attivi con il servizio di consegna gratuita a domicilio da martedì alla Domenica. Per le consegne del pranzo richiedono l’ordine entro le 12:00 del giorno precedente. Per la consegna della sera ordini anche nel pomeriggio per la sera stessa. Servizio di consegna a domicilio negli orari 12:00-14:00 e dalle 18:00 alle 21:00. Trovate il menù sulla loro pagina Facebook e Instagram."
-         },
-         {
-            "name": "Piadinaland",
-            "tel": "348.7923772",
-            "fb": "//www.facebook.com/PIADINALAND",
-            "mail": "info@piadinaland.com",
-            "site": "http://www.piadinaland.com/",
-            "note": "Attivi con il servizio di consegna a domicilio. Ordini telefonici specificando l’orario di consegna.",
-            "satispay": 1
-         },
-         {
-            "name": "Piadinosauro - La Baracchina",
-            "addr": "via Scotellaro 4",
-            "fb": "//www.facebook.com/Il-PiadinoSauro-2020-105771310955596",
-            "tel": "345 8086618"
-         }
-      ]
-   },
-   "Ristoranti": {
-      "icon": "🍽",
-      "data": [
-         {
-            "name": "Andy & Flo",
-            "tel": "0542.640109",
-            "fb": "//www.facebook.com/Andy-Flo-1417704201845485",
-            "note": "Attivi dal Martedì al Venerdì a cena e Sabato e Domenica a pranzo e cena. Consegne gratuite a  domicilio."
-         },
-         {
-            "name": "Anonima Fornelli",
-            "addr": "Via Emilia, 38, 40026 Imola BO",
-            "site": "//anonimafornelli.it",
-            "fb": "//www.facebook.com/Anonima-Fornelli-167093829971859",
-            "tel": "0542 24755",
-            "satispay": 1
-         },
-         {
-            "newEntry": 1,
-            "name": "Cà delle Querce",
-            "tel": "0542 690176",
-            "satispay": 1,
-            "mail": "cadellequerce@gmail.com",
-            "fb": "//www.facebook.com/profile.php?id=100008860025460"
-         },
-         {
-            "name": "Da Noi Osteria e Vini",
-            "tel": "0542.24045",
-            "fb": "//www.facebook.com/danoiosteriaevini",
-            "note": "Siamo attivi a partire da 11/3 con le consegne a domicilio dalle 18:00 alle 22:00"
-         },
-         {
-            "name": "Fabbrica Gastronomica",
-            "tel": "0542 35502",
-            "email": "fabbrica.gastronomica@hotmail.it",
-            "fb": "//www.facebook.com/fabbrica.gastronomica/",
-            "satispay": 1
-         },
-         {
-            "name": "Forum Cornelii",
-            "tel": ["0542.23903 ", "324.8460804", "335.6806997"],
-            "mail": "info@forumcornelii.com",
-            "fb": "//www.facebook.com/forumcornelii",
-            "note": "La nostra picanha potete continuare a gustarla a domicilio dal lunedì al venerdì pranzo e cena. Attivi con cosegne a domicilio di vino e piatti del ristorante. Consegna gratuita con tutte le precauzioni del caso (mascherina e guanti). Prenotazioni anche su le Piattaforme Deliveroo e  JustEat. Ristorante: menù a prezzi ridotti. Consegne di vino e piatti del ristorante Lunedì-Venerdì dalle 12:30 alle 14:30 e dalle 19:00 alle 21:30. Consegna in tutto il comprensorio."
-         },
-         {
-            "name": "Hostaria 900",
-            "addr": "Viale Dante, 20",
-            "mail": "hostaria900@hostaria900.it",
-            "tel": ["0542.24211", "347 3091215"],
-            "fb": "//www.facebook.com/hostaria900/",
-            "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
-         },
-         {
-            "newEntry": 1,
-            "name": "La Tavernetta",
-            "tel": "0542 22417",
-            "mail": "mauro.paolini52@gmail.com"
-         },
-         {
-            "name": "Le Magie di Bacco",
-            "tel": "0542.31280",
-            "fb": "//www.facebook.com/magiedibacco",
-            "note": "Attivi con le consegne a domicilio Venerdì e Sabato sera con sconto del 25%."
-         },
-         {
-            "newEntry": 1,
-            "name": "Osteria del Teatro",
-            "tel": "3389239291",
-            "satispay": 1,
-            "mail": "danilomartelli@alice.it",
-            "fb": "//www.facebook.com/Osteriadelteatroimola/",
-            "site": "http://www.osteriadelteatro.org/"
-         },
-         {
-            "name": "Poggiopollino Ristorante",
-            "tel": "331.6125474",
-            "fb": "//www.facebook.com/poggiopollino",
-            "note": "Attivi tutti i giorni a pranzo e cena con servizio di consegna a domicilio. Ogni 30€ in omaggio una bottiglia di vino. Prenotazioni almeno 1 ora prima della consegna.",
-            "satispay": 1
-         },
-         {
-            "name": "Ristorante Campanaccio",
-            "tel": "335.6384918",
-            "fb": "//www.facebook.com/il.campanaccio.3",
-            "note": "Servizio di consegna a domicilio attivo tutti i giorni dalle 12:00 alle 14:30 e dalle 18:30 alle 21:30. Ordini entro le ore 19:00 – Consegna gratuita a Imola, Toscanella e Castel San Pietro Terme. Menu aggiornato settimanalmente sulla loro pagina Facebook. Omaggio di una bottiglia di vino Monticino Rosso al raggiungimento di 40€ di ordini."
-         },
-         {
-            "name": "Ristorante Carpe Diem",
-            "tel": "347.4358768",
-            "fb": "//www.facebook.com/carpediemimola",
-            "note": "Carne e pesce. Attivi con le consegne a domicilio tutti i giorni a pra e cena. Ordini telefonici entro le ore 14:00 per la cena e entro le 20:00 del giorno prima per la cena. Consegne solo a Imola. Pagamento in contanti. Dal Mercoledì 2 proposte settimanale (pesce e tradizionale). Per i menù consultate la loro pagina Facebook."
-         },
-         {
-            "name": "Ristorante Controluce",
-            "tel": "388.7764330",
-            "fb": "//www.facebook.com/ControluceImola",
-            "note": "Il menù varia settimanalmente – Consegne a domicilio dalle 19:30 alle 21:30 con ordini telefonici che dovranno pervenire entro le 16:00"
-         },
-         {
-            "name": "Ristorante E Parlamintè",
-            "tel": "0542.30144",
-            "fb": "//www.facebook.com/pages/E%20Parlamint%C3%A8%20(Imola)/449412555095973/",
-            "note": "Sono attivi con il servizio di consegne a domicilio dal Martedì al Venerdì per la cena, Sabato pranzo e cena e Domenica solo a pranzo."
-         },
-         {
-            "name": "Ristorante La Zambra",
-            "tel": "0545.288757",
-            "fb": "//www.facebook.com/RistoranteZambra",
-            "note": "A Lugo, consegna anche ad Imola. Attivi con le consegne a domicilio di piatti di pesce, carne, focacce, piadina, pasta fresca fatta in casa e dolci. Trovate i piatti sulla pagina Facebook. Ordini anche per anche vini bianchi o rossi, bibite in barattolo, Coca Cola in bottiglia e birra da 33 e 66 cl. Chiamare con anticipo rispetto all’orario di consegna."
-         },
-         {
-            "name": "Ristorante Le Bistrot",
-            "tel": ["0542.672122", "340.5574589"],
-            "mail": "info@ristorantelebistrot.it",
-            "site": "//www.ristorantelebistrot.it/",
-            "fb": "//www.facebook.com/ristorantelebistrot",
-            "note": "Il ristorante è attivo con il servizio di consegna a domicilio a cena nei giorni di Venerdi, Sabato con ordini entro le 18:00. Domenica pranzo e cena. Si accettano ordini di Lasagne per Domenica a pranzo. Il menù cambia settimanalmente (guardare su Facebook)"
-         },
-         {
-            "name": "Ristorante Pizzeria Donatello",
-            "tel": "380.5883904",
-            "fb": "//www.facebook.com/ristorantepizzeriadonatello",
-            "note": "Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
-         },
-         {
-            "name": "Sicilia Bedda... la buona gastronomia siciliana",
-            "tel": "054229779",
-            "addr": "via Fratelli Cairoli 2, 40026 Imola BO",
-            "mail": "siciliabedda@blu.it",
-            "fb": "//www.facebook.com/siciliabeddaimola/"
-         },
-         {
-            "name": "Trattoria la Sterlina",
-            "addr": "Via Nuova, 16, 40026 Imola BO",
-            "tel": "0542.55030",
-            "fb": "//www.facebook.com/Trattoria-la-Sterlina-151476190474",
-            "note": "Attivi a pranzo e cena con consegne gratuite a domicilio. Ordini 9:00-13:30 e 18:00-21:00",
-            "satispay": 1
-         },
-         {
-            "name": "Vivanderia Note e Aromi",
-            "mail": "vivanderia@gmail.com",
-            "tel": "3489061576",
-            "fb": "//www.facebook.com/Vivanderia",
-            "note": "Attivo il Ristorante con consegne a domicilio tutti i giorni a Imola e circondario. Menù settimanale su Fb. Costo della consegna nel circondario di Imola di 1/2€ con spesa minima di 20€",
-            "satispay": 1
-         }
-      ]
-   },
-   "Agriturismi": {
-      "icon": "👩‍🌾🍽",
-      "data": [
-         {
-            "name": "Agriturismo Colombara",
-            "tel": "339.3448493",
-            "fb": "//www.facebook.com/agri.colombara",
-            "note": "Attivi dal venerdì alla domenica a pranzo e cena con il servizio di consegna a domicilio. Ordini telefonici e consegne. Per il pranzo entro le ore 11:00 e consegna dalle 12:00. Per la la cena ordine telefonico entro le ore 18:00 e consegna dalle 19:00 – Ogni settimana propongono un nuovo menù (guarda su Facebook). La consegna è gratuita. "
-         },
-         {
-            "name": "Agriturismo La Marletta",
-            "tel": "348.0977076",
-            "note": "Attivi il Venerdì, Sabato e Domenica con servizio di consegne a domicilio. Orario degli ordini (cena): fino alle 20:30. Consegne dalle 19:00 alle 21:30. Domenica (pranzo) Orario degli Ordini: entro le 13:00 – Consegne dalle 12:00 alle 14:00. Consegna gratuita nel comune di Imola. Pagamento solo in contanti.",
-            "fb": "//www.facebook.com/Agriturismo-La-Marletta-1778075132444946",
             "satispay": 1
          }
       ]
