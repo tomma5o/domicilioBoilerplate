@@ -34,7 +34,7 @@ export default class Home extends Component {
 		const { results: stores } = this.props;
 		const keys = Object.keys(stores);
 		let sentence = "";
-		if (keys > 2) {
+		if (keys.length > 2) {
 			sentence = "tra " + keys[0] + ", " + keys[1] + " e " + keys[2];
 		}
 		return sentence;
