@@ -71,7 +71,7 @@ export default class Home extends Component {
       const { results: stores } = props;
       const filteredStores = this.filteredCategories(filter, categoryFilter);
       const storesNumber = this.calculateStoresNumber();
-      const finalSentence = this.getFinalSentence(9);
+      const finalSentence = this.getFinalSentence(6);
       const isEmptySearch = this.isEmptySearch(filteredStores);
 
       return (
