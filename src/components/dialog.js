@@ -26,7 +26,7 @@ export const Dialog = ({
 				style={{top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}
 			>
 				<div class="flex justify-between">
-					<h1 class="text-2xl mb-5 font-bold flex-1">{name}</h1>
+					<h1 class="text-3xl mb-5 font-bold flex-1 text-gray-700">{name}</h1>
 					<span
 						class="bg-red-300 rounded-full text-center cursor-pointer"
 						style={{ width: '30px', height: '30px', lineHeight: '30px' }}
