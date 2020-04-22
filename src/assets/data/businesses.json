@@ -1,9 +1,21 @@
 {
+   "Supermercati": {
+      "icon": "🛒",
+      "data": [
+         {
+            "newEntry": 1,
+            "name": "Conad Carducci",
+            "tel": "0542 30485",
+            "mail": "negozio@carducci-srl.it",
+            "fb": "//www.facebook.com/ConadImolaVialeCarducci/",
+            "site": "http://shop.carducci-srl.it/"
+         }
+      ]
+   },
    "Fruttivendoli": {
       "icon": "🥕",
       "data": [
          {
-            "newEntry": 1,
             "name": "Aldo Grementieri",
             "tel": ["3335636753", "0542 680815"],
             "fb": "//www.facebook.com/aldogrementierifruttaeverdura/"
@@ -136,6 +148,14 @@
             "mail": "ivan.morara@gmail.com",
             "tel": "340 4557578",
             "site": "http://www.vini-morara.It"
+         },
+         {
+            "newEntry": 1,
+            "name": "Tremonti Società Agricola",
+            "tel": "0542 657116",
+            "mail": "tremonti@tremonti.it",
+            "fb": "//www.facebook.com/tremontiwines/",
+            "site": "//www.tremonti.it/"
          }
       ]
    },
@@ -152,6 +172,7 @@
          {
             "name": "CLAI Macelleria e Salumificio",
             "fb": "//www.facebook.com/claisalumi",
+            "site": "//www.macelleriedelcontadino.com/",
             "tel": "800 895110",
             "mail": "inferno.negozio@clai.it",
             "note": "Ordini da Lunedì a Sabato dalle 8:00 alle 13:00 e dalle 16:00 alle 19:00, esclusi Martedì pomeriggio e festivi"
@@ -163,6 +184,12 @@
             "tel": "0542 27950",
             "site": "http://www.chaimandir.com",
             "satispay": 1
+         },
+         {
+            "name": "Cofferose",
+            "tel": ["338 3251769 ", "338 9633251"],
+            "fb": "//www.facebook.com/rosa.cofferose",
+            "note": "Attivi con le consegne a domicilio di caffè, uova di Pasqua e cioccolato su Imola e circondario. Ordini telefonici o con Whatsapp."
          },
          {
             "name": "Drogheria presso mercato coperto \"Il Borghetto\"",
@@ -185,6 +212,12 @@
             "mail": "carlo.sabattani@alice.it",
             "fb": "//www.facebook.com/mercatocopertoilborghetto/",
             "note": "Al numero fisso solo al mattino, al cellulare tutto il giorno fino alle 19."
+         },
+         {
+            "name": "Il Ghiottone",
+            "tel": "0542.23562",
+            "fb": "//www.facebook.com/ilghiottoneimola",
+            "note": "Attivi con il servizio a domicilio. Ordini al Mattino e consegne dalle 8.30 alle 12:30. Uova pasquali, colombe, ovetti di cioccolato e caffè."
          },
          {
             "name": "La Malga salumeria",
@@ -216,12 +249,6 @@
             "satispay": 1
          },
          {
-            "name": "Cofferose",
-            "tel": ["338 3251769 ", "338 9633251"],
-            "fb": "//www.facebook.com/rosa.cofferose",
-            "note": "Attivi con le consegne a domicilio di caffè, uova di Pasqua e cioccolato su Imola e circondario. Ordini telefonici o con Whatsapp."
-         },
-         {
             "name": "Puro - quelli del caffè",
             "addr": "via giovanni x, 88/h",
             "mail": "info@puroquellidelcaffe.it",
@@ -229,12 +256,6 @@
             "fb": "//www.facebook.com/puro.quellidelcaffe",
             "site": "//www.puroquellidelcaffe.it/",
             "satispay": 1
-         },
-         {
-            "name": "Il Ghiottone",
-            "tel": "0542.23562",
-            "fb": "//www.facebook.com/ilghiottoneimola",
-            "note": "Attivi con il servizio a domicilio. Ordini al Mattino e consegne dalle 8.30 alle 12:30. Uova pasquali, colombe, ovetti di cioccolato e caffè."
          }
       ]
    },
@@ -363,6 +384,13 @@
             "note": "Consegna a domicilio tutti i giorni tranne il Mercoledì dalle 18:30 alle 22:00"
          },
          {
+            "name": "Pizzeria La Lanterna (i nanetti)",
+            "addr": "Via G.Mazzini, 21, 40026 Imola BO",
+            "fb": "//www.facebook.com/lalanternaimola.it",
+            "tel": "0542 26296",
+            "satispay": 1
+         },
+         {
             "name": "Pizzeria Milana",
             "tel": ["054242200", "0542627240"],
             "mail": "pizzeriamilana@gmail.com",
@@ -380,13 +408,6 @@
             "tel": "388.7835340",
             "fb": "//www.facebook.com/Pizzeria-Zolino-209300093193852",
             "note": "Pizzeria d’asporto – Attivo il servizio di consegna a domicilio tutti i giorni dalle ore 18:00 alle 21:30"
-         },
-         {
-            "name": "Pizzeria La Lanterna (i nanetti)",
-            "addr": "Via G.Mazzini, 21, 40026 Imola BO",
-            "fb": "//www.facebook.com/lalanternaimola.it",
-            "tel": "0542 26296",
-            "satispay": 1
          },
          {
             "name": "Ristorante Pizzeria da Valerio",
@@ -429,17 +450,17 @@
       "icon": "🌮",
       "data": [
          {
+            "name": "Da Lori Piadineria",
+            "tel": "339.1782830",
+            "fb": "//www.facebook.com/dalori.piadineria",
+            "note": "Pizza a scelta e hamburger. Servizio a domicilio gratuito rispettando tutte le norme igieniche sanitarie."
+         },
+         {
             "name": "La Greppia Piadineria",
             "tel": "340 4033521",
             "addr": "Via Emilia, 287, 40026 Imola BO",
             "fb": "//www.facebook.com/chioscolagreppia",
             "satispay": 1
-         },
-         {
-            "name": "Da Lori Piadineria",
-            "tel": "339.1782830",
-            "fb": "//www.facebook.com/dalori.piadineria",
-            "note": "Pizza a scelta e hamburger. Servizio a domicilio gratuito rispettando tutte le norme igieniche sanitarie."
          },
          {
             "name": "Le 3 marie",
@@ -482,6 +503,14 @@
             "satispay": 1
          },
          {
+            "newEntry": 1,
+            "name": "Cà delle Querce",
+            "tel": "0542 690176",
+            "satispay": 1,
+            "mail": "cadellequerce@gmail.com",
+            "fb": "//www.facebook.com/profile.php?id=100008860025460"
+         },
+         {
             "name": "Da Noi Osteria e Vini",
             "tel": "0542.24045",
             "fb": "//www.facebook.com/danoiosteriaevini",
@@ -510,10 +539,25 @@
             "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
          },
          {
+            "newEntry": 1,
+            "name": "La Tavernetta",
+            "tel": "0542 22417",
+            "mail": "mauro.paolini52@gmail.com"
+         },
+         {
             "name": "Le Magie di Bacco",
             "tel": "0542.31280",
             "fb": "//www.facebook.com/magiedibacco",
             "note": "Attivi con le consegne a domicilio Venerdì e Sabato sera con sconto del 25%."
+         },
+         {
+            "newEntry": 1,
+            "name": "Osteria del Teatro",
+            "tel": "3389239291",
+            "satispay": 1,
+            "mail": "danilomartelli@alice.it",
+            "fb": "//www.facebook.com/Osteriadelteatroimola/",
+            "site": "http://www.osteriadelteatro.org/"
          },
          {
             "name": "Poggiopollino Ristorante",
@@ -691,6 +735,12 @@
             "tel": "0542.26485",
             "fb": "//www.facebook.com/gelateriasestosenso",
             "note": "Gelato artigianale e torte con consegna gratuita a domicilio. Chiusi il Lunedì. Gelato: 500 gr. 7,50€ – 750 gr. 10€ – 1 kg. 15€ – Prenotate con due giorni di anticipo le torte gelato. Per il gelato consegna a domicilio gratuita con prenotazione dalle 12:00 alle 18:00 e consegna entro le 21:00."
+         },
+         {
+            "newEntry": 1,
+            "name": "YO yogurteria e creperia",
+            "tel": "327 8814119",
+            "mail": "yobarbara@libero.it"
          }
       ]
    },
@@ -786,6 +836,13 @@
             "tel": "0542 30881",
             "mail": "ranicola@libero.it",
             "fb": "//www.facebook.com/mercatocopertoilborghetto/"
+         },
+         {
+            "newEntry": 1,
+            "name": "Tabaccheria edicola Pontesanto",
+            "tel": ["0542 850050", "345 1270688"],
+            "satispay": 1,
+            "mail": "tabpontesanto@libero.it"
          }
       ]
    },
@@ -863,7 +920,6 @@
             "note": "Produzione e vendita vini Bio in bottiglia e in Bag Box. Ordini telefonici."
          },
          {
-            "newEntry": 1,
             "name": "Azienda vinicola e agriturismo Trerè",
             "tel": "054647034",
             "mail": "trere@trere.com",
@@ -876,6 +932,14 @@
             "fb": "//www.facebook.com/Caf%C3%A8-del-Grillo-1439621372982996",
             "tel": "3470131723",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Enoteca Le lune",
+            "tel": "0542 643359",
+            "mail": "diego@lune.it",
+            "fb": "//www.facebook.com/EnotecaLeLuneImola/",
+            "site": "http://www.lune.it/"
          },
          {
             "name": "Hopinion Birrificio Imolese Agricolo",
@@ -893,7 +957,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "La sorgente divina",
             "tel": "3518305141",
             "mail": "lasorgentedivina@gmail.com",
@@ -928,6 +991,15 @@
             "satispay": 1
          },
          {
+            "newEntry": 1,
+            "name": "Maison et flurs",
+            "tel": "0542 783484",
+            "satispay": 1,
+            "mail": "vale.nanni@libero.it",
+            "fb": "http://www.maisonetfleurs.it/",
+            "site": "http://www.maisonetfleurs.it/"
+         },
+         {
             "name": "Neve in Fiore",
             "mail": "neveinfiore@gmail.com",
             "tel": "3913354258",
@@ -958,6 +1030,12 @@
             "mail": "babetta.snc@libero.it",
             "site": "http://www.babettaimola.com",
             "addr": "via Emilia 26, 40026 Imola BO"
+         },
+         {
+            "newEntry": 1,
+            "name": "Blake",
+            "tel": "345 8332491",
+            "mail": "blakeimola@gmail.com"
          },
          {
             "name": "Chemise",
@@ -1023,7 +1101,6 @@
             "note": "Consegna in tutto il comprensorio"
          },
          {
-            "newEntry": 1,
             "name": "Esser Bella parrucchiera",
             "tel": "3489343876",
             "satispay": 1,
