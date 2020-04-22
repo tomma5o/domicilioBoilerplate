@@ -59,12 +59,20 @@ export default class Home extends Component {
          }, {});
    }
 
+   isEmptySearch(filteredStores) {
+      let storesFound = 0;
+      for (let key in filteredStores) {
+         storesFound += filteredStores[key].data.length;
+      }
+      return storesFound === 0;
+   }
+
    render(props, { filter, categoryFilter }) {
       const { results: stores } = props;
       const filteredStores = this.filteredCategories(filter, categoryFilter);
       const storesNumber = this.calculateStoresNumber();
       const finalSentence = this.getFinalSentence(9);
-      const emptySearch = Object.keys(filteredStores).length === 0;
+      const isEmptySearch = this.isEmptySearch(filteredStores);
 
       return (
          <Fragment>
@@ -74,7 +82,7 @@ export default class Home extends Component {
                   <span class="capitalize">{process.env.PREACT_APP_CITY}</span>{" "}
                   sono presenti{" "}
                   <span class="font-semibold">{storesNumber}</span>{" "}
-                  attività {finalSentence} che consegnano a domicilio
+                  attività {finalSentence} che consegnano a domicilio.
                </div>
             )}
             <div class="my-10">
@@ -85,7 +93,7 @@ export default class Home extends Component {
                   onInput={this.handleChangeFilter}
                />
             </div>
-            <div class="relative flex overflow-x-scroll text-center mt-2 pb-5">
+            <div class="flex overflow-x-scroll text-center mt-2 mb-5">
                {Object.keys(stores).map((key) => (
                   <button
                      onClick={this.handleCategoryFilter(key)}
@@ -110,6 +118,9 @@ export default class Home extends Component {
                      />
                   ))}
             </div>
+            {isEmptySearch && (
+               <p class="font-bold mt-5 mb-10 text-center">Oops! 😅 Non ci sono attività corrispondenti alla tua ricerca.</p>
+            )}
             <div class="text-center w-full">
                <p class="mb-5">
                   Developed with ❤️ by{" "}
