@@ -8,6 +8,25 @@ export default class Home extends Component {
       categoryFilter: null,
    };
 
+   calculateStoresNumber() {
+      const { results: stores } = this.props;
+      const keys = Object.keys(stores);
+      let storesNumber = 0;
+      for (const key of keys) {
+         storesNumber += stores[key].data.length;
+      }
+      return storesNumber;
+   }
+
+   getFinalSentence(categoriesToList) {
+      const { results: stores } = this.props;
+      const keys = Object.keys(stores);
+      const relevantKeys = keys.slice(0, categoriesToList)
+      if (relevantKeys.length === 0) return ""; 
+      const joinedRelevantKeys = relevantKeys.join(", ");
+      return `tra ${joinedRelevantKeys}, ...`;   
+   }
+
    handleChangeFilter = (e) => {
       const text = e.target.value;
       this.setState({ filter: text });
@@ -43,9 +62,20 @@ export default class Home extends Component {
    render(props, { filter, categoryFilter }) {
       const { results: stores } = props;
       const filteredStores = this.filteredCategories(filter, categoryFilter);
+      const storesNumber = this.calculateStoresNumber();
+      const finalSentence = this.getFinalSentence(9);
 
       return (
          <Fragment>
+            {storesNumber > 0 && (
+               <div class="text-center mt-2 pb-5">
+                  A{" "}
+                  <span class="capitalize">{process.env.PREACT_APP_CITY}</span>{" "}
+                  sono presenti{" "}
+                  <span class="font-semibold">{storesNumber}</span>{" "}
+                  attività {finalSentence} che consegnano a domicilio
+               </div>
+            )}
             <div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
                <input
                   class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
