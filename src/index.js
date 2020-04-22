@@ -67,7 +67,7 @@ export default class App extends Component {
                         : <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
                   }
                </nav>
-               <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl mt-5 text-gray-800 text-center">
+               <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl text-gray-800 text-center">
                   {`${process.env.PREACT_APP_CITY} a Domicilio`}
                   <span class="block sm:inline-block ml-2" role="img" aria-label="biker">
                      🚴

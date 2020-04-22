@@ -64,11 +64,12 @@ export default class Home extends Component {
       const filteredStores = this.filteredCategories(filter, categoryFilter);
       const storesNumber = this.calculateStoresNumber();
       const finalSentence = this.getFinalSentence(9);
+      const emptySearch = Object.keys(filteredStores).length === 0;
 
       return (
          <Fragment>
             {storesNumber > 0 && (
-               <div class="text-center mt-2 pb-5">
+               <div class="text-center mt-2 mb-5">
                   A{" "}
                   <span class="capitalize">{process.env.PREACT_APP_CITY}</span>{" "}
                   sono presenti{" "}
@@ -76,7 +77,7 @@ export default class Home extends Component {
                   attività {finalSentence} che consegnano a domicilio
                </div>
             )}
-            <div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto mb-5">
+            <div class="my-10">
                <input
                   class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                   type="text"
