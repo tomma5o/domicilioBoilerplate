@@ -7,11 +7,30 @@ export default class Home extends Component {
 		filter: '',
 		categoryFilter: null
 	};
+	
+   calculateStoresNumber() {
+      const { results: stores } = this.props;
+      const keys = Object.keys(stores);
+      let storesNumber = 0;
+      for (const key of keys) {
+         storesNumber += stores[key].data.length;
+      }
+      return storesNumber;
+   }
 
-	handleChangeFilter = e => {
+   getFinalSentence(categoriesToList) {
+      const { results: stores } = this.props;
+      const keys = Object.keys(stores);
+      const relevantKeys = keys.slice(0, categoriesToList)
+      if (relevantKeys.length === 0) return ""; 
+      const joinedRelevantKeys = relevantKeys.join(", ");
+      return `tra ${joinedRelevantKeys} ed altri`;
+   }
+
+   handleChangeFilter = e => {
 		const text = e.target.value;
 		this.setState({ filter: text });
-	};
+   };
 
 	handleCategoryFilter = key => _ => { // eslint-disable-line no-unused-vars
       if (key === this.state.categoryFilter) {
@@ -41,10 +60,17 @@ export default class Home extends Component {
 
 	render(props, { filter, categoryFilter }) {
 		const { results: stores } = props;
-		const filteredStores = this.filteredCategories(filter, categoryFilter)
+      const filteredStores = this.filteredCategories(filter, categoryFilter);
+      const storesNumber = this.calculateStoresNumber();
+      const finalSentence = this.getFinalSentence(9);
 
 		return (
 			<Fragment>
+            {storesNumber > 0 && (
+               <div class="text-center mt-2 mb-5">
+                  {storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
+               </div>
+            )}
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
