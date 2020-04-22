@@ -46,7 +46,7 @@ export default class Home extends Component {
 
       return (
          <Fragment>
-            <div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
+            <div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto mb-5">
                <input
                   class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                   type="text"
@@ -81,9 +81,9 @@ export default class Home extends Component {
             </div>
             <div class="text-center w-full">
                <p class="mb-5">
-                  Developed with ❤️ by&nbsp;
+                  Developed with ❤️ by{" "}
                   <a
-                     class="text-orange-500"
+                     class="underline text-orange-500"
                      href={process.env.PREACT_APP_DEV_LINK}
                   >
                      {process.env.PREACT_APP_DEV_NAME}
