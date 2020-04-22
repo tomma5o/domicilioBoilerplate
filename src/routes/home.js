@@ -24,7 +24,7 @@ export default class Home extends Component {
       const relevantKeys = keys.slice(0, categoriesToList)
       if (relevantKeys.length === 0) return ""; 
       const joinedRelevantKeys = relevantKeys.join(", ");
-      return `tra ${joinedRelevantKeys}, ...`;
+      return `tra ${joinedRelevantKeys} ed altri`;
    }
 
    handleChangeFilter = (e) => {
@@ -78,11 +78,7 @@ export default class Home extends Component {
          <Fragment>
             {storesNumber > 0 && (
                <div class="text-center mt-2 mb-5">
-                  A{" "}
-                  <span class="capitalize">{process.env.PREACT_APP_CITY}</span>{" "}
-                  sono presenti{" "}
-                  <span class="font-semibold">{storesNumber}</span>{" "}
-                  attività {finalSentence} che consegnano a domicilio.
+                  {storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
                </div>
             )}
             <div class="my-10">
