@@ -1,5 +1,6 @@
 // Components
 import { D_Contacts } from './dialog_contacts';
+import { D_Services } from './dialog_services';
 import { D_Notes } from './dialog_notes';
 
 export const Dialog = ({
@@ -8,7 +9,8 @@ export const Dialog = ({
 	name,
 	tel,
 	mail,
-	site,
+   site,
+   services,
 	note
 }) => {
 	return (
@@ -31,6 +33,7 @@ export const Dialog = ({
 				</div>
 				{note && <D_Notes {...{note}} />}
 				<D_Contacts {...{tel, mail, site}} />
+            {services && <D_Services {...{services}} />}
 			</div>
 		</dialog>
 	);

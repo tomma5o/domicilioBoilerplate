@@ -4,14 +4,14 @@ import { useContext } from "preact/hooks";
 import { Action } from "../index";
 
 export const ListItem = (props) => {
-   const { name, tel, site, fb, mail, note, newEntry, satispay } = props;
+   const { name, tel, site, fb, services, mail, note, newEntry, satispay } = props;
    const action = useContext(Action);
    const encodedName = encodeURIComponent(name);
    const encodedCity = encodeURIComponent(process.env.PREACT_APP_CITY);
    const searchUrl = `https://www.google.com/search?q=${encodedName}%20${encodedCity}`;
    const link = site || fb || searchUrl;
    const isInfoVisible = Boolean(
-      Array.isArray(tel) || site || fb || satispay || mail || note
+      Array.isArray(tel) || site || fb || satispay || services || mail || note
    );
 
    return (
