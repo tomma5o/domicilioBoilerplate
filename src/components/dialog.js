@@ -24,14 +24,12 @@ export const Dialog = ({
 				class="absolute w-5/6 max-w-screen-md bg-white rounded-lg p-6 shadow-lg border border-gray-700"
 				style={{top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}
 			>
-				<div class="flex justify-between">
-					<h1 class="text-3xl mb-5 font-bold flex-1 text-gray-700">{name}</h1>
-					<span
-						class="bg-red-300 rounded-full text-center cursor-pointer"
+				<button
+               class="bg-red-300 rounded-full text-center cursor-pointer float-right"
 						style={{ width: '30px', height: '30px', lineHeight: '30px' }}
 						onClick={closePopup}
-					>✖️</span>
-				</div>
+            >✖️</button>
+            <h1 class="text-3xl mb-5 font-bold flex-1 text-gray-700">{name}</h1>	
 				{note && <D_Notes {...{note}} />}
 				<D_Contacts {...{tel, mail, site, fb}} />
             {services && <D_Services {...{services}} />}

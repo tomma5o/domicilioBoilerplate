@@ -5,7 +5,7 @@ function Tel({tel}) {
 
 	return ( isArrayOfTel
 		? tel.map((telNumber, i) => (
-			<a href={`tel:${telNumber}`} class="inline-block rounded-lg text-sm font-semibold text-gray-700">
+			<a href={`tel:${telNumber}`} class="inline-block rounded-lg font-semibold text-gray-700">
 				<span>{telNumber}</span>
 				{tel.length !== i+1 && <span class="mx-2">-</span>}
 			</a>
@@ -64,14 +64,14 @@ export const D_Contacts = ({tel, mail, site, fb}) => {
 				{mail && (
 					<p class="mb-2">
 						<span
-							class="inline-block mr-2 w-6 h-6 bg-blue-300 text-xs text-center leading-6 rounded-lg cursor-pointer"
+							class="inline-block mr-2 w-6 h-6 bg-blue-300 text-center text-xs leading-6 rounded-lg cursor-pointer"
 							role="img"
 							aria-label="send mail"
 						>
 						✉️
 						</span>
-						<a href={`mailto:${mail}`} class="inline-block rounded-lg text-sm font-semibold text-gray-700">
-							<span>{mail}</span>
+						<a href={`mailto:${mail}?subject=Contatto da imoladomicilio.it`} class="inline-block rounded-lg font-semibold text-gray-700">
+							<span>E-mail</span>
 						</a>
 					</p>
 				)}
