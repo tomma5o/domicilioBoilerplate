@@ -696,9 +696,10 @@
          {
             "name": "Angolo del Gelato",
             "tel": "3481372636",
+            "satispay": 1,
             "mail": "angolodelgelato@ymail.com",
             "fb": "//www.facebook.com/AngolodelGelatoImola",
-            "note": "Senza costi di consegna. Ordine minimo €10.00"
+            "note": "Senza costi di consegna. Ordine minimo €10.00. Consegna in tutto il comprensorio."
          },
          {
             "name": "Burrocacao Gelateria Artigianale",
