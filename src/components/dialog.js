@@ -7,7 +7,8 @@ export const Dialog = ({
 	isOpen,
 	closePopup,
 	name,
-	tel,
+   tel,
+   fb,
 	mail,
    site,
    services,
@@ -15,7 +16,7 @@ export const Dialog = ({
 }) => {
 	return (
 		<dialog 
-			class="fixed inset-x-0 top-0 backdrop w-screen h-screen"
+			class="fixed inset-x-0 top-0 backdrop w-screen h-screen overflow-y-scroll"
 			style={{display: isOpen ? "initial" : "none"}}
 			onClick={closePopup}
 		>
@@ -32,7 +33,7 @@ export const Dialog = ({
 					>✖️</span>
 				</div>
 				{note && <D_Notes {...{note}} />}
-				<D_Contacts {...{tel, mail, site}} />
+				<D_Contacts {...{tel, mail, site, fb}} />
             {services && <D_Services {...{services}} />}
 			</div>
 		</dialog>
