@@ -28,13 +28,12 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
    new RegExp(`${process.env.PREACT_APP_DATA_SOURCE}`),
-   new workbox.strategies.StaleWhileRevalidate({
+   new workbox.strategies.NetworkFirst({
       cacheName: "github-api-cache",
       plugins: [
          new workbox.cacheableResponse.Plugin({
             statuses: [200],
          }),
-         { cachedResponseWillBeUsed: useLastCachedResponse },
       ],
    })
 );
