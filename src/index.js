@@ -21,7 +21,7 @@ export default class App extends Component {
       results: {},
       isHomepage: true,
       isPopupOpen: false,
-      popupNumbers: [],
+      popupData: {},
    }
 
    handleRoute = e => {
@@ -29,14 +29,20 @@ export default class App extends Component {
       this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
    };
 
-   setPopupNumbers = (e, numberArray) => {
+   setPopupNumbers = (e, popupData) => {
       e.preventDefault();
 
       this.setState({
-         popupNumbers: numberArray,
+         popupData,
          isPopupOpen: true
       })
    }
+
+   closePopup = (e) => {	
+		if (e.currentTarget === e.target) {
+			this.setState({ isPopupOpen: false })
+		}
+	}
 
    componentDidMount() {
       fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
@@ -56,7 +62,7 @@ export default class App extends Component {
       root.style.setProperty('--popup-visible', isPopupOpen ? 'hidden' : 'initial')
    }
 
-   render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
+   render(props, { isHomepage, results, popupData, isPopupOpen }) {
       return (
          <Action.Provider value={{ setPopupNumbers: this.setPopupNumbers }}>
             <div id="app" class="px-5 max-w-screen-md mx-auto">
@@ -79,7 +85,7 @@ export default class App extends Component {
                   <FormSuccess path="/form/success" />
                </Router>
             </div>
-            <Dialog isOpen={isPopupOpen} closePopup={this.closePopup} telNumbers={popupNumbers} />
+            <Dialog isOpen={isPopupOpen} closePopup={this.closePopup} {...popupData} />
             <PWAPrompt />
          </Action.Provider>
       );

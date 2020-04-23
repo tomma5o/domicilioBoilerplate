@@ -5,6 +5,7 @@ module.exports = {
          trueWhite: "#ffffff",
 			gray: {
 				200: 'var(--gray-200)',
+				300: 'var(--gray-300)',
 				500: 'var(--gray-500)',
 				700: 'var(--gray-700)',
 			},
