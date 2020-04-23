@@ -1,6 +1,7 @@
 // Components
 import { D_Contacts } from './dialog_contacts';
 import { D_Services } from './dialog_services';
+import { D_Payments } from './dialog_payments';
 import { D_Notes } from './dialog_notes';
 
 export const Dialog = ({
@@ -11,6 +12,7 @@ export const Dialog = ({
    fb,
 	mail,
    site,
+   satispay,
    services,
 	note
 }) => {
@@ -26,12 +28,13 @@ export const Dialog = ({
 			>
 				<button
                class="bg-red-300 rounded-full text-center cursor-pointer float-right"
-						style={{ width: '30px', height: '30px', lineHeight: '30px' }}
-						onClick={closePopup}
+               style={{ width: '30px', height: '30px', lineHeight: '30px' }}
+               onClick={closePopup}
             >✖️</button>
             <h1 class="text-3xl mb-5 font-bold flex-1 text-gray-700">{name}</h1>	
 				{note && <D_Notes {...{note}} />}
 				<D_Contacts {...{tel, mail, site, fb}} />
+            {satispay && <D_Payments {...{satispay}} />}
             {services && <D_Services {...{services}} />}
 			</div>
 		</dialog>
