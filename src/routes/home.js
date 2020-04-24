@@ -77,7 +77,7 @@ export default class Home extends Component {
       return (
          <Fragment>
             {storesNumber > 0 && (
-               <div class="text-center mt-2 mb-5">
+					<div class="text-center my-5">
                   {storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
                </div>
             )}
