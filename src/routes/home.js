@@ -81,15 +81,20 @@ export default class Home extends Component {
                   {storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
                </div>
             )}
-            <div class="my-10">
+				<label class="my-5">
+					<p class="mb-2 text-sm">Cerca per nome</p>
                <input
                   class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
                   type="text"
-                  placeholder="Cerca Attività"
+						placeholder="Nome attività"
                   onInput={this.handleChangeFilter}
                />
+				</label>
+				<div class="mt-5 mb-2 flex justify-between items-center">
+					<p class="text-sm">Filtra per categoria</p>
+					<div class="float-right text-xs">Altre &rarr;</div>
             </div>
-            <div class="flex overflow-x-scroll text-center mt-2 mb-5">
+				<div class="flex overflow-x-scroll text-center mt-2 mb-5" style="-webkit-overflow-scrolling: touch;">
                {Object.keys(stores).map((key) => (
                   <button
                      onClick={this.handleCategoryFilter(key)}
