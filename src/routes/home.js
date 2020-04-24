@@ -22,7 +22,8 @@ export default class Home extends Component {
 
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
-		const regex = new RegExp(`${filter}`, 'i');
+		const regexStore = new RegExp(`${filter}`, 'i');
+		const regexCategory = new RegExp(`[${filter}]{${filter.length},}`, 'i');
 
 		return Object.keys(results)
 			.filter(key => (categoryFilter ? categoryFilter === key : true))
@@ -32,7 +33,11 @@ export default class Home extends Component {
 						...acc,
 						[key]: {
 							icon: results[key].icon,
-							data: results[key].data.filter(e => (filter.length ? regex.test(e.name) : true))
+							data: regexCategory.test(key)
+                     ? results[key].data
+                     : results[key].data.filter(e =>
+                          filter.length ? regexStore.test(e.name) : true
+                       )
 						}
 					}
 				);
