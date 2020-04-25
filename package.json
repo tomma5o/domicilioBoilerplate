@@ -8,6 +8,7 @@
       "start:production": "npm run -s serve",
       "start:development": "npm run -s dev",
       "build": "preact build",
+      "prebuild": "node minJson",
       "serve": "preact build && sirv build --cors --single",
       "dev": "preact watch",
       "lint": "eslint src"
