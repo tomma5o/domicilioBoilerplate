@@ -81,53 +81,55 @@ export default class Home extends Component {
 
 		return (
 			<Fragment>
-				{storesNumber > 0 && (
-					<div class="text-center my-5">
-						{storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
+				<main>
+					{storesNumber > 0 && (
+						<div class="text-center my-5">
+							{storesNumber} attività {finalSentence} che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>.
+						</div>
+					)}
+					<label class="my-5">
+						<p class="mb-2 text-sm">Cerca per nome</p>
+						<input
+							class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+							type="text"
+							placeholder="Nome attività"
+							onInput={this.handleChangeFilter}
+						/>
+					</label>
+					<div class="mt-5 mb-2 flex justify-between items-center">
+						<p class="text-sm">Filtra per categoria</p>
+						<div class="float-right text-xs">Altre &rarr;</div>
 					</div>
-				)}
-				<label class="my-5">
-					<p class="mb-2 text-sm">Cerca per nome</p>
-					<input
-						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-						type="text"
-						placeholder="Nome attività"
-						onInput={this.handleChangeFilter}
-					/>
-				</label>
-				<div class="mt-5 mb-2 flex justify-between items-center">
-					<p class="text-sm">Filtra per categoria</p>
-					<div class="float-right text-xs">Altre &rarr;</div>
-				</div>
-				<div class="flex overflow-x-scroll text-center mt-2 mb-5" style="-webkit-overflow-scrolling: touch;">
-					{Object.keys(stores).map((key) => (
-						<button
-							onClick={this.handleCategoryFilter(key)}
-							class={`m-1 flex-grow-0 flex-shrink-0 items-center border border-blue-500 py-2 px-4 rounded-full ${
-								key === categoryFilter
-									? "bg-blue-500 hover:bg-blue-500 text-white outline-none text-white"
-									: "bg-white hover:bg-blue-500 hover:text-white"
-							}`}
-						>
-							<span>{`${stores[key].icon} ${key}`}</span>
-						</button>
-					))}
-				</div>
-				<div class="relative mb-10 font-sans text-md text-gray-800">
-					{Object.keys(filteredStores)
-						.filter((key) => filteredStores[key].data.length)
-						.map((key) => (
-							<ListCategory
-								name={key}
-								category={filteredStores[key]}
-								filter={filter}
-							/>
+					<div class="flex overflow-x-scroll text-center mt-2 mb-5" style="-webkit-overflow-scrolling: touch;">
+						{Object.keys(stores).map((key) => (
+							<button
+								onClick={this.handleCategoryFilter(key)}
+								class={`m-1 flex-grow-0 flex-shrink-0 items-center border border-blue-500 py-2 px-4 rounded-full ${
+									key === categoryFilter
+										? "bg-blue-500 hover:bg-blue-500 text-white outline-none text-white"
+										: "bg-white hover:bg-blue-500 hover:text-white"
+								}`}
+							>
+								<span>{`${stores[key].icon} ${key}`}</span>
+							</button>
 						))}
-				</div>
-				{isEmptySearch && (
-					<p class="font-bold mt-5 mb-10 text-center">Oops! 😅 Non ci sono attività corrispondenti alla tua ricerca.</p>
-				)}
-				<div class="text-center w-full">
+					</div>
+					<div class="relative mb-10 font-sans text-md text-gray-800">
+						{Object.keys(filteredStores)
+							.filter((key) => filteredStores[key].data.length)
+							.map((key) => (
+								<ListCategory
+									name={key}
+									category={filteredStores[key]}
+									filter={filter}
+								/>
+							))}
+					</div>
+					{isEmptySearch && (
+						<p class="font-bold mt-5 mb-10 text-center">Oops! 😅 Non ci sono attività corrispondenti alla tua ricerca.</p>
+					)}
+				</main>
+				<footer class="text-center w-full">
 					<p class="mb-5">
 						Developed with ❤️ by{" "}
 						<a
@@ -146,7 +148,7 @@ export default class Home extends Component {
 						Se vuoi crearlo per la tua città visita la pagina GitHub del
 						progetto
 					</a>
-				</div>
+				</footer>
 			</Fragment>
 		);
 	}

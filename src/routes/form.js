@@ -1,6 +1,6 @@
 export default function Form() {
    return (
-      <div class="">
+      <main class="">
          <form
             name="contact"
             method="post"
@@ -113,6 +113,6 @@ export default function Form() {
                </button>
             </p>
          </form>
-      </div>
+      </main>
    );
 }
