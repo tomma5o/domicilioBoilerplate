@@ -7,7 +7,7 @@ export default class Home extends Component {
 		filter: "",
 		categoryFilter: null,
 	};
-
+	
 	calculateStoresNumber() {
 		const { results: stores } = this.props;
 		const keys = Object.keys(stores);
@@ -17,7 +17,7 @@ export default class Home extends Component {
 		}
 		return storesNumber;
 	}
-
+	
 	getFinalSentence(categoriesToList) {
 		const { results: stores } = this.props;
 		const keys = Object.keys(stores);
@@ -31,7 +31,7 @@ export default class Home extends Component {
 		const text = e.target.value;
 		this.setState({ filter: text });
 	};
-
+	
 	handleCategoryFilter = (key) => (_) => {
 		// eslint-disable-line no-unused-vars
 		if (key === this.state.categoryFilter) {
@@ -39,29 +39,34 @@ export default class Home extends Component {
 		}
 		this.setState({ categoryFilter: key });
 	};
-
+	
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
-		const regex = new RegExp(`${filter}`, "i");
+		const regexStore = new RegExp(`${filter}`, 'i');
+		const regexCategory = new RegExp(`[${filter}]{${filter.length},}`, 'i');
 
 		return Object.keys(results)
-			.filter((key) => (categoryFilter ? categoryFilter === key : true))
+			.filter(key => (categoryFilter ? categoryFilter === key : true))
 			.reduce((acc, key) => {
-				return {
-					...acc,
-					[key]: {
-						icon: results[key].icon,
-						data: results[key].data.filter((e) =>
-							filter.length ? regex.test(e.name) : true
-						),
-					},
-				};
+				return (
+					{
+						...acc,
+						[key]: {
+							icon: results[key].icon,
+							data: regexCategory.test(key)
+							? results[key].data
+							: results[key].data.filter(e =>
+								  filter.length ? regexStore.test(e.name) : true
+							  )
+						}
+					}
+				);
 			}, {});
 	}
-
+	
 	isEmptySearch(filteredStores) {
 		let storesFound = 0;
-		for (let key in filteredStores) {
+		for (const key in filteredStores) {
 			storesFound += filteredStores[key].data.length;
 		}
 		return storesFound === 0;
