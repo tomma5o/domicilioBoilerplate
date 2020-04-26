@@ -6,9 +6,9 @@ const isNav = (event) => event.request.mode === "navigate";
 const dataCacheName = "data";
 const preactAppDataSource = `${process.env.PREACT_APP_DATA_SOURCE}`;
 
-workbox.setConfig({
+/* workbox.setConfig({
    debug: true,
-});
+}); */
 
 const networkFirst = (cacheName, networkTimeoutSeconds = 3) => {
    return new workbox.strategies.NetworkFirst({
