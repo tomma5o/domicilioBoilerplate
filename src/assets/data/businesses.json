@@ -3,6 +3,16 @@
       "icon": "🍕",
       "data": [
          {
+            "newEntry": 1,
+            "name": "360Gradi Pizzeria",
+            "tel": "391 738 6318",
+            "satispay": 1,
+            "fb": "https://www.facebook.com/360gradi-Pizzeria-1808339386063595",
+            "site": "https://360gradi.cittacoupon.it/",
+            "addr": "Via Tommaso Campanella 103, 40026 Imola BO",
+            "note": "Consegna gratuita per tutto il mese di aprile per chi ordina dall'app."
+         },
+         {
             "name": "Andy & Flo",
             "tel": "0542.640109",
             "fb": "//www.facebook.com/Andy-Flo-1417704201845485",
@@ -88,7 +98,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Cà delle Querce",
             "tel": "0542 690176",
             "satispay": 1,
@@ -124,7 +133,6 @@
             "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
          },
          {
-            "newEntry": 1,
             "name": "La Tavernetta",
             "tel": "0542 22417",
             "mail": "mauro.paolini52@gmail.com"
@@ -136,7 +144,6 @@
             "note": "Attivi con le consegne a domicilio Venerdì e Sabato sera con sconto del 25%."
          },
          {
-            "newEntry": 1,
             "name": "Osteria del Teatro",
             "tel": "3389239291",
             "satispay": 1,
@@ -445,7 +452,6 @@
             "site": "http://www.vini-morara.It"
          },
          {
-            "newEntry": 1,
             "name": "Tremonti Società Agricola",
             "tel": "0542 657116",
             "mail": "tremonti@tremonti.it",
@@ -458,7 +464,6 @@
       "icon": "🛒",
       "data": [
          {
-            "newEntry": 1,
             "name": "Conad Carducci",
             "tel": "0542 30485",
             "mail": "negozio@carducci-srl.it",
@@ -748,10 +753,10 @@
             "note": "Gelato artigianale e torte con consegna gratuita a domicilio. Chiusi il Lunedì. Gelato: 500 gr. 7,50€ – 750 gr. 10€ – 1 kg. 15€ – Prenotate con due giorni di anticipo le torte gelato. Per il gelato consegna a domicilio gratuita con prenotazione dalle 12:00 alle 18:00 e consegna entro le 21:00."
          },
          {
-            "newEntry": 1,
-            "name": "YO yogurteria e creperia",
+            "name": "YO! yogurteria e creperia",
             "tel": "327 8814119",
-            "mail": "yobarbara@libero.it"
+            "mail": "yobarbara@libero.it",
+            "note": "Per il centro, ordine mimimo 8 euro. Fuori centro ordine minimo 10 euro. Spese di consegna: 2 euro."
          }
       ]
    },
@@ -849,7 +854,6 @@
             "fb": "//www.facebook.com/mercatocopertoilborghetto/"
          },
          {
-            "newEntry": 1,
             "name": "Tabaccheria edicola Pontesanto",
             "tel": ["0542 850050", "345 1270688"],
             "satispay": 1,
@@ -955,7 +959,6 @@
             "note": "Consegna in tutto il comprensorio. Pagamento contanti o POS."
          },
          {
-            "newEntry": 1,
             "name": "Enoteca Le lune",
             "tel": "0542 643359",
             "mail": "diego@lune.it",
@@ -1021,7 +1024,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Maison et flurs",
             "tel": "0542 783484",
             "satispay": 1,
@@ -1062,7 +1064,6 @@
             "addr": "via Emilia 26, 40026 Imola BO"
          },
          {
-            "newEntry": 1,
             "name": "Blake",
             "tel": "345 8332491",
             "mail": "blakeimola@gmail.com"
