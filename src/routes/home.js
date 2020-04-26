@@ -106,8 +106,8 @@ export default class Home extends Component {
 								onClick={this.handleCategoryFilter(key)}
 								class={`m-1 flex-grow-0 flex-shrink-0 items-center border border-blue-500 py-2 px-4 rounded-full ${
 									key === categoryFilter
-										? "bg-blue-500 hover:bg-blue-500 text-white outline-none text-white"
-										: "bg-white hover:bg-blue-500 hover:text-white"
+										? "bg-blue-500 text-white outline-none text-white"
+										: "bg-white"
 								}`}
 							>
 								<span>{`${stores[key].icon} ${key}`}</span>
