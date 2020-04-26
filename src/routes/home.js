@@ -59,14 +59,19 @@ export default class Home extends Component {
 
 		return (
 			<Fragment>
-				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
+				<label class="my-5">
+					<p class="mb-2 text-sm">Cerca per nome</p>
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
 						type="text"
-						placeholder="Cerca Attività"
+						placeholder="Nome attività"
 						onInput={this.handleChangeFilter}
 					/>
-				</div>
+				</label>
+				<div class="mt-5 mb-2 flex justify-between items-center">
+					<p class="text-sm">Filtra per categoria</p>
+					<div class="float-right text-xs">Altre &rarr;</div>
+            </div>
 				<div class="relative flex overflow-x-scroll text-center mt-2 pb-5">
 					{Object.keys(stores).map(key => (
 						<button
