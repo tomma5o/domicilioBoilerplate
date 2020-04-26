@@ -1,5 +1,4 @@
 {
-
    "Pizzerie": {
       "icon": "🍕",
       "data": [
@@ -65,7 +64,8 @@
             "name": "Ristorante e Pizzeria Anema e Core",
             "addr": "Via Selice Provinciale, 44/b, 40026 Imola BO",
             "fb": "//www.facebook.com/Pizzeria-Anema-e-Core-102488027924687",
-            "tel": ["0542 31328", "380 151 1599"]
+            "tel": ["0542 31328", "380 151 1599"],
+            "note": "Consegniamo x un raggio di 10 km sia cucina che pizzeria che friggitoria."
          }
       ]
    },
@@ -193,6 +193,13 @@
             "tel": "380.5883904",
             "fb": "//www.facebook.com/ristorantepizzeriadonatello",
             "note": "Specialità carne alla brace. Attivi come ristorante e pizzeria (sera) con consegne a domicilio gratuite a domicilio su Imola. Prenotazioni dalle 11:00 alle 19:00 – Consegne dalle 19:00 alle 21:30."
+         },
+         {
+            "name": "Ristorante e Pizzeria Anema e Core",
+            "addr": "Via Selice Provinciale, 44/b, 40026 Imola BO",
+            "fb": "//www.facebook.com/Pizzeria-Anema-e-Core-102488027924687",
+            "tel": ["0542 31328", "380 151 1599"],
+            "note": "Consegniamo x un raggio di 10 km sia cucina che pizzeria che friggitoria."
          },
          {
             "name": "Sicilia Bedda... la buona gastronomia siciliana",
@@ -938,6 +945,15 @@
          },
          {
             "newEntry": 1,
+            "name": "Enoteca 1300",
+            "tel": "345.3405928",
+            "mail": "info@enoteca1300.it",
+            "fb": "//www.facebook.com/enoteca1300/",
+            "site": "//enoteca1300.it/",
+            "note": "Consegna in tutto il comprensorio. Pagamento contanti o POS."
+         },
+         {
+            "newEntry": 1,
             "name": "Enoteca Le lune",
             "tel": "0542 643359",
             "mail": "diego@lune.it",
@@ -950,6 +966,15 @@
             "note": "Birrificio Agricolo. Sono attivi con il servizio di consegna a domicilio gratuita per le birre di propria produzione e di altri prodotti agricoli delle aziende della zona quali: vino (Cantina Tampieri), farina macinata a pietra grano Senatore Capelli (Stefano Quartieri), passata di pomodoro, miele (Il Mielaio del Guelfo), Raviole, crostate, succhi di frutta (Il bertuzzo – prodotti BIO Succhi di frutta) e Olio extravergine d’oliva. Sconti elevati per tutto il periodo di Quarantena.",
             "fb": "//www.facebook.com/hopinion.beer",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Imola Bevande",
+            "tel": "0542642606",
+            "mail": "drinkservice@imolabevande.it",
+            "fb": "https://www.facebook.com/ImolaBevande/",
+            "site": "https://www.imolabevande.it/",
+            "note": "Consegna in tutto il comprensorio. Pagamento contanti o POS."
          },
          {
             "name": "In enoteca",
