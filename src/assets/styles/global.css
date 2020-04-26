@@ -21,6 +21,10 @@ body {
 	background-color: var(--bg);
 }
 
+.overflow-x-scroll,
+.overflow-y-scroll {
+	-webkit-overflow-scrolling: touch;
+}
 
 .backdrop {
 	-webkit-backdrop-filter: blur(10px);

@@ -100,7 +100,7 @@ export default class Home extends Component {
 						<p class="text-sm">Filtra per categoria</p>
 						<div class="float-right text-xs">Altre &rarr;</div>
 					</div>
-					<div class="flex overflow-x-scroll text-center mt-2 mb-5" style="-webkit-overflow-scrolling: touch;">
+					<div class="flex overflow-x-scroll text-center mt-2 mb-5">
 						{Object.keys(stores).map((key) => (
 							<button
 								onClick={this.handleCategoryFilter(key)}
