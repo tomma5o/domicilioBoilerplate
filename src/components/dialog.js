@@ -18,9 +18,7 @@ export const Dialog = ({
 }) => {
    return (
       <dialog
-         class="fixed inset-0 backdrop w-screen h-screen "
-         //class=" bg-white  p-6  "
-         //style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
+         class="fixed inset-0 backdrop w-screen h-screen"
          style={{ display: isOpen ? "initial" : "none" }}
          onClick={closePopup}
       >
