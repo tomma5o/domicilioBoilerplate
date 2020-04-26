@@ -5,10 +5,10 @@
          {
             "newEntry": 1,
             "name": "360Gradi Pizzeria",
-            "tel": "391 738 6318",
+            "tel": "391 7386318",
             "satispay": 1,
-            "fb": "https://www.facebook.com/360gradi-Pizzeria-1808339386063595",
-            "site": "https://360gradi.cittacoupon.it/",
+            "fb": "//www.facebook.com/360gradi-Pizzeria-1808339386063595",
+            "site": "//360gradi.cittacoupon.it/",
             "addr": "Via Tommaso Campanella 103, 40026 Imola BO",
             "note": "Consegna gratuita per tutto il mese di aprile per chi ordina dall'app."
          },
@@ -30,6 +30,13 @@
             "tel": "0542.850132",
             "fb": "//www.facebook.com/La-Voglia-Matta-Imola-426769174063866",
             "note": "Attivi con la il servizio gratuito di consegna a domicilio. Ordini dalle 11:00 alle 13:00 per la sera. Consegne a partire dalle ore 18:00. Per semplificare ed accorciare i tempi di consegna non accattano ordinazioni per pizze giganti, metri e mezzi metri e calzoni."
+         },
+         {
+            "newEntry": 1,
+            "name": "Pizzeria Cavour",
+            "tel": "0542 25417",
+            "fb": "//www.facebook.com/wwwpizzeriacavour.it/",
+            "note": "Consegna in tutto il comprensorio."
          },
          {
             "name": "Pizzeria I Munel",
@@ -977,8 +984,8 @@
             "name": "Imola Bevande",
             "tel": "0542642606",
             "mail": "drinkservice@imolabevande.it",
-            "fb": "https://www.facebook.com/ImolaBevande/",
-            "site": "https://www.imolabevande.it/",
+            "fb": "//www.facebook.com/ImolaBevande/",
+            "site": "//www.imolabevande.it/",
             "note": "Consegna in tutto il comprensorio. Pagamento contanti o POS."
          },
          {
