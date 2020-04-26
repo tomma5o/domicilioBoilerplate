@@ -1060,6 +1060,21 @@
          }
       ]
    },
+   "Copisterie": {
+      "icon": "🖨",
+      "data": [
+         {
+            "newEntry": 1,
+            "name": "Copy Service - Creative lab",
+            "tel": "0542 640655",
+            "satispay": 1,
+            "mail": "copyservice@fastmail.it",
+            "fb": "https://www.facebook.com/CopyServiceImola",
+            "site": "http://www.copyserviceimola.it/",
+            "note": "Centro Digitale con molteplici servizi a privati e ad aziende: Stampa Digitale piccolo e grande formato - Progettazione Grafica - Web Management - Gadgettistica - Servizi Informatici."
+         }
+      ]
+   },
    "Abbigliamento": {
       "icon": "👗",
       "data": [
