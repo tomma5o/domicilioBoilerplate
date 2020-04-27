@@ -4,15 +4,6 @@
       "data": [
          {
             "newEntry": 1,
-            "name": "La Masseria",
-            "tel": "0542 642548",
-            "mail": "info@pizzerialamasseriaimola.com",
-            "fb": "//facebook.com/lamasseriaimola",
-            "site": "http://www.pizzerialamasseriaimola.com/",
-            "note": "La Masseria è una pizzeria ristorante con specialità di pesce a Imola, in via Bicocca 9."
-         },
-         {
-            "newEntry": 1,
             "name": "360Gradi Pizzeria",
             "tel": "391 7386318",
             "satispay": 1,
@@ -33,6 +24,15 @@
             "mail": "info@cibo-pizzeriaristo.it",
             "fb": "//facebook.com/CiBo-pizzeria-rist%C3%B2-1452449751677071",
             "note": "Aperti con il servizio di asporto a domicilio."
+         },
+         {
+            "newEntry": 1,
+            "name": "La Masseria",
+            "tel": "0542 642548",
+            "mail": "info@pizzerialamasseriaimola.com",
+            "fb": "//facebook.com/lamasseriaimola",
+            "site": "http://www.pizzerialamasseriaimola.com/",
+            "note": "La Masseria è una pizzeria ristorante con specialità di pesce a Imola, in via Bicocca 9."
          },
          {
             "name": "La Voglia Matta",
@@ -74,10 +74,24 @@
             "fb": "//facebook.com/pizzeriareginella2014"
          },
          {
+            "newEntry": 1,
+            "name": "Pizzeria Villaggio",
+            "tel": "380 1520443",
+            "mail": "motelvillaggio@gmail.com",
+            "fb": "https://www.facebook.com/Albergomotelvillaggio/"
+         },
+         {
             "name": "Pizzeria Zolino",
             "tel": "388.7835340",
             "fb": "//facebook.com/Pizzeria-Zolino-209300093193852",
             "note": "Pizzeria d’asporto – Attivo il servizio di consegna a domicilio tutti i giorni dalle ore 18:00 alle 21:30"
+         },
+         {
+            "newEntry": 1,
+            "name": "Ristorante Pizzeria D'Azeglio",
+            "tel": "0542 29412",
+            "fb": "//facebook.com/Ristorante-pizzeria-Dazeglio-1522403954743023/",
+            "note": "Consegna in tutto il comprensorio"
          },
          {
             "name": "Ristorante Pizzeria da Valerio",
@@ -100,15 +114,6 @@
       "icon": "🍽",
       "data": [
          {
-            "newEntry": 1,
-            "name": "Asiatique Thai Cuisine",
-            "tel": "3489354436",
-            "satispay": 1,
-            "mail": "asiatiquethaifood@gmail.com",
-            "fb": "//facebook.com/asiatiquethaicuisine/",
-            "note": "Consegna entro gli 8 km da Piratello. Preferibilmente prenotare per pranzo un giorno prima, per cena entro pranzo del giorno stesso."
-         },
-         {
             "name": "Andy & Flo",
             "tel": "0542.640109",
             "fb": "//facebook.com/Andy-Flo-1417704201845485",
@@ -121,6 +126,15 @@
             "fb": "//facebook.com/Anonima-Fornelli-167093829971859",
             "tel": "0542 24755",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Asiatique Thai Cuisine",
+            "tel": "3489354436",
+            "satispay": 1,
+            "mail": "asiatiquethaifood@gmail.com",
+            "fb": "//facebook.com/asiatiquethaicuisine/",
+            "note": "Consegna entro gli 8 km da Piratello. Preferibilmente prenotare per pranzo un giorno prima, per cena entro pranzo del giorno stesso."
          },
          {
             "name": "Cà delle Querce",
@@ -222,6 +236,13 @@
             "note": "Il ristorante è attivo con il servizio di consegna a domicilio a cena nei giorni di Venerdi, Sabato con ordini entro le 18:00. Domenica pranzo e cena. Si accettano ordini di Lasagne per Domenica a pranzo. Il menù cambia settimanalmente (guardare su Facebook)"
          },
          {
+            "newEntry": 1,
+            "name": "Ristorante Pizzeria D'Azeglio",
+            "tel": "0542 29412",
+            "fb": "//facebook.com/Ristorante-pizzeria-Dazeglio-1522403954743023/",
+            "note": "Consegna in tutto il comprensorio"
+         },
+         {
             "name": "Ristorante Pizzeria Donatello",
             "tel": "380.5883904",
             "fb": "//facebook.com/ristorantepizzeriadonatello",
@@ -305,6 +326,16 @@
    "Chioschi": {
       "icon": "🌮",
       "data": [
+         {
+            "newEntry": 1,
+            "name": "Chiosco Controcorrente (Mordano)",
+            "tel": "333 6309829",
+            "satispay": 1,
+            "mail": "chioscocontrocorrente@gmail.com",
+            "fb": "//facebook.com/piadinatigella/",
+            "site": "//www.reteimprese.it/controcorrente",
+            "note": "A Mordano. Consegna in tutto il comprensorio."
+         },
          {
             "name": "Da Lori Piadineria",
             "tel": "339.1782830",
@@ -416,14 +447,6 @@
       "icon": "👩‍🌾",
       "data": [
          {
-            "name": "Azienda agricola la Marletta",
-            "tel": "348.0977076",
-            "mail": "info@lamarletta.it",
-            "site": "http://www.lamarletta.it/",
-            "note": "Consegna di verdura e frutta a domicilio.",
-            "satispay": 1
-         },
-         {
             "name": "Azienda agricola Boschi Chiara",
             "addr": "via Rondanina, 27",
             "mail": "boschichiara.bio@gmail.it",
@@ -440,6 +463,14 @@
             "tel": "3397021594",
             "fb": "//facebook.com/aziendagricolabordona/shop/",
             "note": "Prodotti visionabili sulla pagina FB"
+         },
+         {
+            "name": "Azienda agricola la Marletta",
+            "tel": "348.0977076",
+            "mail": "info@lamarletta.it",
+            "site": "http://www.lamarletta.it/",
+            "note": "Consegna di verdura e frutta a domicilio.",
+            "satispay": 1
          },
          {
             "name": "Battilani Damirca/Raffaele Poidomani az. agr. ",
@@ -511,6 +542,15 @@
       "icon": "☕",
       "data": [
          {
+            "name": "Puro - quelli del caffè",
+            "addr": "via giovanni x, 88/h",
+            "mail": "info@puroquellidelcaffe.it",
+            "tel": "370 3759246",
+            "fb": "//facebook.com/puro.quellidelcaffe",
+            "site": "//www.puroquellidelcaffe.it/",
+            "satispay": 1
+         },
+         {
             "newEntry": 1,
             "name": "Torrefazione Caffè Gourmet",
             "tel": "0542 640621",
@@ -519,39 +559,12 @@
             "fb": "//facebook.com/TorrefazioneGourmet/",
             "site": "//torrefazionegourmet.it/",
             "note": "Cialde, capsule e caffè. Consegna in tutto il comprensorio."
-         },
-         {
-            "name": "Puro - quelli del caffè",
-            "addr": "via giovanni x, 88/h",
-            "mail": "info@puroquellidelcaffe.it",
-            "tel": "370 3759246",
-            "fb": "//facebook.com/puro.quellidelcaffe",
-            "site": "//www.puroquellidelcaffe.it/",
-            "satispay": 1
          }
       ]
    },
    "Alimentari": {
       "icon": "🍖🐟",
       "data": [
-         {
-            "newEntry": 1,
-            "name": "La Bottega di Gourmet",
-            "tel": "3339567790",
-            "satispay": 1,
-            "mail": "ordini@torrefazionegourmet.it",
-            "fb": "//facebook.com/BottegacaffeGourmet/",
-            "site": "//torrefazionegourmet.it/11-0/la-bottega-del-caff/",
-            "note": "Consegna in tutto il comprensorio"
-         },
-         {
-            "newEntry": 1,
-            "name": "Tienda Latina Deyoha",
-            "tel": "3891061914",
-            "mail": "blancoyohania7@gmail.com",
-            "fb": "//facebook.com/Tienda-Latina-DaYoha-2267026389974137",
-            "note": "Alimentari etnico"
-         },
          {
             "name": "Bo. Mi service La bottega in Movimento",
             "mail": "info@bomiservice.it",
@@ -610,6 +623,16 @@
             "note": "Attivi con il servizio a domicilio. Ordini al Mattino e consegne dalle 8.30 alle 12:30. Uova pasquali, colombe, ovetti di cioccolato e caffè."
          },
          {
+            "newEntry": 1,
+            "name": "La Bottega di Gourmet",
+            "tel": "3339567790",
+            "satispay": 1,
+            "mail": "ordini@torrefazionegourmet.it",
+            "fb": "//facebook.com/BottegacaffeGourmet/",
+            "site": "//torrefazionegourmet.it/11-0/la-bottega-del-caff/",
+            "note": "Consegna in tutto il comprensorio"
+         },
+         {
             "name": "La Malga salumeria",
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
             "tel": "338 1477866",
@@ -637,6 +660,14 @@
             "mail": "polleriadelborghetto@gmail.com",
             "fb": "//facebook.com/mercatocopertoilborghetto/",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Tienda Latina Deyoha",
+            "tel": "3891061914",
+            "mail": "blancoyohania7@gmail.com",
+            "fb": "//facebook.com/Tienda-Latina-DaYoha-2267026389974137",
+            "note": "Alimentari etnico"
          }
       ]
    },
@@ -644,26 +675,19 @@
       "icon": "🍞🥐",
       "data": [
          {
+            "name": "Bar Otello",
+            "tel": "333 5974499",
+            "fb": "//facebook.com/otello.imola/",
+            "addr": "via Emilia, 166",
+            "satispay": 1
+         },
+         {
             "newEntry": 1,
             "name": "Bar borghetto",
             "tel": "0542 30881",
             "satispay": 1,
             "fb": "//facebook.com/barborghettoimola",
             "note": "Consegna zona centro"
-         },
-         {
-            "newEntry": 1,
-            "name": "Il caffè di Alice",
-            "tel": "3384044404",
-            "mail": "antonellabronzato72@gmail.com",
-            "note": "Consegna di colazioni con brioches fresche estratti spremute e panini. Per il pranzo prenotazioni entro le ore 21 del giorno precedente"
-         },
-         {
-            "name": "Bar Otello",
-            "tel": "333 5974499",
-            "fb": "//facebook.com/otello.imola/",
-            "addr": "via Emilia, 166",
-            "satispay": 1
          },
          {
             "name": "Bar centrale",
@@ -723,6 +747,13 @@
             "note": "Consegna in tutto il comprensorio",
             "fb": "//facebook.com/Forno-Pasticceria-Katan%C3%A8-132745454017749",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Il caffè di Alice",
+            "tel": "3384044404",
+            "mail": "antonellabronzato72@gmail.com",
+            "note": "Consegna di colazioni con brioches fresche estratti spremute e panini. Per il pranzo prenotazioni entro le ore 21 del giorno precedente"
          },
          {
             "name": "Laboratorio Plasir",
@@ -847,12 +878,11 @@
       "icon": "👶",
       "data": [
          {
-            "newEntry": 1,
-            "name": "Joseph bimbi",
-            "tel": "0542 27892",
-            "satispay": 1,
-            "fb": "//facebook.com/josephbimbi",
-            "note": "Consegna in tutto il comprensorio"
+            "name": "Bulli e pupe fashion store",
+            "tel": ["3939125082", "3331630522"],
+            "mail": "bulliepupeimola1@gmail.com",
+            "fb": "//facebook.com/bulliepupeimola0",
+            "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
          },
          {
             "newEntry": 1,
@@ -864,19 +894,20 @@
             "note": "Palloncini e kit per feste in casa"
          },
          {
-            "name": "Bulli e pupe fashion store",
-            "tel": ["3939125082", "3331630522"],
-            "mail": "bulliepupeimola1@gmail.com",
-            "fb": "//facebook.com/bulliepupeimola0",
-            "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
-         },
-         {
             "name": "Giù Giù e Bebè Sorriso ",
             "mail": "mammachiocciaimola@gmail.com",
             "fb": "//facebook.com/giugiuebebesorriso/",
             "tel": "3890715322",
             "note": "Consegna anche fuori comune",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Joseph bimbi",
+            "tel": "0542 27892",
+            "satispay": 1,
+            "fb": "//facebook.com/josephbimbi",
+            "note": "Consegna in tutto il comprensorio"
          },
          {
             "name": "La cicogna",
@@ -1172,14 +1203,6 @@
       "icon": "👗",
       "data": [
          {
-            "newEntry": 1,
-            "name": "Joseph",
-            "tel": "0542 24361",
-            "satispay": 1,
-            "fb": "//facebook.com/Josephimola",
-            "note": "Consegna in tutto il comprensorio"
-         },
-         {
             "name": "Babetta boutique",
             "tel": "335 5641419",
             "mail": "babetta.snc@libero.it",
@@ -1210,6 +1233,14 @@
             "fb": "//facebook.com/Gi%C3%B3-Gi%C3%B3-tutto-lintimo-192830997739960",
             "mail": "giovanna.bandini@icloud.com",
             "note": "Anche su Whatsapp, Instagram gioo_ba, Facebook Gió & Gió"
+         },
+         {
+            "newEntry": 1,
+            "name": "Joseph",
+            "tel": "0542 24361",
+            "satispay": 1,
+            "fb": "//facebook.com/Josephimola",
+            "note": "Consegna in tutto il comprensorio"
          },
          {
             "name": "Madera",
