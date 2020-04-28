@@ -675,6 +675,13 @@
       "icon": "🍞🥐",
       "data": [
          {
+            "newEntry": 1,
+            "name": "Sunrise caffè",
+            "tel": "0542 40037",
+            "fb": "https://www.facebook.com/sunrisecaffeeaperitivi",
+            "note": "Su prenotazione consegna a domicilio ed asporto di colazioni ed aperitivi. Consegna in tutto il comprensorio."
+         },
+         {
             "name": "Bar Otello",
             "tel": "333 5974499",
             "fb": "//facebook.com/otello.imola/",
