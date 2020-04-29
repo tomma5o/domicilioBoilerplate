@@ -69,18 +69,18 @@ export default class App extends Component {
 			<Action.Provider value={{ setPopupNumbers: this.setPopupNumbers }}>
 				<div id="app" class="px-5 max-w-screen-md mx-auto">
 					<header>
-						<div class="m-5 text-center">
+						{/* <div class="m-5 text-center">
 							<p class="bg-gray-200 text-sm text-gray-500 px-2 py-1 rounded inline-block">
-								Segnalazione attività sospesa fino al 29/04
+								Segnalazione attività sospesa fino al __/__
 							</p>
-						</div>
-						{/* <nav class="flex justify-center md:justify-end items-center">
+						</div> */}
+						<nav class="flex justify-center md:justify-end items-center">
 							{
 								isHomepage
 									? <Link class="m-5 bg-blue-500 inline-block text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
-									: <Link class="m-5 text-blue-500" href="/">Ritorna alla ricerca</Link>
+									: <Link class="m-5 text-blue-500 inline-block px-2 py-1 rounded" href="/">&larr; Ritorna alla ricerca</Link>
 							}
-						</nav> */}
+						</nav>
 						<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl text-gray-800 text-center">
 							{`${process.env.PREACT_APP_CITY} a Domicilio`}
 							<span
