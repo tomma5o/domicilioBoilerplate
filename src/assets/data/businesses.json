@@ -3,7 +3,6 @@
       "icon": "🍕",
       "data": [
          {
-            "newEntry": 1,
             "name": "360Gradi Pizzeria",
             "tel": "391 7386318",
             "satispay": 1,
@@ -26,7 +25,6 @@
             "note": "Aperti con il servizio di asporto a domicilio."
          },
          {
-            "newEntry": 1,
             "name": "La Masseria",
             "tel": "0542 642548",
             "mail": "info@pizzerialamasseriaimola.com",
@@ -41,7 +39,6 @@
             "note": "Attivi con la il servizio gratuito di consegna a domicilio. Ordini dalle 11:00 alle 13:00 per la sera. Consegne a partire dalle ore 18:00. Per semplificare ed accorciare i tempi di consegna non accattano ordinazioni per pizze giganti, metri e mezzi metri e calzoni."
          },
          {
-            "newEntry": 1,
             "name": "Pizzeria Cavour",
             "tel": "0542 25417",
             "fb": "//facebook.com/wwwpizzeriacavour.it/",
@@ -74,7 +71,6 @@
             "fb": "//facebook.com/pizzeriareginella2014"
          },
          {
-            "newEntry": 1,
             "name": "Pizzeria Villaggio",
             "tel": "380 1520443",
             "mail": "motelvillaggio@gmail.com",
@@ -87,7 +83,6 @@
             "note": "Pizzeria d’asporto – Attivo il servizio di consegna a domicilio tutti i giorni dalle ore 18:00 alle 21:30"
          },
          {
-            "newEntry": 1,
             "name": "Ristorante Pizzeria D'Azeglio",
             "tel": "0542 29412",
             "fb": "//facebook.com/Ristorante-pizzeria-Dazeglio-1522403954743023/",
@@ -128,7 +123,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Asiatique Thai Cuisine",
             "tel": "3489354436",
             "satispay": 1,
@@ -236,7 +230,6 @@
             "note": "Il ristorante è attivo con il servizio di consegna a domicilio a cena nei giorni di Venerdi, Sabato con ordini entro le 18:00. Domenica pranzo e cena. Si accettano ordini di Lasagne per Domenica a pranzo. Il menù cambia settimanalmente (guardare su Facebook)"
          },
          {
-            "newEntry": 1,
             "name": "Ristorante Pizzeria D'Azeglio",
             "tel": "0542 29412",
             "fb": "//facebook.com/Ristorante-pizzeria-Dazeglio-1522403954743023/",
@@ -327,7 +320,6 @@
       "icon": "🌮",
       "data": [
          {
-            "newEntry": 1,
             "name": "Chiosco Controcorrente (Mordano)",
             "tel": "333 6309829",
             "satispay": 1,
@@ -551,7 +543,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Torrefazione Caffè Gourmet",
             "tel": "0542 640621",
             "satispay": 1,
@@ -623,7 +614,6 @@
             "note": "Attivi con il servizio a domicilio. Ordini al Mattino e consegne dalle 8.30 alle 12:30. Uova pasquali, colombe, ovetti di cioccolato e caffè."
          },
          {
-            "newEntry": 1,
             "name": "La Bottega di Gourmet",
             "tel": "3339567790",
             "satispay": 1,
@@ -662,7 +652,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Tienda Latina Deyoha",
             "tel": "3891061914",
             "mail": "blancoyohania7@gmail.com",
@@ -676,6 +665,13 @@
       "data": [
          {
             "newEntry": 1,
+            "name": "Caffetteria Melody",
+            "tel": ["342 1332747", "0542 010921"],
+            "mail": "caffetteriamelody@hotmail.com",
+            "fb": "https://www.facebook.com/CaffetteriaMelody",
+            "note": "Caffetteria - Pasticceria - Panetteria. Attivi con il servizio di consegna a domicilio e aperti per il take away per colazioni, pasticceria, biscotteria, Torte di tutti i tipi, Vino selezionato.Colazioni con Paste fresche e di produzione propria. Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici oppure Facebook, Instagram (@caffetteriamelody). L'attività rispetta tutte le misure sanitarie di preparazione e consegna in massima sicurezza."
+         },
+         {
             "name": "Sunrise caffè",
             "tel": "0542 40037",
             "fb": "https://www.facebook.com/sunrisecaffeeaperitivi",
@@ -689,7 +685,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Bar borghetto",
             "tel": "0542 30881",
             "satispay": 1,
@@ -756,7 +751,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Il caffè di Alice",
             "tel": "3384044404",
             "mail": "antonellabronzato72@gmail.com",
@@ -892,7 +886,6 @@
             "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
          },
          {
-            "newEntry": 1,
             "name": "Fiocchi e Balocchi",
             "tel": "3395030266",
             "satispay": 1,
@@ -909,7 +902,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Joseph bimbi",
             "tel": "0542 27892",
             "satispay": 1,
@@ -1088,7 +1080,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Enoteca 1300",
             "tel": "345.3405928",
             "mail": "info@enoteca1300.it",
@@ -1111,7 +1102,6 @@
             "satispay": 1
          },
          {
-            "newEntry": 1,
             "name": "Imola Bevande",
             "tel": "0542642606",
             "mail": "drinkservice@imolabevande.it",
@@ -1195,7 +1185,6 @@
       "icon": "🖨",
       "data": [
          {
-            "newEntry": 1,
             "name": "Copy Service - Creative lab",
             "tel": "0542 640655",
             "satispay": 1,
@@ -1242,7 +1231,6 @@
             "note": "Anche su Whatsapp, Instagram gioo_ba, Facebook Gió & Gió"
          },
          {
-            "newEntry": 1,
             "name": "Joseph",
             "tel": "0542 24361",
             "satispay": 1,
@@ -1312,7 +1300,6 @@
       "icon": "🏠",
       "data": [
          {
-            "newEntry": 1,
             "name": "Artisticando",
             "tel": "3395030266",
             "satispay": 1,
@@ -1322,7 +1309,6 @@
             "note": "Articoli da regalo, articoli personalizzati, confetti. Consegna in tutto il comprensorio."
          },
          {
-            "newEntry": 1,
             "name": "La Porcellana Bianca",
             "tel": ["3343901442", "0542 23992"],
             "satispay": 1,
