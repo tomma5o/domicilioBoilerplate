@@ -74,7 +74,7 @@
             "name": "Pizzeria Villaggio",
             "tel": "380 1520443",
             "mail": "motelvillaggio@gmail.com",
-            "fb": "https://www.facebook.com/Albergomotelvillaggio/"
+            "fb": "https://facebook.com/Albergomotelvillaggio/"
          },
          {
             "name": "Pizzeria Zolino",
@@ -664,20 +664,6 @@
       "icon": "🍞🥐",
       "data": [
          {
-            "newEntry": 1,
-            "name": "Caffetteria Melody",
-            "tel": ["342 1332747", "0542 010921"],
-            "mail": "caffetteriamelody@hotmail.com",
-            "fb": "https://www.facebook.com/CaffetteriaMelody",
-            "note": "Caffetteria - Pasticceria - Panetteria. Attivi con il servizio di consegna a domicilio e aperti per il take away per colazioni, pasticceria, biscotteria, Torte di tutti i tipi, Vino selezionato.Colazioni con Paste fresche e di produzione propria. Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici oppure Facebook, Instagram (@caffetteriamelody). L'attività rispetta tutte le misure sanitarie di preparazione e consegna in massima sicurezza."
-         },
-         {
-            "name": "Sunrise caffè",
-            "tel": "0542 40037",
-            "fb": "https://www.facebook.com/sunrisecaffeeaperitivi",
-            "note": "Su prenotazione consegna a domicilio ed asporto di colazioni ed aperitivi. Consegna in tutto il comprensorio."
-         },
-         {
             "name": "Bar Otello",
             "tel": "333 5974499",
             "fb": "//facebook.com/otello.imola/",
@@ -696,6 +682,13 @@
             "tel": "3296499059",
             "fb": "//facebook.com/BarCentraleImola",
             "satispay": 1
+         },
+         {
+            "name": "Caffetteria Melody",
+            "tel": ["342 1332747", "0542 010921"],
+            "mail": "caffetteriamelody@hotmail.com",
+            "fb": "https://facebook.com/CaffetteriaMelody",
+            "note": "Caffetteria - Pasticceria - Panetteria. Attivi con il servizio di consegna a domicilio e aperti per il take away per colazioni, pasticceria, biscotteria, Torte di tutti i tipi, Vino selezionato.Colazioni con Paste fresche e di produzione propria. Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici oppure Facebook, Instagram (@caffetteriamelody). L'attività rispetta tutte le misure sanitarie di preparazione e consegna in massima sicurezza."
          },
          {
             "name": "Caffè Emilia",
@@ -780,6 +773,12 @@
             "fb": "//facebook.com/MammaMiaCafeImola",
             "note": "Vino, birre, brioche e pane da forno. Attivi con il servizio di consegna a domicilio di  brioche e prodotti da forno (Ordine entro le 19:00 del giorno prima), vino, birra e salatini mignon. Donazioni all’AUSL di Imola: per ogni bottiglia di vino venduta doneremo il 10% del suo valore e a fronte di 1 cartone di Birra donermo 10€. Orari di consegna 7:30-12:00 per le colazioni e pane e 12:00-17:00 per birra, vino e aperitivo",
             "satispay": 1
+         },
+         {
+            "name": "Sunrise caffè",
+            "tel": "0542 40037",
+            "fb": "https://facebook.com/sunrisecaffeeaperitivi",
+            "note": "Su prenotazione consegna a domicilio ed asporto di colazioni ed aperitivi. Consegna in tutto il comprensorio."
          }
       ]
    },
@@ -817,14 +816,14 @@
       "data": [
          {
             "name": "AlSi Gelateria",
-            "tel": "338.3856912",
+            "tel": "338 3856912",
             "note": "Consegne a domicilio nel comune di Imola tutti i giorni delle 12:00 alle 21:30",
             "fb": "//facebook.com/ALSI-Gelateria-175743926388618",
             "satispay": 1
          },
          {
             "name": "Angolo del Gelato",
-            "tel": "3481372636",
+            "tel": "348 1372636",
             "satispay": 1,
             "mail": "angolodelgelato@ymail.com",
             "fb": "//facebook.com/AngolodelGelatoImola",
@@ -833,7 +832,7 @@
          {
             "name": "Burrocacao Gelateria Artigianale",
             "addr": "Via Gaetano Donizetti, 43, 40026 Imola BO",
-            "tel": "338.3100854",
+            "tel": "338 3100854",
             "note": "Consegna gratuita a domicilio.",
             "fb": "//facebook.com/BurrocacaoGelateriaArtigianale",
             "satispay": 1
@@ -848,14 +847,14 @@
          {
             "name": "Gelateria Ferri",
             "addr": "Via Giovanni X, 15, 40026 Imola BO",
-            "tel": "388.4442316",
+            "tel": "388 4442316",
             "fb": "//facebook.com/Gelateria-FERRI-221812871195546",
             "note": "Torte e gelato con servizio di consegna gratuita a domicilio. Prenotazioni entro le ore 19:00 – Consegne dalle 16:00 alle 22:00 anche su WhatsApp. ",
             "satispay": 1
          },
          {
             "name": "Gelateria Nord Pol",
-            "tel": "054226358",
+            "tel": "0542 26358",
             "mail": "gelaterianordpol@libero.it",
             "fb": "//facebook.com/pages/Gelateria%20Nord%20Pol%20Srl/2055795661391060/",
             "satispay": 1
@@ -863,7 +862,7 @@
          {
             "name": "Gelateria Sesto Senso",
             "addr": "Via Emilia, 112, 40026 Imola BO",
-            "tel": "0542.26485",
+            "tel": "0542 26485",
             "fb": "//facebook.com/gelateriasestosenso",
             "note": "Gelato artigianale e torte con consegna gratuita a domicilio. Chiusi il Lunedì. Gelato: 500 gr. 7,50€ – 750 gr. 10€ – 1 kg. 15€ – Prenotate con due giorni di anticipo le torte gelato. Per il gelato consegna a domicilio gratuita con prenotazione dalle 12:00 alle 18:00 e consegna entro le 21:00."
          },
@@ -872,6 +871,15 @@
             "tel": "327 8814119",
             "mail": "yobarbara@libero.it",
             "note": "Per il centro, ordine mimimo 8 euro. Fuori centro ordine minimo 10 euro. Spese di consegna: 2 euro."
+         },
+         {
+            "newEntry": 1,
+            "name": "ZLÈ - Laboratorio del Gelato",
+            "tel": "0542 694001",
+            "mail": "info@zlegelateria.it",
+            "fb": "//facebook.com/zlelaboratoriodelgelatoimola",
+            "site": "//zlegelateria.it",
+            "note": "E' attivo l'ASPORTO ed il servizio di consegna GRATUITA a domicilio. Potete ordinare: Vaschette di gelato (500gr, 750gr o 1kg). Il biscotto di sasso (min 4 pz). Le torte solo su prenotazione (preavviso 24h ore). Ordini telefonici oppure scrivici via Facebook chat."
          }
       ]
    },
@@ -1192,6 +1200,16 @@
             "fb": "//facebook.com/CopyServiceImola",
             "site": "http://www.copyserviceimola.it/",
             "note": "Centro Digitale con molteplici servizi a privati e ad aziende: Stampa Digitale piccolo e grande formato - Progettazione Grafica - Web Management - Gadgettistica - Servizi Informatici."
+         },
+         {
+            "newEntry": 1,
+            "name": "Handmade",
+            "tel": "3442872717",
+            "satispay": 1,
+            "mail": "commerciale@handmadestudio.it",
+            "fb": "//facebook.com/handmadeimola",
+            "site": "3442872717",
+            "note": "Consegna in tutto il comprensorio."
          }
       ]
    },
@@ -1231,6 +1249,16 @@
             "note": "Anche su Whatsapp, Instagram gioo_ba, Facebook Gió & Gió"
          },
          {
+            "newEntry": 1,
+            "name": "Jolie",
+            "tel": "347 3161320",
+            "satispay": 1,
+            "mail": "f.juna@email.it",
+            "fb": "https://m.facebook.com/jolieimola/?locale2=it_IT",
+            "site": "https://www.jolieimola.com/",
+            "note": "Taglie comode. Consegna in tutto il comprensorio."
+         },
+         {
             "name": "Joseph",
             "tel": "0542 24361",
             "satispay": 1,
@@ -1252,6 +1280,14 @@
             "tel": "334 8409824",
             "fb": "//facebook.com/Ivonne-merceria-1384366248556136/",
             "satispay": 1
+         },
+         {
+            "newEntry": 1,
+            "name": "Merceria Miki",
+            "tel": "339 8467620",
+            "mail": "auramirandola@gmail.com",
+            "fb": "//facebook.com/merceriamiky",
+            "note": "Consegna in tutto il comprensorio."
          },
          {
             "name": "Pro Match",
@@ -1281,6 +1317,14 @@
             "note": "Consegna in tutto il comprensorio"
          },
          {
+            "newEntry": 1,
+            "name": "Bar Roma Bistrot",
+            "tel": "3381812156",
+            "mail": "barromaimola@gmail.com",
+            "fb": "https://facebook.com/barromabistrot",
+            "note": "Da asporto e consegna a domicilio (Imola)"
+         },
+         {
             "name": "Esser Bella parrucchiera",
             "tel": "3489343876",
             "satispay": 1,
@@ -1293,6 +1337,13 @@
             "name": "Hair Stylist Look Center",
             "addr": "via Marconi, 52",
             "fb": "//facebook.com/hairstylistlookcenter/"
+         },
+         {
+            "newEntry": 1,
+            "name": "Roberta parrucchiera unisex",
+            "tel": "3276130156",
+            "mail": "robertaparrucchieraunisex@gmail.com",
+            "note": "Ordini telefonici. Consegna in tutto il comprensorio."
          }
       ]
    },
