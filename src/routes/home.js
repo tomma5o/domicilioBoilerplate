@@ -33,15 +33,16 @@ export default class Home extends Component {
    };
 
 	handleCategoryFilter = key => _ => { // eslint-disable-line no-unused-vars
-      if (key === this.state.categoryFilter) {
-         return this.setState({ categoryFilter: null });
-      }
-      this.setState({ categoryFilter: key });
-   };
+		if (key === this.state.categoryFilter) {
+			return this.setState({ categoryFilter: null });
+		}
+		this.setState({ categoryFilter: key });
+	};
 
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
-		const regex = new RegExp(`${filter}`, 'i');
+		const regexStore = new RegExp(`${filter}`, 'i');
+		const regexCategory = new RegExp(`[${filter}]{${filter.length},}`, 'i');
 
 		return Object.keys(results)
 			.filter(key => (categoryFilter ? categoryFilter === key : true))
@@ -51,19 +52,32 @@ export default class Home extends Component {
 						...acc,
 						[key]: {
 							icon: results[key].icon,
-							data: results[key].data.filter(e => (filter.length ? regex.test(e.name) : true))
+							data: regexCategory.test(key)
+                     ? results[key].data
+                     : results[key].data.filter(e =>
+                          filter.length ? regexStore.test(e.name) : true
+                       )
 						}
 					}
 				);
 			}, {});
 	}
+	
+	isEmptySearch(filteredStores) {
+		let storesFound = 0;
+		for (let key in filteredStores) {
+			storesFound += filteredStores[key].data.length;
+		}
+		return storesFound === 0;
+	}
 
 	render(props, { filter, categoryFilter }) {
 		const { results: stores } = props;
-      const filteredStores = this.filteredCategories(filter, categoryFilter);
-      const storesNumber = this.calculateStoresNumber();
-      const finalSentence = this.getFinalSentence(9);
-
+    const filteredStores = this.filteredCategories(filter, categoryFilter);
+    const storesNumber = this.calculateStoresNumber();
+    const finalSentence = this.getFinalSentence(9);
+		const isEmptySearch = this.isEmptySearch(filteredStores);
+    
 		return (
 			<Fragment>
             {storesNumber > 0 && (
@@ -106,6 +120,9 @@ export default class Home extends Component {
 							))
 					}
 				</div>
+				{isEmptySearch && (
+					<p class="font-bold mt-5 mb-10 text-center">Oops! 😅 Non ci sono attività corrispondenti alla tua ricerca.</p>
+				)}
 				<div class="text-center w-full">
 					<p class="mb-5">
 						Developed with ❤️ by

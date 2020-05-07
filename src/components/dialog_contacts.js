@@ -22,7 +22,7 @@ function Tel({tel}) {
 export const D_Contacts = ({tel, mail, site}) => {
 	return (
 		<Fragment>
-			<h3 class="text-lg font-bold mb-2">Contatti</h3>
+			<h3 class="text-lg font-bold mb-2 text-gray-700">Contatti</h3>
 			<div class="mb-5">
 				{tel && (
 					<p class="mb-2">
