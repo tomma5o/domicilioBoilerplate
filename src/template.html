@@ -2,23 +2,23 @@
 <html lang="it">
   <head>
 		<meta charset="utf-8">
-		<title>🚴 Ferrara a Domicilio</title>
-		<meta name="title" content="🚴‍♂️ Ferrara a Domicilio">
-		<meta name="description" content="Tutte le aziende che effettuano consegne a domicilio in provincia di Ferrara">
+		<title><%= process.env.PREACT_APP_CITY %> a Domicilio</title>
+		<meta name="title" content="🚴‍♂️ <%= process.env.PREACT_APP_CITY %> a Domicilio">
+		<meta name="description" content="Tutte le aziende che effettuano consegne a domicilio nella città di <%= process.env.PREACT_APP_CITY %>">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://ferraradomicilio.it/">
-		<meta property="og:title" content="🚴‍♂️ Ferrara a Domicilio">
-		<meta property="og:description" content="Tutte le aziende che effettuano consegne a domicilio in provincia di Ferrara">
-		<meta property="og:image" content="/assets/images/ferraradomicilio_og_image.png">
+		<meta property="og:url" content="<%= process.env.PREACT_APP_HOSTING_DOMAIN %>">
+		<meta property="og:title" content="🚴‍♂️ <%= process.env.PREACT_APP_CITY %> a Domicilio">
+		<meta property="og:description" content="Tutte le aziende che effettuano consegne a domicilio nella città di <%= process.env.PREACT_APP_CITY %>">
+		<meta property="og:image" content="https://i.microlink.io/https%3A%2F%2Fcards.microlink.io%2F%3Fpreset%3Dwesbos%26p%3D2gSUPD4KICA8RmxleAogICAgc3g9e3sKICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywKICAgICAgYmFja2dyb3VuZEltYWdlOiBgdXJsKCR7cXVlcnkuYmFja2dyb3VuZEltYWdlfSlgLAogICAgICBiYWNrZ3JvdW5kU2l6ZTogcXVlcnkuYmFja2dyb3VuZFNpemUsCiAgICAgIGJnOiBxdWVyeS5iZywKICAgIH19CiAgPgogICAgPEZsZXgKICAgICAgc3g9e3sKICAgICAgICBjb2xvcjogcXVlcnkucHJpbWFyeSwKICAgICAgICBwOiAnM3JlbScsCiAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsCiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICB9fQogICAgPgogICAgICA8SW1hZ2UKICAgICAgICBzcmM9Imh0dHBzOi8vdG9tbWE1by5jb20vaW1hZ2VzL2JpY3ljbGlzdF9lbW9qeS5wbmciCiAgICAgICAgc3g9e3sKICAgICAgICAgIGZsZXhHcm93OiAxLAogICAgICAgICAgZm9udFNpemU6ICcxMDBweCcsCiAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICBmb250RmFtaWx5OiAncmFkbmlrYSwgc2Fucy1zZXJpZicsCiAgICAgICAgICB0ZXh0QWxpZ246ICJjZW50ZXIiLAogICAgICAgIH19CiAgICAgIC8-CiAgICAgIDxUZXh0CiAgICAgICAgc3g9e3sKICAgICAgICAgIGZsZXhHcm93OiAxLAogICAgICAgICAgZm9udFNpemU6IDcsCiAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICBmb250RmFtaWx5OiAncmFkbmlrYSwgc2Fucy1zZXJpZicsCiAgICAgICAgICBmb250U3R5bGU6ICdpdGFsaWMnLAogICAgICAgICAgdGV4dEFsaWduOiAiY2VudGVyIiwKICAgICAgICB9fQogICAgICAgIGNoaWxkcmVuPXtxdWVyeS50aXRsZX0KICAgICAgLz4KICAgICAgPFRleHQKICAgICAgICBzeD17ewogICAgICAgICAgZmxleEdyb3c6IDEsCiAgICAgICAgICBmb250U2l6ZTogMywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDUwMCwKICAgICAgICAgIGZvbnRGYW1pbHk6ICdyYWRuaWthLCBzYW5zLXNlcmlmJywKICAgICAgICAgIHRleHRBbGlnbjogImNlbnRlciIsCiAgICAgICAgfX0KICAgICAgICBjaGlsZHJlbj17cXVlcnkuc3VidGl0bGV9CiAgICAgIC8-CiAgICA8L0ZsZXg-CiAgPC9GbGV4Pgo8Lz4%26title%3D<%= process.env.PREACT_APP_TITLE_OG %>%26secondary%3Dblue%26emoji%3D%25F0%259F%259A%25B4%25E2%2580%258D%25E2%2599%2582%25EF%25B8%258F%26subtitle%3D<%= encodeURI(process.env.PREACT_APP_SUBTITLE_OG) %>">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://ferraradomicilio.it/">
-		<meta property="twitter:title" content="🚴‍♂️ Ferrara a Domicilio">
-		<meta property="twitter:description" content="Tutte le aziende che effettuano consegne a domicilio in provincia di Ferrara">
-		<meta property="twitter:image" content="/assets/images/ferraradomicilio_og_image.png">
+		<meta property="twitter:url" content="<%= process.env.PREACT_APP_HOSTING_DOMAIN %>">
+		<meta property="twitter:title" content="🚴‍♂️ <%= process.env.PREACT_APP_CITY %> a Domicilio">
+		<meta property="twitter:description" content="Tutte le aziende che effettuano consegne a domicilio nella città di <%= process.env.PREACT_APP_CITY %>">
+		<meta property="og:image" content="https://i.microlink.io/https%3A%2F%2Fcards.microlink.io%2F%3Fpreset%3Dwesbos%26p%3D2gSUPD4KICA8RmxleAogICAgc3g9e3sKICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJywKICAgICAgYmFja2dyb3VuZEltYWdlOiBgdXJsKCR7cXVlcnkuYmFja2dyb3VuZEltYWdlfSlgLAogICAgICBiYWNrZ3JvdW5kU2l6ZTogcXVlcnkuYmFja2dyb3VuZFNpemUsCiAgICAgIGJnOiBxdWVyeS5iZywKICAgIH19CiAgPgogICAgPEZsZXgKICAgICAgc3g9e3sKICAgICAgICBjb2xvcjogcXVlcnkucHJpbWFyeSwKICAgICAgICBwOiAnM3JlbScsCiAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsCiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsCiAgICAgICAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLAogICAgICB9fQogICAgPgogICAgICA8SW1hZ2UKICAgICAgICBzcmM9Imh0dHBzOi8vdG9tbWE1by5jb20vaW1hZ2VzL2JpY3ljbGlzdF9lbW9qeS5wbmciCiAgICAgICAgc3g9e3sKICAgICAgICAgIGZsZXhHcm93OiAxLAogICAgICAgICAgZm9udFNpemU6ICcxMDBweCcsCiAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICBmb250RmFtaWx5OiAncmFkbmlrYSwgc2Fucy1zZXJpZicsCiAgICAgICAgICB0ZXh0QWxpZ246ICJjZW50ZXIiLAogICAgICAgIH19CiAgICAgIC8-CiAgICAgIDxUZXh0CiAgICAgICAgc3g9e3sKICAgICAgICAgIGZsZXhHcm93OiAxLAogICAgICAgICAgZm9udFNpemU6IDcsCiAgICAgICAgICBmb250V2VpZ2h0OiA5MDAsCiAgICAgICAgICBmb250RmFtaWx5OiAncmFkbmlrYSwgc2Fucy1zZXJpZicsCiAgICAgICAgICBmb250U3R5bGU6ICdpdGFsaWMnLAogICAgICAgICAgdGV4dEFsaWduOiAiY2VudGVyIiwKICAgICAgICB9fQogICAgICAgIGNoaWxkcmVuPXtxdWVyeS50aXRsZX0KICAgICAgLz4KICAgICAgPFRleHQKICAgICAgICBzeD17ewogICAgICAgICAgZmxleEdyb3c6IDEsCiAgICAgICAgICBmb250U2l6ZTogMywKICAgICAgICAgIGZvbnRXZWlnaHQ6IDUwMCwKICAgICAgICAgIGZvbnRGYW1pbHk6ICdyYWRuaWthLCBzYW5zLXNlcmlmJywKICAgICAgICAgIHRleHRBbGlnbjogImNlbnRlciIsCiAgICAgICAgfX0KICAgICAgICBjaGlsZHJlbj17cXVlcnkuc3VidGl0bGV9CiAgICAgIC8-CiAgICA8L0ZsZXg-CiAgPC9GbGV4Pgo8Lz4%26title%3D<%= process.env.PREACT_APP_TITLE_OG %>%26secondary%3Dblue%26emoji%3D%25F0%259F%259A%25B4%25E2%2580%258D%25E2%2599%2582%25EF%25B8%258F%26subtitle%3D<%= encodeURI(process.env.PREACT_APP_SUBTITLE_OG) %>">
 
 		<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/apple-icon-60x60.png">
