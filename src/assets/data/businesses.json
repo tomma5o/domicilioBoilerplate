@@ -59,10 +59,7 @@
          },
          {
             "name": "Pizzeria Milana",
-            "tel": [
-               "054242200",
-               "0542627240"
-            ],
+            "tel": ["054242200", "0542627240"],
             "mail": "pizzeriamilana@gmail.com",
             "site": "//www.pizzeriamilana.it/",
             "fb": "//facebook.com/pages/Pizzeria%20Milana%20-%20Ristoranti%20E%20Pizzerie/187969714560616/",
@@ -155,11 +152,7 @@
          },
          {
             "name": "Forum Cornelii",
-            "tel": [
-               "0542.23903 ",
-               "324.8460804",
-               "335.6806997"
-            ],
+            "tel": ["0542.23903 ", "324.8460804", "335.6806997"],
             "mail": "info@forumcornelii.com",
             "fb": "//facebook.com/forumcornelii",
             "note": "La nostra picanha potete continuare a gustarla a domicilio dal lunedì al venerdì pranzo e cena. Attivi con cosegne a domicilio di vino e piatti del ristorante. Consegna gratuita con tutte le precauzioni del caso (mascherina e guanti). Prenotazioni anche su le Piattaforme Deliveroo e  JustEat. Ristorante: menù a prezzi ridotti. Consegne di vino e piatti del ristorante Lunedì-Venerdì dalle 12:30 alle 14:30 e dalle 19:00 alle 21:30. Consegna in tutto il comprensorio."
@@ -168,10 +161,7 @@
             "name": "Hostaria 900",
             "addr": "Viale Dante, 20",
             "mail": "hostaria900@hostaria900.it",
-            "tel": [
-               "0542.24211",
-               "347 3091215"
-            ],
+            "tel": ["0542.24211", "347 3091215"],
             "fb": "//facebook.com/hostaria900/",
             "note": "Menù giornaliero di asporto con consegna a domicilio (pubblicato su Fb). Vini dalla cantina sconto 20%."
          },
@@ -241,10 +231,7 @@
          },
          {
             "name": "Ristorante Le Bistrot",
-            "tel": [
-               "0542.672122",
-               "340.5574589"
-            ],
+            "tel": ["0542.672122", "340.5574589"],
             "mail": "info@ristorantelebistrot.it",
             "site": "//www.ristorantelebistrot.it/",
             "fb": "//facebook.com/ristorantelebistrot",
@@ -364,10 +351,7 @@
          },
          {
             "name": "Le 3 marie",
-            "tel": [
-               "0542.851761",
-               "338.3089378"
-            ],
+            "tel": ["0542.851761", "338.3089378"],
             "fb": "//facebook.com/le3marie",
             "note": "Piadineria, primi piatti e secondi – Attivi con il servizio di consegna gratuita a domicilio da martedì alla Domenica. Per le consegne del pranzo richiedono l’ordine entro le 12:00 del giorno precedente. Per la consegna della sera ordini anche nel pomeriggio per la sera stessa. Servizio di consegna a domicilio negli orari 12:00-14:00 e dalle 18:00 alle 21:00. Trovate il menù sulla loro pagina Facebook e Instagram."
          },
@@ -393,20 +377,14 @@
       "data": [
          {
             "name": "Aldo Grementieri",
-            "tel": [
-               "3335636753",
-               "0542 680815"
-            ],
+            "tel": ["3335636753", "0542 680815"],
             "fb": "//facebook.com/aldogrementierifruttaeverdura/"
          },
          {
             "name": "Clorofilla (all'ingrosso)",
             "addr": "viale Rivalta, 10 - Imola",
             "mail": "clorofilla1@legalmail.it",
-            "tel": [
-               "349 2687102",
-               "0542 31671"
-            ]
+            "tel": ["349 2687102", "0542 31671"]
          },
          {
             "name": "Cuore dell'Orto Frutta verdura",
@@ -418,10 +396,7 @@
          },
          {
             "name": "Folli prodotti Ortofrutticoli",
-            "tel": [
-               "3336687712",
-               "3409128427"
-            ],
+            "tel": ["3336687712", "3409128427"],
             "fb": "//facebook.com/Folliprodottiortofrutticoli",
             "satispay": 1
          },
@@ -501,10 +476,7 @@
             "name": "Battilani Damirca/Raffaele Poidomani az. agr. ",
             "addr": "via Maria Zanotti n. 3/s",
             "mail": "info@raffaelepoidomani.com",
-            "tel": [
-               "3405776284",
-               "0542 40950"
-            ]
+            "tel": ["3405776284", "0542 40950"]
          },
          {
             "name": "Ca di Viazadur Farm House",
@@ -514,10 +486,7 @@
          },
          {
             "name": "Cà Monti",
-            "tel": [
-               "0542.97666",
-               "335.8048641"
-            ],
+            "tel": ["0542.97666", "335.8048641"],
             "fb": "//facebook.com/AgriturismoCaMonti/",
             "note": "Azienda Agricola – insieme ai colleghi di Agrimercato Bologna siamo attivi con il servizio di consegna a domicilio di prodotti tipici biologici e confetture (dalle classiche di More di Rovo, Albicocca Reale di Imola, Fragole ecc..)"
          },
@@ -539,10 +508,7 @@
             "name": "Le Delizie di Sicilia",
             "addr": "viale Marconi 177 ",
             "mail": "angleocata@gmail.com",
-            "tel": [
-               "335 7010654",
-               "0542 1906624"
-            ]
+            "tel": ["335 7010654", "0542 1906624"]
          },
          {
             "name": "Società agricola Morara Ivan e Anna",
@@ -623,10 +589,7 @@
          },
          {
             "name": "Cofferose",
-            "tel": [
-               "338 3251769 ",
-               "338 9633251"
-            ],
+            "tel": ["338 3251769 ", "338 9633251"],
             "fb": "//facebook.com/rosa.cofferose",
             "note": "Attivi con le consegne a domicilio di caffè, uova di Pasqua e cioccolato su Imola e circondario. Ordini telefonici o con Whatsapp."
          },
@@ -647,10 +610,7 @@
          {
             "name": "I Buongustai salumeria, alimentari, latte",
             "addr": "presso mercato coperto \"Il Borghetto\" - piazzale Ragazzi del '99 - Imola",
-            "tel": [
-               "0542 26749",
-               "335 1495867"
-            ],
+            "tel": ["0542 26749", "335 1495867"],
             "mail": "carlo.sabattani@alice.it",
             "fb": "//facebook.com/mercatocopertoilborghetto/",
             "note": "Al numero fisso solo al mattino, al cellulare tutto il giorno fino alle 19."
@@ -694,10 +654,7 @@
          {
             "name": "Polleria del Borghetto",
             "addr": "presso mercato coperto \"Il Borghetto\", piazzale Ragazzi del '99 - Imola",
-            "tel": [
-               "0542 26715",
-               "351 7776754"
-            ],
+            "tel": ["0542 26715", "351 7776754"],
             "mail": "polleriadelborghetto@gmail.com",
             "fb": "//facebook.com/mercatocopertoilborghetto/",
             "satispay": 1
@@ -736,10 +693,7 @@
          },
          {
             "name": "Caffetteria Melody",
-            "tel": [
-               "342 1332747",
-               "0542 010921"
-            ],
+            "tel": ["342 1332747", "0542 010921"],
             "mail": "caffetteriamelody@hotmail.com",
             "fb": "https://facebook.com/CaffetteriaMelody",
             "note": "Caffetteria - Pasticceria - Panetteria. Attivi con il servizio di consegna a domicilio e aperti per il take away per colazioni, pasticceria, biscotteria, Torte di tutti i tipi, Vino selezionato.Colazioni con Paste fresche e di produzione propria. Aperitivo casalingo: richiedi una bottiglia della nostra cantina. Ordini telefonici oppure Facebook, Instagram (@caffetteriamelody). L'attività rispetta tutte le misure sanitarie di preparazione e consegna in massima sicurezza."
@@ -815,11 +769,7 @@
             "name": "Le Origini Villa - Caffè Pasticceria",
             "addr": "via San Pier Grisologo, 14",
             "mail": "villacaffepasticceria@gmail.com",
-            "tel": [
-               "054232314",
-               "340 4146990",
-               "338 7619797"
-            ],
+            "tel": ["054232314", "340 4146990", "338 7619797"],
             "fb": "//facebook.com/leoriginivilla",
             "note": "Produzione tradizionale e senza glutine, a richiesta anche senza lattosio. Ordini di torte e mignon dolci e salati con 24 ore di anticipo. Dalla nostra enoteca proponiamo vini vegani e tradizionali e bollicine con sconto del 10% per importi a partire da 28€. Colombe artigianali, uova pasquali e ovetti Lindt adatte anche per le persone celiache e su prenotazione si effettuano confezioni regalo personalizzate."
          },
@@ -844,6 +794,15 @@
       "icon": "🍝",
       "data": [
          {
+            "newEntry": 1,
+            "name": "Dolce Pasta",
+            "tel": "0542 22570",
+            "satispay": 1,
+            "mail": "dolcepasrasrl@gmail.com",
+            "fb": "https://www.facebook.com/DolcePastasrl/",
+            "note": "Consegna a Domicilio di Pasta Fresca e Surgelata direttamente a casa vostra di: Tortellini di Carne, Tortelli di Ricotta, Tortelli di Patata, Gnocchi, Tagliatelle, Tagliolini. Consegna Gratuita entro i 3 Km dal nostro laboratorio e 3€ dai 3 ai 10 Km. Ordine minimo 20€."
+         },
+         {
             "name": "Gusto Rama",
             "tel": "334.3856812",
             "fb": "//facebook.com/GustoRama2019",
@@ -864,11 +823,7 @@
             "name": "Sushi sun bar",
             "addr": "c/o centro commerciale Leonardo viale Amendola - Imola",
             "mail": "ordinikmzero@gmail.com",
-            "tel": [
-               "0542 1901795",
-               "327 3428961",
-               "320 3577717"
-            ],
+            "tel": ["0542 1901795", "327 3428961", "320 3577717"],
             "fb": "//facebook.com/sushisunbarimola/"
          }
       ]
@@ -949,10 +904,7 @@
       "data": [
          {
             "name": "Bulli e pupe fashion store",
-            "tel": [
-               "3939125082",
-               "3331630522"
-            ],
+            "tel": ["3939125082", "3331630522"],
             "mail": "bulliepupeimola1@gmail.com",
             "fb": "//facebook.com/bulliepupeimola0",
             "note": "Anche su Whatsapp. Per altri comuni operativi con spedizione postale."
@@ -992,11 +944,7 @@
             "name": "La città dei giochi",
             "addr": "via Appia, 56",
             "mail": "lacittadeigiochiimola@gmail.com",
-            "tel": [
-               "0542 27223",
-               "338 8444734",
-               "349 4737453"
-            ],
+            "tel": ["0542 27223", "338 8444734", "349 4737453"],
             "site": "//www.lacittadeigiochiimola.it/",
             "fb": "//facebook.com/lacittadeigiochi/"
          },
@@ -1029,10 +977,7 @@
             "name": "Pom Pon",
             "mail": "diciassettesnc@gmail.com",
             "fb": "//facebook.com/Florapompon",
-            "tel": [
-               "3402913550",
-               "3393878212"
-            ],
+            "tel": ["3402913550", "3393878212"],
             "satispay": 1
          },
          {
@@ -1064,10 +1009,7 @@
          },
          {
             "name": "Tabaccheria edicola Pontesanto",
-            "tel": [
-               "0542 850050",
-               "345 1270688"
-            ],
+            "tel": ["0542 850050", "345 1270688"],
             "satispay": 1,
             "mail": "tabpontesanto@libero.it"
          }
@@ -1080,10 +1022,7 @@
             "name": "Erboristeria dr. Zambrini",
             "addr": "via Aldrovandi 20",
             "mail": "erb.zambrini@libero.it",
-            "tel": [
-               "0542 33029",
-               "331 1234569"
-            ],
+            "tel": ["0542 33029", "331 1234569"],
             "fb": "//facebook.com/zambrinierboristeria.imola/"
          }
       ]
@@ -1099,20 +1038,13 @@
             "name": "Cartoleria Arcangeli",
             "addr": "via Emilia 148, Imola",
             "mail": "chiarapelliconi@libero.it",
-            "tel": [
-               "347 5636800",
-               "054223152"
-            ],
+            "tel": ["347 5636800", "054223152"],
             "fb": "//facebook.com/cartoleriaarcangeli/",
             "note": "Consegna gratuita"
          },
          {
             "name": "Cartolibreria Imola ufficio",
-            "tel": [
-               "0542 681400",
-               "338 8847616",
-               "338 6225034"
-            ],
+            "tel": ["0542 681400", "338 8847616", "338 6225034"],
             "mail": "imola.ufficio@gmail.com",
             "fb": "//facebook.com/Cartolibreria-Imola-Ufficio-806220532758534",
             "site": "//m.facebook.com/CartolibreriaImolaUfficio",
@@ -1122,20 +1054,14 @@
             "name": "Cartolibreria Marondoli",
             "addr": "via emilia, 90",
             "mail": "cartolibreriamarondoli90@gmail.com",
-            "tel": [
-               "333 5657974",
-               "0542 23164"
-            ],
+            "tel": ["333 5657974", "0542 23164"],
             "site": "http://www.cartolibreriamarondoli.it/index.html",
             "fb": "//facebook.com/Cartolibreria-Marondoli-115554086757729/"
          },
          {
             "name": "Cartolibreria Snoopy",
             "mail": "cartolibreriasnoopy@imolanet.com",
-            "tel": [
-               "054231648",
-               "3389436603"
-            ],
+            "tel": ["054231648", "3389436603"],
             "fb": "//facebook.com/Snoopy-cartolibreria-imola-124259488229150",
             "note": "Consegna nel comprensorio"
          },
@@ -1143,10 +1069,7 @@
             "name": "Il Mosaico soc.coop. sociale",
             "addr": "via Aldrovandi, 5/a",
             "mail": "ilmosaicolibreriadeiragazzi@gmail.com",
-            "tel": [
-               "0542 21949",
-               "366 9747140"
-            ],
+            "tel": ["0542 21949", "366 9747140"],
             "site": "http://www.ilmosaicocooperativa.com",
             "fb": "//facebook.com/ilmosaicolibreriadeiragazzi/"
          },
@@ -1154,10 +1077,7 @@
             "name": "Pi greco",
             "addr": "via Pacinotti, 10",
             "mail": "pi.greco40026@virgilio.it",
-            "tel": [
-               "0542 25691",
-               "351 5399557"
-            ],
+            "tel": ["0542 25691", "351 5399557"],
             "fb": "//facebook.com/cartoleriapigreco/"
          }
       ]
@@ -1166,7 +1086,6 @@
       "icon": "🍷🍺",
       "data": [
          {
-            "newEntry": 1,
             "name": "Az. Agricola Prantoni vini",
             "tel": "347 7247517",
             "mail": "info@prantonivini.it",
@@ -1212,10 +1131,7 @@
          },
          {
             "name": "Hopinion Birrificio Imolese Agricolo",
-            "tel": [
-               "340.5856032",
-               "348.7793909"
-            ],
+            "tel": ["340.5856032", "348.7793909"],
             "note": "Birrificio Agricolo. Sono attivi con il servizio di consegna a domicilio gratuita per le birre di propria produzione e di altri prodotti agricoli delle aziende della zona quali: vino (Cantina Tampieri), farina macinata a pietra grano Senatore Capelli (Stefano Quartieri), passata di pomodoro, miele (Il Mielaio del Guelfo), Raviole, crostate, succhi di frutta (Il bertuzzo – prodotti BIO Succhi di frutta) e Olio extravergine d’oliva. Sconti elevati per tutto il periodo di Quarantena.",
             "fb": "//facebook.com/hopinion.beer",
             "satispay": 1
@@ -1476,10 +1392,7 @@
          },
          {
             "name": "La Porcellana Bianca",
-            "tel": [
-               "3343901442",
-               "0542 23992"
-            ],
+            "tel": ["3343901442", "0542 23992"],
             "satispay": 1,
             "mail": "sabi71@alice.it",
             "fb": "//facebook.com/pbimola91",
