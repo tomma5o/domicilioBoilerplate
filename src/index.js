@@ -16,95 +16,103 @@ import { PWAPrompt } from "./components/pwaPrompt";
 export const Action = createContext({});
 
 export default class App extends Component {
-	state = {
-		results: {},
-		isHomepage: true,
-		isPopupOpen: false,
-		popupData: {},
-	};
+   state = {
+      results: {},
+      isHomepage: true,
+      isPopupOpen: false,
+      popupData: {},
+   };
 
-	handleRoute = (e) => {
-		this.currentUrl = e.url;
-		this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
-	};
+   handleRoute = (e) => {
+      this.currentUrl = e.url;
+      this.setState({ isHomepage: e.url.replace(/\?.*/g, "") === "/" });
+   };
 
-	setPopupNumbers = (e, popupData) => {
-		e.preventDefault();
+   setPopupNumbers = (e, popupData) => {
+      e.preventDefault();
 
-		this.setState({
-			popupData,
-			isPopupOpen: true,
-		});
-	};
+      this.setState({
+         popupData,
+         isPopupOpen: true,
+      });
+   };
 
-	closePopup = (e) => {
-		if (e.currentTarget === e.target) {
-			this.setState({ isPopupOpen: false });
-		}
-	};
+   closePopup = (e) => {
+      if (e.currentTarget === e.target) {
+         this.setState({ isPopupOpen: false });
+      }
+   };
 
-	componentDidMount() {
-		fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
-			.then((r) => r.json())
-			.then((json) => {
-				this.setState({
-					results: json,
-					resultBkp: json,
-				});
-			});
-	}
+   componentDidMount() {
+      fetch(`${process.env.PREACT_APP_DATA_SOURCE}`)
+         .then((r) => r.json())
+         .then((json) => {
+            this.setState({
+               results: json,
+               resultBkp: json,
+            });
+         });
+   }
 
-	componentDidUpdate() {
-		const { isPopupOpen } = this.state;
+   componentDidUpdate() {
+      const { isPopupOpen } = this.state;
 
-		const root = document.documentElement;
-		root.style.setProperty(
-			"--popup-visible",
-			isPopupOpen ? "hidden" : "initial"
-		);
-	}
+      const root = document.documentElement;
+      root.style.setProperty(
+         "--popup-visible",
+         isPopupOpen ? "hidden" : "initial"
+      );
+   }
 
-	render(props, { isHomepage, results, popupData, isPopupOpen }) {
-		return (
-			<Action.Provider value={{ setPopupNumbers: this.setPopupNumbers }}>
-				<div id="app" class="px-5 max-w-screen-md mx-auto">
-					<header>
-						{/* <div class="m-5 text-center">
+   render(props, { isHomepage, results, popupData, isPopupOpen }) {
+      return (
+         <Action.Provider value={{ setPopupNumbers: this.setPopupNumbers }}>
+            <div id="app" class="px-5 max-w-screen-md mx-auto">
+               <header>
+                  {/* <div class="m-5 text-center">
 							<p class="bg-gray-200 text-sm text-gray-500 px-2 py-1 rounded inline-block">
 								Segnalazione attività sospesa fino al __/__
 							</p>
 						</div> */}
-						<nav class="flex justify-center md:justify-end items-center">
-							{
-								isHomepage
-									? <Link class="m-5 bg-blue-500 inline-block text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
-									: <Link class="m-5 text-blue-500 inline-block px-2 py-1 rounded" href="/">&larr; Ritorna alla ricerca</Link>
-							}
-						</nav>
-						<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl text-gray-800 text-center">
-							{`${process.env.PREACT_APP_CITY} a Domicilio`}
-							<span
-								class="block sm:inline-block ml-2"
-								role="img"
-								aria-label="biker"
-							>
-								🚴
-							</span>
-						</h1>
-					</header>
-					<Router onChange={this.handleRoute}>
-						<Home path="/" results={results} />
-						<Form path="/form" />
-						<FormSuccess path="/form/success" />
-					</Router>
-				</div>
-				<Dialog
-					isOpen={isPopupOpen}
-					closePopup={this.closePopup}
-					{...popupData}
-				/>
-				<PWAPrompt />
-			</Action.Provider>
-		);
-	}
+                  <nav class="flex justify-center md:justify-end items-center">
+                     {isHomepage ? (
+                        <Link
+                           class="m-5 bg-blue-500 inline-block text-white font-bold px-2 py-1 rounded"
+                           href="/form"
+                        >
+                           ➕ Aggiungi un'attività
+                        </Link>
+                     ) : (
+                        <Link
+                           class="m-5 text-blue-500 inline-block px-2 py-1 rounded"
+                           href="/"
+                        >
+                           &larr; Ritorna alla ricerca
+                        </Link>
+                     )}
+                  </nav>
+                  <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl text-gray-800 text-center">
+                     {`${process.env.PREACT_APP_CITY} a Domicilio`}
+                     <span
+                        class="block sm:inline-block ml-2"
+                        role="img"
+                        aria-label="biker"
+                     />
+                  </h1>
+               </header>
+               <Router onChange={this.handleRoute}>
+                  <Home path="/" results={results} />
+                  <Form path="/form" />
+                  <FormSuccess path="/form/success" />
+               </Router>
+            </div>
+            <Dialog
+               isOpen={isPopupOpen}
+               closePopup={this.closePopup}
+               {...popupData}
+            />
+            <PWAPrompt />
+         </Action.Provider>
+      );
+   }
 }
