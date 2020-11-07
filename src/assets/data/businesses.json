@@ -1086,6 +1086,16 @@
       "icon": "🍷🍺",
       "data": [
          {
+            "newEntry": 1,
+            "name": "Mani in Malto",
+            "tel": "3388539832",
+            "satispay": 1,
+            "mail": "maniinmalto@gmail.com",
+            "fb": "https://m.facebook.com/maniinmalto/",
+            "site": "https://portal.yhop.beer/console/pub/131",
+            "note": "Consegna in tutto il comprensorio"
+         },
+         {
             "name": "Az. Agricola Prantoni vini",
             "tel": "347 7247517",
             "mail": "info@prantonivini.it",
