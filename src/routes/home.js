@@ -27,6 +27,11 @@ export default class Home extends Component {
       return `tra ${joinedRelevantKeys} ed altri`;
    }
 
+   handleSubmit = (e) => {
+      e.target.querySelector("#textSearch").blur();
+      e.preventDefault();
+   };
+
    handleChangeFilter = (e) => {
       const text = e.target.value;
       this.setState({ filter: text });
@@ -90,15 +95,19 @@ export default class Home extends Component {
                      .
                   </p>
                )}
-               <label class="my-5">
-                  <p class="mb-2 text-sm">Cerca per nome</p>
-                  <input
-                     class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                     type="text"
-                     placeholder="Nome attività"
-                     onInput={this.handleChangeFilter}
-                  />
-               </label>
+               <form action="#" onSubmit={this.handleSubmit}>
+                  <label class="my-5">
+                     <p class="mb-2 text-sm">Cerca per nome</p>
+                     <input
+                        id="textSearch"
+                        class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="search"
+                        placeholder="Nome attività"
+                        onInput={this.handleChangeFilter}
+                     />
+                  </label>
+                  <button class="hidden">Search</button>
+               </form>
                <div class="mt-5 mb-2 flex justify-between items-center">
                   <p class="text-sm">Filtra per categoria</p>
                   <div class="float-right text-xs">Altre &rarr;</div>
